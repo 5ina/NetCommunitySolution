@@ -1,5 +1,7 @@
 ﻿using System.Data.Common;
 using Abp.EntityFramework;
+using NetCommunitySolution.Domain.Settings;
+using System.Data.Entity;
 
 namespace NetCommunitySolution.EntityFramework
 {
@@ -15,6 +17,7 @@ namespace NetCommunitySolution.EntityFramework
          *   But it may cause problems when working Migrate.exe of EF. If you will apply migrations on command line, do not
          *   pass connection string name to base classes. ABP works either way.
          */
+        public virtual IDbSet<Setting> Users { get; set; }
         public NetCommunitySolutionDbContext()
             : base("Default")
         {
