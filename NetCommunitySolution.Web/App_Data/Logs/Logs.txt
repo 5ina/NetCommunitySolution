@@ -23,3 +23,53 @@ DEBUG 2017-12-13 09:52:38,760 [1    ] Abp.Logging.LogHelper                    -
 DEBUG 2017-12-13 09:52:38,762 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
 WARN  2017-12-13 09:52:48,708 [12   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
 WARN  2017-12-13 09:52:48,799 [12   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+DEBUG 2017-12-13 10:10:36,698 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 10:10:36,714 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 10:10:36,722 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,724 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,725 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,726 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,726 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,726 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:10:36,729 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 10:10:37,074 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+FATAL 2017-12-13 10:10:38,809 [1    ] Abp.AbpBootstrapper                      - System.ArgumentException: 路由集合中已存在名为“Operate_default”的路由。路由名称必须唯一。
+参数名: name
+   在 System.Web.Routing.RouteCollection.Add(String name, RouteBase item)
+   在 System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints, String[] namespaces)
+   在 System.Web.Mvc.AreaRegistrationContext.MapRoute(String name, String url, Object defaults, Object constraints, String[] namespaces)
+   在 System.Web.Mvc.AreaRegistrationContext.MapRoute(String name, String url, Object defaults)
+   在 NetCommunitySolution.Web.Areas.Operate.OperateAreaRegistration.RegisterArea(AreaRegistrationContext context) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Web\Areas\Operate\OperateAreaRegistration.cs:行号 22
+   在 System.Web.Mvc.AreaRegistration.CreateContextAndRegister(RouteCollection routes, Object state)
+   在 System.Web.Mvc.AreaRegistration.RegisterAllAreas(RouteCollection routes, IBuildManager buildManager, Object state)
+   在 System.Web.Mvc.AreaRegistration.RegisterAllAreas(Object state)
+   在 System.Web.Mvc.AreaRegistration.RegisterAllAreas()
+   在 NetCommunitySolution.Web.NetCommunitySolutionWebModule.Initialize() 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Web\App_Start\NetCommunitySolutionWebModule.cs:行号 47
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+System.ArgumentException: 路由集合中已存在名为“Operate_default”的路由。路由名称必须唯一。
+参数名: name
+   在 System.Web.Routing.RouteCollection.Add(String name, RouteBase item)
+   在 System.Web.Mvc.RouteCollectionExtensions.MapRoute(RouteCollection routes, String name, String url, Object defaults, Object constraints, String[] namespaces)
+   在 System.Web.Mvc.AreaRegistrationContext.MapRoute(String name, String url, Object defaults, Object constraints, String[] namespaces)
+   在 System.Web.Mvc.AreaRegistrationContext.MapRoute(String name, String url, Object defaults)
+   在 NetCommunitySolution.Web.Areas.Operate.OperateAreaRegistration.RegisterArea(AreaRegistrationContext context) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Web\Areas\Operate\OperateAreaRegistration.cs:行号 22
+   在 System.Web.Mvc.AreaRegistration.CreateContextAndRegister(RouteCollection routes, Object state)
+   在 System.Web.Mvc.AreaRegistration.RegisterAllAreas(RouteCollection routes, IBuildManager buildManager, Object state)
+   在 System.Web.Mvc.AreaRegistration.RegisterAllAreas(Object state)
+   在 System.Web.Mvc.AreaRegistration.RegisterAllAreas()
+   在 NetCommunitySolution.Web.NetCommunitySolutionWebModule.Initialize() 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Web\App_Start\NetCommunitySolutionWebModule.cs:行号 47
+   在 Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   在 System.Collections.Generic.List`1.ForEach(Action`1 action)
+   在 Abp.Modules.AbpModuleManager.StartModules()
+   在 Abp.AbpBootstrapper.Initialize()
+DEBUG 2017-12-13 10:10:48,854 [12   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 10:10:48,855 [12   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
