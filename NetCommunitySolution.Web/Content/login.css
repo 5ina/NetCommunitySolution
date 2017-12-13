@@ -1,0 +1,68 @@
+﻿body.login {
+    background: #fff url("/images/login_bgx.gif") repeat scroll 0 0;
+}
+
+    body.login .login_title {
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    body.login .login_m {
+        margin: 0px auto 0;
+        width: 483px;
+        overflow: hidden;
+        background: #fff no-repeat scroll 0 0;
+        border-radius: 5px;
+        box-shadow: 5px 5px 5px 1px #808080;
+    }
+
+        body.login .login_m h5 {
+            text-align: center;
+            font-weight: 500;
+            font-size: 25px;
+        }
+
+        body.login .login_m .login-header {
+            border-bottom:1px solid #ccc;
+        }
+
+        body.login .login_m .login-body {
+            min-height: 375px;
+        }
+
+            body.login .login_m .login-body .form-horizontal {
+                padding: 5px 25px;
+            }
+
+            body.login .login_m .login-body .control-group {
+                padding: 15px;
+            }
+
+                body.login .login_m .login-body .control-group .control-label {
+                    margin-bottom: 12px;
+                }
+
+                body.login .login_m .login-body .control-group .forget {
+                    font-size: 12px;
+                }
+
+                    body.login .login_m .login-body .control-group .forget:hover {
+                        text-decoration: none;
+                    }
+
+                body.login .login_m .login-body .control-group .remeber {
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+
+                body.login .login_m .login-body .control-group .btn {
+                    letter-spacing: 5px;
+                    font-size: 12px;
+                }
+                body.login .login_m .login-body .control-group .control-label {
+                    font-weight:normal;
+                    padding:0;
+                
+                }

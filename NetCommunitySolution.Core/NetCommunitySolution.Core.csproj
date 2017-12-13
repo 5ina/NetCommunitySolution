@@ -172,11 +172,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CacheNames\CommonSettingNames.cs" />
     <Compile Include="CommonExtensions.cs" />
     <Compile Include="CommonHelper.cs" />
     <Compile Include="ComponentModel\GenericDictionaryTypeConverter.cs" />
     <Compile Include="ComponentModel\GenericListTypeConverter.cs" />
     <Compile Include="ComponentModel\WriteLockDisposable.cs" />
+    <Compile Include="Domain\Customers\Customer.cs" />
+    <Compile Include="Domain\Customers\CustomerRole.cs" />
     <Compile Include="Domain\ISetting.cs" />
     <Compile Include="Domain\Settings\CommonSetting.cs" />
     <Compile Include="Domain\Settings\RegistrationMode.cs" />

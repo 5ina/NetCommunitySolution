@@ -1,0 +1,76 @@
+﻿@model NetCommunitySolution.Domain.Settings.CommonSetting
+@using NetCommunitySolution.Domain.Settings;
+@{
+    ViewBag.Title = "公共配置";
+    ViewBag.ActiveMenu = "Setting"; //The menu item will be active for this page.
+    ViewBag.ActiveItem = "Common-Setting"; //The menu item will be active for this page.
+}
+
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>公共配置</legend>
+</fieldset>
+@using (Html.BeginForm("Common","Setting",FormMethod.Post,new { @id="common-setting",@class= "layui-form"}))
+{
+    @Html.AntiForgeryToken()
+    <div class="layui-form-item">
+        <div class="layui-row">
+            <div class="layui-col-md1 layui-col-md-offset11">
+                <button class="layui-btn layui-btn-normal">保存</button>
+            </div>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        @Html.NETLabelFor(model=>model.Title)
+        
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.Title)
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        @Html.NETLabelFor(model => model.Keywords)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.Keywords)
+        </div>
+    </div>
+    <div class="layui-form-item">
+        @Html.NETLabelFor(model => model.Description)
+
+        <div class="layui-input-block">
+            @Html.TextAreaFor(model => model.Description,new { @class= "layui-textarea"})
+        </div>
+    </div>
+    <div class="layui-form-item">
+        @Html.NETLabelFor(model => model.IsClose)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.IsClose)
+        </div>
+    </div>
+    <div class="layui-form-item">
+        @Html.NETLabelFor(model => model.IsOpenRegistration)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.IsOpenRegistration)
+                                    
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        @Html.NETLabelFor(model => model.RegistrationId)
+
+        <div class="layui-input-block">
+            @Html.NETDropDownListFor(model => model.RegistrationId, RegistrationMode.Mobile.ToSelectList())
+        </div>
+    </div>
+}
+<script>
+    layui.use('form', function () {
+        var form = layui.form;
+        //各种基于事件的操作，下面会有进一步介绍
+        form.render();
+    });
+</script>
+

@@ -59,18 +59,33 @@ namespace NetCommunitySolution.Web
                 );
 
             //APPLICATION RESOURCES
-
-            //~/Bundles/css
-            bundles.Add(
-                new StyleBundle("~/Bundles/css")
-                    .Include("~/css/main.css")
-                );
+            
+            #region layui
 
             //~/Bundles/js
             bundles.Add(
-                new ScriptBundle("~/Bundles/js")
-                    .Include("~/js/main.js")
+                new ScriptBundle("~/layui/js")
+                .Include("~/layui/layui.all.js")
                 );
+
+            //~/Bundles/css
+            bundles.Add(
+                new StyleBundle("~/layui/css")
+                    .Include("~/layui/css/layui.css")
+                );
+            #endregion
+
+            #region Jquery
+            
+            bundles.Add(
+                new ScriptBundle("~/jquery")
+                    .Include("~/Scripts/jquery-3.2.1.js")
+                    .Include("~/Scripts/jquery-3.2.1.js")
+                    .Include("~/Scripts/jquery-3.2.1.js")
+                    .Include("~/Scripts/bootstrap.js")
+                );
+            #endregion
+
         }
     }
 }

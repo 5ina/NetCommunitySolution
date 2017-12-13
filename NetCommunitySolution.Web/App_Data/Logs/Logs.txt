@@ -73,3 +73,789 @@ System.ArgumentException: Â·ÓÉ¼¯ºÏÖÐÒÑ´æÔÚÃûÎª¡°Operate_default¡±µÄÂ·ÓÉ¡£Â·ÓÉÃû³
    ÔÚ Abp.AbpBootstrapper.Initialize()
 DEBUG 2017-12-13 10:10:48,854 [12   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
 DEBUG 2017-12-13 10:10:48,855 [12   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 10:11:36,008 [13   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 10:11:36,027 [13   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 10:11:36,033 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,036 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,036 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,036 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,037 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,037 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,037 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,037 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,038 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,038 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,038 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,038 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:36,041 [13   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 10:11:36,339 [13   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:11:37,456 [13   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 10:11:37,482 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 10:11:37,484 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 10:11:37,488 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 10:11:37,629 [13   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:11:37,658 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 10:11:37,659 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+WARN  2017-12-13 10:11:46,185 [12   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-13 10:11:46,243 [12   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+DEBUG 2017-12-13 10:16:17,862 [29   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 10:16:17,864 [29   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:16:17,865 [29   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:16:17,865 [29   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 10:16:37,906 [13   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 10:16:37,921 [13   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 10:16:37,928 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,930 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,930 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,931 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,931 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,931 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,931 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,931 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,932 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,932 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,932 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,932 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:37,935 [13   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 10:16:38,239 [13   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:16:39,400 [13   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 10:16:39,406 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 10:16:39,408 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 10:16:39,409 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 10:16:39,536 [13   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:16:39,565 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 10:16:39,566 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+WARN  2017-12-13 10:16:46,990 [35   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-13 10:16:47,083 [35   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+DEBUG 2017-12-13 10:25:20,467 [18   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 10:25:20,475 [18   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:25:20,476 [18   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:25:20,476 [18   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 10:37:38,726 [32   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 10:37:38,745 [32   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 10:37:38,753 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,757 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,757 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,758 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,758 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,758 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,759 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,759 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,759 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,760 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,760 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,760 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:38,765 [32   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 10:37:39,281 [32   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:37:41,179 [32   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 10:37:41,192 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 10:37:41,198 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 10:37:41,200 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 10:37:41,386 [32   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:37:41,432 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 10:37:41,434 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 10:40:43,067 [27   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 10:40:43,076 [27   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:40:43,078 [27   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:40:43,078 [27   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 10:40:59,087 [13   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 10:40:59,103 [13   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 10:40:59,111 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,114 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,114 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,115 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,115 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,115 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,115 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,116 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,116 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,116 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,116 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,117 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:40:59,120 [13   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 10:40:59,595 [13   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:41:01,126 [13   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 10:41:01,140 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 10:41:01,147 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 10:41:01,149 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 10:41:01,324 [13   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:41:01,370 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 10:41:01,372 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 10:42:26,102 [52   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 10:42:26,103 [52   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:42:26,105 [52   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:42:26,105 [52   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 10:42:45,434 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 10:42:45,450 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 10:42:45,457 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,461 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,461 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,461 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,461 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:45,465 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 10:42:45,808 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 10:42:47,070 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 10:42:47,079 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 10:42:47,084 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 10:42:47,087 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 10:42:47,246 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 10:42:47,293 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 10:42:47,294 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:06:57,624 [56   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:06:57,634 [56   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:06:57,635 [56   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:06:57,635 [56   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:11:21,017 [5    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:11:21,032 [5    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:11:21,039 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,041 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,041 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,041 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,041 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,041 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,042 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,042 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,042 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,042 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,042 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,043 [5    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:21,046 [5    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:11:21,347 [5    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:11:22,621 [5    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:11:22,636 [5    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:11:22,644 [5    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:11:22,648 [5    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:11:22,886 [5    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:11:22,924 [5    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:11:22,925 [5    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:12:05,005 [37   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:12:05,006 [37   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:12:05,007 [37   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:12:05,007 [37   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:12:41,815 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:12:41,833 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:12:41,844 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,847 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,847 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,847 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,847 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,848 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,848 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,848 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,849 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,849 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,849 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,849 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:41,853 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:12:42,270 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:12:44,149 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:12:44,159 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:12:44,161 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:12:44,164 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:12:44,374 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:12:44,420 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:12:44,421 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:13:53,678 [45   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:13:53,679 [45   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:13:53,681 [45   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:13:53,681 [45   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:15:25,769 [34   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:15:25,783 [34   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:15:25,789 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,791 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,792 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,792 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,792 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,792 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,792 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,793 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,793 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,793 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,793 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,793 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:25,796 [34   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:15:26,094 [34   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:15:27,256 [34   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:15:27,262 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:15:27,264 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:15:27,265 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:15:27,391 [34   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:15:27,420 [34   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:15:27,421 [34   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+ERROR 2017-12-13 11:21:46,371 [12   ] as.Operate.Controllers.SettingController - d:\NetCommunitySolution\src\NetCommunitySolution.Web\Areas\Operate\Views\Setting\Common.cshtml(56): error CS1061: ¡°NetCommunitySolution.Domain.Settings.RegistrationMode¡±²»°üº¬¡°ToSelectList¡±µÄ¶¨Òå£¬²¢ÇÒÕÒ²»µ½¿É½ÓÊÜÀàÐÍÎª¡°NetCommunitySolution.Domain.Settings.RegistrationMode¡±µÄµÚÒ»¸ö²ÎÊýµÄÀ©Õ¹·½·¨¡°ToSelectList¡±(ÊÇ·ñÈ±ÉÙ using Ö¸Áî»ò³ÌÐò¼¯ÒýÓÃ?)
+System.Web.HttpCompileException (0x80004005): d:\NetCommunitySolution\src\NetCommunitySolution.Web\Areas\Operate\Views\Setting\Common.cshtml(56): error CS1061: ¡°NetCommunitySolution.Domain.Settings.RegistrationMode¡±²»°üº¬¡°ToSelectList¡±µÄ¶¨Òå£¬²¢ÇÒÕÒ²»µ½¿É½ÓÊÜÀàÐÍÎª¡°NetCommunitySolution.Domain.Settings.RegistrationMode¡±µÄµÚÒ»¸ö²ÎÊýµÄÀ©Õ¹·½·¨¡°ToSelectList¡±(ÊÇ·ñÈ±ÉÙ using Ö¸Áî»ò³ÌÐò¼¯ÒýÓÃ?)
+   ÔÚ System.Web.Compilation.AssemblyBuilder.Compile()
+   ÔÚ System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ÔÚ System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ÔÚ System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   ÔÚ System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   ÔÚ System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   ÔÚ System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   ÔÚ System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   ÔÚ System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2017-12-13 11:21:58,059 [37   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:21:58,061 [37   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:21:58,062 [37   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:21:58,062 [37   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:22:09,397 [32   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:22:09,413 [32   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:22:09,419 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,421 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,421 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,422 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,422 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,422 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,422 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,423 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,423 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,423 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,423 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,423 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:09,426 [32   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:22:09,734 [32   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:22:11,070 [32   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:22:11,076 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:22:11,077 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:22:11,079 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:22:11,222 [32   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:22:11,254 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:22:11,255 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:24:21,579 [47   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:24:21,581 [47   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:24:21,582 [47   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:24:21,582 [47   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:24:33,225 [33   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:24:33,243 [33   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:24:33,252 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,254 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,255 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,255 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,255 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,256 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,256 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,257 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,257 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,257 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,257 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,258 [33   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:33,262 [33   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:24:33,635 [33   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:24:34,920 [33   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:24:34,926 [33   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:24:34,928 [33   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:24:34,930 [33   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:24:35,080 [33   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:24:35,116 [33   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:24:35,118 [33   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:27:08,304 [37   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:27:08,311 [37   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:27:08,312 [37   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:27:08,312 [37   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:27:19,773 [13   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:27:19,806 [13   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:27:19,815 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,817 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,818 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,818 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,818 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,818 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,820 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,820 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,821 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,821 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,822 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,822 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:19,827 [13   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:27:20,229 [13   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:27:21,423 [13   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:27:21,437 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:27:21,443 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:27:21,445 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:27:21,661 [13   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:27:21,692 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:27:21,693 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:28:06,246 [10   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:28:06,248 [10   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:28:06,249 [10   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:28:06,249 [10   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:28:22,845 [32   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:28:22,871 [32   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:28:22,882 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,885 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,885 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,885 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,886 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,886 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,886 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,886 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,887 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,887 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,887 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,888 [32   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:22,893 [32   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:28:23,350 [32   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:28:24,788 [32   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:28:24,798 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:28:24,803 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:28:24,805 [32   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:28:24,963 [32   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:28:24,997 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:28:24,999 [32   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:29:11,489 [54   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:29:11,493 [54   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:29:11,495 [54   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:29:11,495 [54   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:29:23,039 [34   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:29:23,054 [34   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:29:23,060 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,062 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,062 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,062 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,063 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,063 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,063 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,063 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,064 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,064 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,064 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,064 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:23,067 [34   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:29:23,377 [34   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:29:24,588 [34   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:29:24,594 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:29:24,595 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:29:24,597 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:29:24,730 [34   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:29:24,759 [34   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:29:24,760 [34   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:30:34,011 [10   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:30:34,013 [10   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:30:34,013 [10   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:30:34,013 [10   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:31:14,012 [34   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:31:14,030 [34   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:31:14,040 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,043 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,043 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,043 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,043 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,044 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,044 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,044 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,044 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,045 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,045 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,045 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:14,049 [34   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:31:14,413 [34   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:31:15,807 [34   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:31:15,816 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:31:15,821 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:31:15,824 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:31:15,957 [34   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:31:15,987 [34   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:31:15,988 [34   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:40:20,879 [16   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:40:20,881 [16   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:40:20,882 [16   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:40:20,882 [16   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:43:51,270 [13   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:43:51,285 [13   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:43:51,291 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,294 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,294 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,294 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,294 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,295 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,295 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,296 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,296 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,296 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,296 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,296 [13   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:51,299 [13   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:43:51,624 [13   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:43:52,825 [13   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:43:52,834 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:43:52,835 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:43:52,837 [13   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:43:52,969 [13   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:43:53,001 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:43:53,002 [13   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:45:37,514 [42   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:45:37,516 [42   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:45:37,516 [42   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:45:37,517 [42   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:46:08,806 [34   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:46:08,820 [34   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:46:08,826 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,828 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,828 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,828 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,829 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,829 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,829 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,829 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,830 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,830 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,830 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,830 [34   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:08,835 [34   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:46:09,145 [34   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:46:10,325 [34   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:46:10,331 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:46:10,333 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:46:10,334 [34   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:46:10,459 [34   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:46:10,489 [34   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:46:10,492 [34   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 11:57:23,209 [12   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 11:57:23,212 [12   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:57:23,213 [12   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:57:23,213 [12   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 11:57:40,531 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 11:57:40,568 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 11:57:40,575 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,578 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,579 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,579 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,580 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,581 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,581 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,581 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,582 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:40,588 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 11:57:41,249 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 11:57:43,853 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 11:57:43,881 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 11:57:43,883 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 11:57:43,887 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 11:57:44,075 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 11:57:44,106 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 11:57:44,107 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+WARN  2017-12-13 11:59:31,507 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-13 11:59:31,642 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+DEBUG 2017-12-13 12:01:30,145 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 12:01:30,168 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 12:01:30,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,180 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,180 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,180 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,180 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,181 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,181 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:30,184 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 12:01:30,679 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 12:01:32,527 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 12:01:32,554 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 12:01:32,556 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 12:01:32,560 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 12:01:32,705 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 12:01:32,732 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 12:01:32,734 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 15:06:53,968 [48   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 15:06:53,971 [48   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:06:53,972 [48   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:06:53,972 [48   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 15:07:15,268 [58   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 15:07:15,283 [58   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 15:07:15,292 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,295 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,295 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,295 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,295 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,296 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,296 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,296 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,296 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,297 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,297 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,297 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:15,302 [58   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 15:07:15,684 [58   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:07:16,918 [58   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 15:07:16,925 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 15:07:16,929 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 15:07:16,931 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 15:07:17,070 [58   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:07:17,106 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 15:07:17,108 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 15:07:55,220 [32   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 15:07:55,221 [32   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:07:55,223 [32   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:07:55,223 [32   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 15:08:09,342 [58   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 15:08:09,363 [58   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 15:08:09,373 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,375 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,375 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,375 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,376 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,376 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,377 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,377 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,377 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,377 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,378 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,378 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:09,381 [58   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 15:08:09,784 [58   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:08:11,228 [58   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 15:08:11,239 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 15:08:11,244 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 15:08:11,246 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 15:08:11,386 [58   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:08:11,416 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 15:08:11,417 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 15:34:32,413 [53   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 15:34:32,422 [53   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:34:32,424 [53   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:34:32,424 [53   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 15:34:41,706 [19   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 15:34:41,789 [19   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 15:34:41,794 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,797 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,797 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,797 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,797 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,798 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,798 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,798 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,799 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,799 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,799 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,799 [19   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:41,802 [19   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 15:34:42,241 [19   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:34:42,456 [19   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 15:34:42,466 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 15:34:42,471 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 15:34:42,473 [19   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 15:34:42,654 [19   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:34:42,691 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 15:34:42,693 [19   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 15:44:51,659 [8    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 15:44:51,661 [8    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:44:51,662 [8    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:44:51,663 [8    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 15:45:05,196 [58   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 15:45:05,221 [58   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 15:45:05,230 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,232 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,233 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,233 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,233 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,233 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,234 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,235 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,235 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,235 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,235 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,236 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:05,239 [58   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 15:45:05,588 [58   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:45:06,830 [58   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 15:45:06,839 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 15:45:06,844 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 15:45:06,847 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 15:45:06,983 [58   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:45:07,016 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 15:45:07,018 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 15:48:18,860 [34   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 15:48:18,867 [34   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:48:18,869 [34   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:48:18,869 [34   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 15:48:56,060 [58   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 15:48:56,078 [58   ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 15:48:56,089 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,091 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,092 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,092 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,092 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,093 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,093 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,094 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,094 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,094 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,094 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,095 [58   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:56,100 [58   ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 15:48:56,482 [58   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 15:48:57,861 [58   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 15:48:57,870 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 15:48:57,875 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 15:48:57,877 [58   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 15:48:58,027 [58   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:48:58,068 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 15:48:58,070 [58   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 15:58:44,141 [57   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 15:58:44,142 [57   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:58:44,142 [57   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 15:58:44,143 [57   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 18:56:30,600 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 18:56:30,617 [1    ] Abp.Modules.AbpModuleManager             - Found 12 ABP modules in total.
+DEBUG 2017-12-13 18:56:30,622 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:30,630 [1    ] Abp.Modules.AbpModuleManager             - 12 modules loaded.
+DEBUG 2017-12-13 18:56:30,991 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:56:32,920 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 18:56:32,950 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 18:56:32,952 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 18:56:32,959 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 18:56:33,122 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 18:56:33,154 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 18:56:33,155 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-13 18:56:33,156 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 18:57:47,945 [5    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 18:57:47,946 [5    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 18:57:47,947 [5    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 18:57:47,947 [5    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 18:58:02,187 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 18:58:02,207 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2017-12-13 18:58:02,218 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,221 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,222 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,222 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,222 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,222 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:02,229 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2017-12-13 18:58:02,645 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 18:58:03,843 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 18:58:03,848 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 18:58:03,850 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 18:58:03,852 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 18:58:03,969 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 18:58:04,035 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 1 classes define auto mapping attributes
+DEBUG 2017-12-13 18:58:04,035 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Authentication.Dto.CustomerDto
+DEBUG 2017-12-13 18:58:04,254 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 18:58:04,255 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-13 18:58:04,256 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 19:08:28,775 [27   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 19:08:28,776 [27   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 19:08:28,777 [27   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 19:08:28,777 [27   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 19:08:37,217 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 19:08:37,234 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2017-12-13 19:08:37,240 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,243 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,243 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,243 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,243 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,243 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,244 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,244 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,244 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,244 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,244 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,245 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,245 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:37,248 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2017-12-13 19:08:37,661 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:08:39,455 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 19:08:39,462 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 19:08:39,463 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 19:08:39,465 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 19:08:39,582 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 19:08:39,634 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 1 classes define auto mapping attributes
+DEBUG 2017-12-13 19:08:39,634 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Authentication.Dto.CustomerDto
+DEBUG 2017-12-13 19:08:39,818 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 19:08:39,819 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-13 19:08:39,821 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 19:10:32,051 [27   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-13 19:10:32,052 [27   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 19:10:32,053 [27   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 19:10:32,053 [27   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-13 19:10:48,182 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 19:10:48,198 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2017-12-13 19:10:48,207 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,211 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,212 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,213 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,213 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,214 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,214 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,214 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,214 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,215 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:48,220 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2017-12-13 19:10:48,720 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:10:51,387 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 19:10:51,414 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 19:10:51,415 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 19:10:51,419 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 19:10:51,598 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 19:10:51,683 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 1 classes define auto mapping attributes
+DEBUG 2017-12-13 19:10:51,683 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Authentication.Dto.CustomerDto
+DEBUG 2017-12-13 19:10:51,969 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 19:10:51,971 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-13 19:10:51,974 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-13 19:19:03,509 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-13 19:19:03,528 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2017-12-13 19:19:03,534 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,536 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,536 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,536 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,536 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,536 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,537 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,537 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,537 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,537 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,537 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,537 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,538 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:03,542 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2017-12-13 19:19:03,886 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-13 19:19:05,971 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-13 19:19:05,995 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-13 19:19:05,997 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-13 19:19:06,001 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-13 19:19:06,133 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-13 19:19:06,198 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 1 classes define auto mapping attributes
+DEBUG 2017-12-13 19:19:06,198 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Authentication.Dto.CustomerDto
+DEBUG 2017-12-13 19:19:06,472 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-13 19:19:06,474 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-13 19:19:06,476 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.

@@ -1,0 +1,81 @@
+﻿@model NetCommunitySolution.Web.Models.Customers.LoginModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>NET社区</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/login.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="~/Content/bootstrap-cosmo.min.css" />
+    <script type="text/javascript" src="~/Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+</head>
+<body class="login">
+    <div class="container">
+        <div class="span12">
+            <ins class="login_title"></ins>
+        </div>
+
+        @{var validationSummary = Html.ValidationSummary(true);
+
+            if (!MvcHtmlString.IsNullOrEmpty(validationSummary))
+            {
+                <div class="alert alert-warning">
+                    <a href="#" class="close" data-dismiss="alert">
+                        &times;
+                    </a>
+                    @validationSummary
+                </div>
+            }
+        }
+     
+
+        <div class="span12">
+            <div class="login_m">
+                <div class="login-header">
+                    <h5>NET社区用户登录</h5>
+                </div>
+
+                <div class="login-body">
+                    @using (Html.BeginForm("Login", "Customer", FormMethod.Post, new { @id = "login-form", @class = "form-horizontal", role = "form" }))
+                    {
+
+                        @Html.AntiForgeryToken()
+                        <div class="control-group">
+                            @Html.LabelFor(model => model.LoginName, new { @class = "control-label" })
+                            <div class="controls">
+                                @Html.TextBoxFor(model => model.LoginName, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            @Html.LabelFor(model => model.Password, new { @class = "control-label" })
+                            <div class="controls">
+                                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="control-group clearfix">
+                            <div class="pull-left">
+                                @Html.CheckBoxFor(model => model.RememberMe)
+                                @Html.LabelFor(model => model.RememberMe, new { @class = "remeber" })
+                            </div>
+                            <div class="pull-right">
+                                <a class="forget" href="">忘记密码？</a>
+                            </div>
+                        </div>
+                        <div class="control-group text-center">
+                            <button class="btn btn-success">登录</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
