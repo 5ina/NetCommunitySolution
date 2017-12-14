@@ -59,19 +59,33 @@ namespace NetCommunitySolution.Web
                 );
 
             //APPLICATION RESOURCES
-            
+
+            #region home
+            bundles.Add(
+              new StyleBundle("~/Bundles/css")
+                  .Include("~/Content/style.css", new CssRewriteUrlTransform())
+                  .Include("~/Content/bootstrap-cosmo.min.css", new CssRewriteUrlTransform())
+                  .Include("~/Content/toastr.min.css")
+                  .Include("~/Scripts/sweetalert/sweet-alert.css")
+                  .Include("~/Content/flags/famfamfam-flags.css", new CssRewriteUrlTransform())
+                  .Include("~/Content/font-awesome.min.css", new CssRewriteUrlTransform())
+              );
+            #endregion
+
             #region layui
 
-            //~/Bundles/js
+            //~/layui/js
             bundles.Add(
                 new ScriptBundle("~/layui/js")
                 .Include("~/layui/layui.all.js")
+                .Include("~/Scripts/admin.common.js")
                 );
 
-            //~/Bundles/css
+            //~/layui/css
             bundles.Add(
                 new StyleBundle("~/layui/css")
                     .Include("~/layui/css/layui.css")
+                    .Include("~/Content/admin.css")
                 );
             #endregion
 

@@ -3,6 +3,7 @@ using Abp.EntityFramework;
 using NetCommunitySolution.Domain.Settings;
 using System.Data.Entity;
 using NetCommunitySolution.Domain.Customers;
+using NetCommunitySolution.Domain.Catalog;
 
 namespace NetCommunitySolution.EntityFramework
 {
@@ -20,6 +21,12 @@ namespace NetCommunitySolution.EntityFramework
          */
         public virtual IDbSet<Setting> Setting { get; set; }
         public virtual IDbSet<Customer> Customer { get; set; }
+
+        //Catalog
+        public virtual IDbSet<Category> Category { get; set; }
+        public virtual IDbSet<ContentLabel> ContentLabel { get; set; }
+
+        
         public NetCommunitySolutionDbContext()
             : base("Default")
         {

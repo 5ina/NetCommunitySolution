@@ -1,0 +1,14 @@
+﻿@model IList<NetCommunitySolution.Web.Models.Catalog.CategoryModel>
+
+<div class="category-list">
+    <h5 class="category-title">编程分类</h5>
+    <ul class="list-group">
+        @foreach (var item in Model)
+        {
+        <li class="list-group-item">
+            <span class="badge">14</span>
+            <a title="@item.Description">@item.Name</a>
+        </li>
+        }
+    </ul>
+</div>

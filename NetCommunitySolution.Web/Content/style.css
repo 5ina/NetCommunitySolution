@@ -1,0 +1,57 @@
+﻿/* Top */
+.navbar-fixed-top .customer-status{
+    margin:0;
+    padding:0;
+}
+.navbar-fixed-top .customer-status li {
+    margin: 0;
+    padding: 0;
+    float:left;
+    list-style:none;
+}
+
+    .navbar-fixed-top .customer-status li a {
+        color: #fff;
+        padding:14.5px 15px;
+        line-height:21px;
+        display:block;
+    }
+        .navbar-fixed-top .customer-status li a:hover {
+            text-decoration: none;
+            background: #0066cc
+        }
+
+.navbar-fixed-top .search-box {
+    height:50px;
+    padding:5px 0;
+}
+    .navbar-fixed-top .search-box .search-input {
+        border: none;
+        display: inline-block;
+        padding: 10px;
+        width:300px;
+    }
+    .navbar-fixed-top .search-box .search-btn {
+        border: none;
+        background:#eee;
+        text-decoration:none;
+        display:inline-block;
+        margin-left:-5px;
+        padding:10px;
+        border-left:1px solid #ccc;
+        cursor:pointer;
+    }
+
+/* container-fluid */
+.container-fluid .wrapper {
+    margin-top:70px;
+}
+
+/* Home Category */
+.category-list .category-title {
+    margin: 0;
+    padding: 10px;
+    background: #007FFF;
+    color: #fff;
+    font-weight: 600;
+}

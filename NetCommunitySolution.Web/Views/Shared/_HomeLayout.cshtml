@@ -1,0 +1,60 @@
+﻿@using System.Threading
+@using System.Web.Optimization
+@using Abp.Timing
+@{
+    SetAntiForgeryCookie();
+}
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="~/favicon.ico">
+
+    <title>NetCommunitySolution</title>
+
+    @Styles.Render("~/Bundles/css")
+
+    <!-- View specific styles -->
+    @RenderSection("styles", required: false)
+
+    <script type="text/javascript">
+        var abp = abp || {}; abp.appPath = '@ApplicationPath';
+    </script>
+
+    <!--[if lt IE 9]>
+        <script src="@Url.Content("~/Scripts/others/html5shiv.js")"></script>
+        <script src="@Url.Content("~/Scripts/others/respond.min.js")"></script>
+    <![endif]-->
+
+    @Scripts.Render("~/Bundles/vendor/js/top")
+
+</head>
+<body>
+    @Html.Action("CustomerStatus", "Customer")
+
+    <div class="container-fluid">
+        <div class="wrapper">
+            @RenderBody()
+        </div>
+    </div>
+
+    @Scripts.Render("~/Bundles/vendor/js/bottom")
+    @Scripts.Render("~/Bundles/js")
+
+    <script>
+        abp.localization.defaultSourceName = '@LocalizationSourceName';
+        moment.locale('@Thread.CurrentThread.CurrentUICulture.Name.ToLower()'); //Localizing momentjs
+    </script>
+
+    <script src="~/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>
+    <script src="~/AbpScripts/GetScripts?v=@(Clock.Now.Ticks)" type="text/javascript"></script>
+
+    <!-- View specific scripts -->
+    @RenderSection("scripts", required: false)
+</body>
+</html>

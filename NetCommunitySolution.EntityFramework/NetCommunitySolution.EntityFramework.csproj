@@ -201,6 +201,14 @@
     <Compile Include="Migrations\201712130804184_Update_Customer_Scripts.Designer.cs">
       <DependentUpon>201712130804184_Update_Customer_Scripts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712131216166_Create_Category_Scripts.cs" />
+    <Compile Include="Migrations\201712131216166_Create_Category_Scripts.Designer.cs">
+      <DependentUpon>201712131216166_Create_Category_Scripts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712140241587_Create_ContentLabel_Scripts.cs" />
+    <Compile Include="Migrations\201712140241587_Create_ContentLabel_Scripts.Designer.cs">
+      <DependentUpon>201712140241587_Create_ContentLabel_Scripts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NetCommunitySolutionDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -224,6 +232,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712130804184_Update_Customer_Scripts.resx">
       <DependentUpon>201712130804184_Update_Customer_Scripts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712131216166_Create_Category_Scripts.resx">
+      <DependentUpon>201712131216166_Create_Category_Scripts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712140241587_Create_ContentLabel_Scripts.resx">
+      <DependentUpon>201712140241587_Create_ContentLabel_Scripts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

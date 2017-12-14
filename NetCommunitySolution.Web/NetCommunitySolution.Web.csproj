@@ -398,6 +398,7 @@
     <Content Include="Abp\Framework\styles\abp.mixings.css" />
     <Content Include="Abp\Framework\styles\abp.mixings.min.css" />
     <Content Include="Abp\Framework\styles\utils\ie10fix.css" />
+    <Content Include="Content\admin.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -405,6 +406,7 @@
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\login.css" />
+    <Content Include="Content\style.css" />
     <Content Include="Content\themes\base\accordion.css" />
     <Content Include="Content\themes\base\all.css" />
     <Content Include="Content\themes\base\autocomplete.css" />
@@ -583,6 +585,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\admin.common.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Abp\Framework\styles\abp.mixings.less" />
@@ -597,6 +600,16 @@
     <Content Include="layui\font\iconfont.ttf" />
     <Content Include="layui\font\iconfont.woff" />
     <Content Include="Areas\Operate\Views\Shared\_Sidebar.cshtml" />
+    <Content Include="Areas\Operate\Views\Catalog\Index.cshtml" />
+    <Content Include="Areas\Operate\Views\ContentLabel\Index.cshtml" />
+    <Content Include="Areas\Operate\Views\Shared\EditorTemplates\MultiSelect.cshtml" />
+    <Content Include="Areas\Operate\Views\Shared\EditorTemplates\SingleSelect.cshtml" />
+    <Content Include="Areas\Operate\Views\ContentLabel\Create.cshtml" />
+    <Content Include="Areas\Operate\Views\ContentLabel\_CreateOrUpdate.cshtml" />
+    <Content Include="Areas\Operate\Views\ContentLabel\Edit.cshtml" />
+    <Content Include="Areas\Operate\Views\Catalog\Edit.cshtml" />
+    <Content Include="Areas\Operate\Views\Catalog\Create.cshtml" />
+    <Content Include="Areas\Operate\Views\Catalog\_CreateOrUpdate.cshtml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
@@ -642,15 +655,30 @@
     <Compile Include="App_Start\NetCommunitySolutionWebModule.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="Areas\Operate\Controllers\ContentLabelController.cs" />
+    <Compile Include="Areas\Operate\Models\Catalog\CategoryListModel.cs" />
     <Compile Include="Areas\Operate\Controllers\AdminBaseController.cs" />
+    <Compile Include="Areas\Operate\Controllers\CatalogController.cs" />
     <Compile Include="Areas\Operate\Controllers\SettingController.cs" />
+    <Compile Include="Areas\Operate\Models\Catalog\CategoryModel.cs" />
+    <Compile Include="Areas\Operate\Models\Catalog\ContentLabelModel.cs" />
     <Compile Include="Areas\Operate\OperateAreaRegistration.cs" />
     <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Controllers\CatalogController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Framework\Controllers\ParameterBasedOnFormNameAttribute.cs" />
     <Compile Include="Framework\Html\EnumExtensions.cs" />
     <Compile Include="Framework\Html\HtmlExtensions.cs" />
+    <Compile Include="Framework\Html\SelectListHelper.cs" />
+    <Compile Include="Framework\Layui\DataSourceRequest.cs" />
+    <Compile Include="Framework\Layui\DataSourceResult.cs" />
+    <Compile Include="Framework\Mvc\NullJsonResult.cs" />
+    <Compile Include="Models\Catalog\CategoryModel.cs" />
     <Compile Include="Models\Customers\LoginModel.cs" />
+    <Compile Include="Models\Customers\RegisterModel.cs" />
+    <Compile Include="Models\Customers\RegisterResultModel.cs" />
+    <Compile Include="Models\Customers\SimpleCustomerModel.cs" />
     <Compile Include="Models\Layout\LanguageSelectionViewModel.cs" />
     <Compile Include="Controllers\LayoutController.cs" />
     <Compile Include="Controllers\NetCommunitySolutionControllerBase.cs" />
@@ -666,7 +694,6 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\About\Index.cshtml" />
-    <Content Include="Views\Shared\_TopBar.cshtml" />
     <Content Include="Views\Layout\_LanguageSelection.cshtml" />
     <Content Include="Views\Layout\_TopMenu.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
@@ -674,6 +701,10 @@
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Views\Customer\Login.cshtml" />
+    <Content Include="Views\Customer\RegisterClose.cshtml" />
+    <Content Include="Views\Shared\_HomeLayout.cshtml" />
+    <Content Include="Views\Customer\CustomerStatus.cshtml" />
+    <Content Include="Views\Catalog\TopMenu.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -701,7 +732,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Operate\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

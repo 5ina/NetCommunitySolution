@@ -7,16 +7,17 @@
             <li class="layui-nav-item @if (ViewBag.ActiveMenu == "Setting") { <text> layui-nav-itemed</text>}" ify-unselect>
                 <a href="javascript:;">配置模块</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="javascript:;" name="Common-Setting" @if (ViewBag.ActiveItem == "Common-Setting") { <text>class="layui-this"</text>}>公共配置</a></dd>
+                    <dd><a href="javascript:;" @if (ViewBag.ActiveItem == "Common-Setting") { <text>class="layui-this"</text>}>公共配置</a></dd>
                     <dd><a href="javascript:;">选项二</a></dd>
                     <dd><a href="javascript:;">选项三</a></dd>
                     <dd><a href="">跳转项</a></dd>
                 </dl>
             </li>
-            <li class="layui-nav-item">
-                <a href="javascript:;">解决方案</a>
+            <li class="layui-nav-item @if (ViewBag.ActiveMenu == "Catalog") { <text> layui-nav-itemed</text>}">
+                <a href="javascript:;">类目管理</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="">移动模块</a></dd>
+                    <dd><a href="@Url.Action("Index","Catalog")" @if (ViewBag.ActiveItem == "Catalog-List") { <text> class="layui-this" </text> }>类目列表</a></dd>
+                    <dd><a href="@Url.Action("Index","ContentLabel")" @if (ViewBag.ActiveItem == "Catalog-Label") { <text> class="layui-this" </text> }>标签列表</a></dd>
                     <dd><a href="">后台模版</a></dd>
                     <dd><a href="">电商平台</a></dd>
                 </dl>

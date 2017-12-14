@@ -3,6 +3,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Abp.AutoMapper;
 using Abp.Localization;
 using Abp.Localization.Dictionaries;
 using Abp.Localization.Dictionaries.Xml;
@@ -15,7 +16,8 @@ namespace NetCommunitySolution.Web
         typeof(AbpWebMvcModule),
         typeof(NetCommunitySolutionDataModule), 
         typeof(NetCommunitySolutionApplicationModule), 
-        typeof(NetCommunitySolutionWebApiModule))]
+        typeof(NetCommunitySolutionWebApiModule),
+        typeof(AbpAutoMapperModule))]
     public class NetCommunitySolutionWebModule : AbpModule
     {
         public override void PreInitialize()

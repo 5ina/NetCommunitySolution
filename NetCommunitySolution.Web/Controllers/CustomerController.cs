@@ -5,7 +5,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using NetCommunitySolution.Authentication;
 using NetCommunitySolution.Authentication.Dto;
+using NetCommunitySolution.Common;
 using NetCommunitySolution.Customers;
+using NetCommunitySolution.Domain.Settings;
 using NetCommunitySolution.Web.Models.Customers;
 using System;
 using System.Collections.Generic;
@@ -25,17 +27,20 @@ namespace NetCommunitySolution.Web.Controllers
         private readonly CustomerManager _customerManager;
         private readonly ICustomerService _customerService;
         private readonly ICacheManager _cacheManager;
+        private readonly ISettingService _settingService;
 
         private const string CACHE_CUSTOMER_STATISTICAL_OVERVIEW = "net.cache.customer.statistical.overview";
         public CustomerController(ICustomerService customerService,
             ICacheManager cacheManager,
             LoginManager loginManager,
-            CustomerManager customerManager)
+            CustomerManager customerManager,
+            ISettingService settingService)
         {
             this._customerService = customerService;
             this._customerManager = customerManager;
             this._loginManager = loginManager;
             this._cacheManager = cacheManager;
+            this._settingService = settingService;
         }
         #endregion
 
@@ -47,6 +52,8 @@ namespace NetCommunitySolution.Web.Controllers
                 return HttpContext.GetOwinContext().Authentication;
             }
         }
+
+        
         #endregion
 
         #region Login / Logout
@@ -106,6 +113,90 @@ namespace NetCommunitySolution.Web.Controllers
             return Redirect("/");
         }
 
+        #endregion
+
+        #region Register
+        
+        public ActionResult Register()
+        {
+            var key = string.Format(NetCommunitySolutionConsts.CACHE_SETTINGS, "common");
+            var commonSetting = _cacheManager.GetCache(key).Get(key, () => _settingService.GetCommonSettings());
+
+            if (!commonSetting.IsOpenRegistration)
+                return RedirectToAction("RegisterClose");
+
+            var model = new RegisterModel();
+
+            return View(model);
+        }
+
+        [HttpPost]
+        [ValidateInput(false)]
+        public ActionResult Register(RegisterModel model, string returnUrl, bool captchaValid, FormCollection form)
+        {
+            var key = string.Format(NetCommunitySolutionConsts.CACHE_SETTINGS, "common");
+            var commonSetting = _cacheManager.GetCache(key).Get(key, () => _settingService.GetCommonSettings());
+
+            if (!commonSetting.IsOpenRegistration)
+                return RedirectToAction("RegisterClose");
+
+            if (model.CheckEmail)
+            {
+                if (String.IsNullOrWhiteSpace(model.Email))
+                    ModelState.AddModelError("", "请输入Email");
+            }
+
+            if (model.CheckLoginName)
+            {
+                if (String.IsNullOrWhiteSpace(model.LoginName))
+                    ModelState.AddModelError("", "请输入登录名");
+            }
+            if (model.CheckPhone)
+            {
+                if (String.IsNullOrWhiteSpace(model.Phone))
+                    ModelState.AddModelError("", "请输入手机号码");
+            }
+            if(!model.Password.Equals(model.ConfirmPassword))
+                ModelState.AddModelError("", "两次密码输入的不相同");
+
+            if (ModelState.IsValid)
+            {
+                _customerService.CreateCustomer(new Domain.Customers.Customer { });
+                return RedirectToAction("Index", "Home");
+            }
+            return View(model);
+        }
+        
+        public ActionResult RegisterClose()
+        {
+            var model = new RegisterResultModel
+            {
+                Result = "对不起，社区暂时关闭注册"
+            };
+            return View(model);
+        }
+
+
+
+        #endregion
+
+        #region ChildAction
+        [ChildActionOnly]
+        public ActionResult CustomerStatus()
+        {
+            var model = new SimpleCustomerModel();
+            var customerId = Convert.ToInt32(AbpSession.UserId);            
+            if (customerId > 0)
+            {
+                var customer = _customerService.GetCustomerId(customerId);
+                model.Id = customer.Id;
+                model.Email = customer.Email;
+                model.Mobile = customer.Mobile;
+                model.LoginName = customer.LoginName;
+                model.NickName = customer.NickName;
+            }
+            return PartialView(model);
+        }
         #endregion
     }
 }

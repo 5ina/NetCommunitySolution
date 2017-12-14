@@ -1,0 +1,76 @@
+﻿@model NetCommunitySolution.Web.Areas.Operate.Models.Catalog.CategoryModel
+
+@Html.HiddenFor(model => model.Id)
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.Name)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.Name)
+    </div>
+</div>
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.ParentCategoryId)
+    <div class="layui-input-block">
+        @Html.DropDownListFor(model => model.ParentCategoryId, Model.AvailableCategories)
+
+    </div>
+</div>
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.Description)
+    <div class="layui-input-block">
+        @Html.TextAreaFor(model => model.Description, new { @class = "layui-textarea" })
+    </div>
+</div>
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.CategoryTemplateNames)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.CategoryTemplateNames)
+    </div>
+</div>
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.IncludeInTopMenu)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.IncludeInTopMenu)
+    </div>
+</div>
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.Published)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.Published)
+    </div>
+</div>
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.DisplayOrder)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.DisplayOrder)
+    </div>
+</div>
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.MetaTitle)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.MetaTitle)
+    </div>
+</div>
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.MetaKeywords)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.MetaKeywords)
+    </div>
+</div>
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.MetaDescription)
+    <div class="layui-input-block">
+        @Html.TextAreaFor(model => model.MetaDescription, new { @class = "layui-textarea" })
+    </div>
+</div>
+<script>
+    layui.use('form', function () {
+        var form = layui.form;
+        //各种基于事件的操作，下面会有进一步介绍
+        form.render();
+    });
+</script>
