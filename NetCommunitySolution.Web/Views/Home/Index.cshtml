@@ -1,12 +1,14 @@
 ﻿@{
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
-    ViewBag.ActiveMenu = "Home"; //The menu item will be active for this page.
 }
 
 <div class="row">
-    <!-- 首页 类目-->
     <div class="col-md-2">
+        <!-- 首页 类目-->
         @Html.Action("TopMenu", "Catalog")
+        <!-- 首页 标签-->
+        @Html.Action("HotLabel", "ContentLabel")
+        
     </div>
 
     <div class="col-md-7">

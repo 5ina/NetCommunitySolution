@@ -1,0 +1,14 @@
+﻿@model IList<NetCommunitySolution.Web.Models.Catalog.ContentLabelModel>
+
+@{
+
+    var classNames = new string[] { "label label-default", "label label-primary", "label label-success", "label label-info", "label label-warning", "label label-danger" };
+    Random rd = new Random();
+}
+
+<div class="content-labels">
+    @foreach (var item in Model)
+    {
+        <span class="@classNames[rd.Next(classNames.Length)]">@item.Name</span>
+    }
+</div>

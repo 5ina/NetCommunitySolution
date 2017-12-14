@@ -5,16 +5,9 @@ using System.Web.Mvc;
 
 namespace NetCommunitySolution.Web.Areas.Operate.Controllers
 {
-
     [RouteArea("Operate")]
-    public class AdminBaseController : AbpController
+    public abstract class AdminBaseController : AbpController
     {
-        protected AdminBaseController()
-        {
-            LocalizationSourceName = NetCommunitySolutionConsts.LocalizationSourceName;
-
-        }
-
 
         protected override AbpJsonResult AbpJson(object data, string contentType = null,
             Encoding contentEncoding = null, JsonRequestBehavior behavior = JsonRequestBehavior.DenyGet,

@@ -25,8 +25,10 @@ namespace NetCommunitySolution.EntityFramework
         //Catalog
         public virtual IDbSet<Category> Category { get; set; }
         public virtual IDbSet<ContentLabel> ContentLabel { get; set; }
-
+        public virtual IDbSet<Post> Post { get; set; }
+        public virtual IDbSet<PostLabel> PostLabel { get; set; }
         
+
         public NetCommunitySolutionDbContext()
             : base("Default")
         {

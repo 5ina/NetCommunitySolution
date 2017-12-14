@@ -224,6 +224,7 @@
     <Compile Include="Catalog\ContentLabelService.cs" />
     <Compile Include="Catalog\ICategoryService.cs" />
     <Compile Include="Catalog\IContentLabelService.cs" />
+    <Compile Include="Catalog\IPostService.cs" />
     <Compile Include="Common\ISettingService.cs" />
     <Compile Include="Common\SettingExtension.cs" />
     <Compile Include="Common\SettingService.cs" />
