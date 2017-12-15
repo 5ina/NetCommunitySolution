@@ -76,5 +76,34 @@ namespace NetCommunitySolution.Common
             _settingService.SaveSetting(CustomerSettingNames.PasswordMaxLength, setting.PasswordMaxLength);
             _settingService.SaveSetting(CustomerSettingNames.PasswordMinLength, setting.PasswordMinLength);
         }
+
+
+        /// <summary>
+        /// 获取帖子配置
+        /// </summary>
+        /// <param name="_settingService"></param>
+        /// <returns></returns>
+        public static PostSetting GetPostSettings(this ISettingService _settingService)
+        {
+
+            var config = new PostSetting
+            {
+                PostPageSize = _settingService.GetSettingByKey<int>(PostSettingNames.PostPageSize),
+                HotPostsCount = _settingService.GetSettingByKey<int>(PostSettingNames.HotPostsCount),
+            };
+            return config;
+        }
+
+
+        /// <summary>
+        /// 存储贴子配置
+        /// </summary>
+        /// <param name="_settingService"></param>
+        /// <param name="setting"></param>
+        public static void SavePostSettings(this ISettingService _settingService, PostSetting setting)
+        {
+            _settingService.SaveSetting(PostSettingNames.HotPostsCount, setting.HotPostsCount);
+            _settingService.SaveSetting(PostSettingNames.PostPageSize, setting.PostPageSize);
+        }
     }
 }

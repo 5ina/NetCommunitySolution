@@ -1,19 +1,20 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using Abp.Domain.Entities;
-using Abp.Domain.Entities.Auditing;
+﻿using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
+using NetCommunitySolution.Domain.Catalog;
+using System;
+using System.ComponentModel;
 
-namespace NetCommunitySolution.Domain.Catalog
+namespace NetCommunitySolution.Web.Models.Catalog
 {
-    /// <summary>
-    /// 帖子
-    /// </summary>
-    public class Post : Entity, ISoftDelete, ICreationAudited, IModificationAudited
+    [AutoMap(typeof(Post))]
+    public class SimplePostModel : EntityDto
     {
-        [Required, MaxLength(50)]
+        
         public string Title { get; set; }
 
+        [DisplayName("技术分类")]
         public int CategoryId { get; set; }
+                
 
         /// <summary>
         /// 发布状态
@@ -21,14 +22,14 @@ namespace NetCommunitySolution.Domain.Catalog
         public bool Published { get; set; }
 
         public bool AllowComments { get; set; }
-
-        public string Content { get; set; }
+        
+        public string Description { get; set; }
 
         public bool IsDeleted { get; set; }
         public long? CreatorUserId { get; set; }
+
+        public string CustomerName { get; set; }
         public DateTime CreationTime { get; set; }
-        public long? LastModifierUserId { get; set; }
-        public DateTime? LastModificationTime { get; set; }
 
         public int Answer { get; set; }
 

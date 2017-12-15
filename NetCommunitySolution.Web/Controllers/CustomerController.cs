@@ -1,6 +1,7 @@
 ﻿using Abp.AutoMapper;
 using Abp.Runtime.Caching;
 using Abp.Runtime.Session;
+using BotDetect.Web.Mvc;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using NetCommunitySolution.Authentication;
@@ -67,17 +68,29 @@ namespace NetCommunitySolution.Web.Controllers
             return null;
         }
 
-        
+        [NonAction]
+        protected virtual void PrepareLoginModel(LoginModel model)
+        {
+            if (model == null)
+                throw new ArgumentNullException("model");
+
+            var customerSetting = _settingService.GetCustomerSettings();
+            model.EnabledCaptcha = customerSetting.EnabledCaptcha;
+        }
         #endregion
 
         #region Login / Logout
+
         public ActionResult Login()
         {
             var model = new LoginModel();
+            PrepareLoginModel(model);
             return View(model);
         }
 
         [HttpPost]
+        [CaptchaValidation("CaptchaCode", "ExampleCaptcha", "Incorrect CAPTCHA code!")]
+        [AllowAnonymous]
         public ActionResult Login(LoginModel model)
         {
 
@@ -115,6 +128,7 @@ namespace NetCommunitySolution.Web.Controllers
                 }
 
             }
+            PrepareLoginModel(model);
             return View(model);
 
         }

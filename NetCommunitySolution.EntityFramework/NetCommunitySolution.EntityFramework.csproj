@@ -209,6 +209,18 @@
     <Compile Include="Migrations\201712140241587_Create_ContentLabel_Scripts.Designer.cs">
       <DependentUpon>201712140241587_Create_ContentLabel_Scripts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712151039222_Create_Posts_Scripts.cs" />
+    <Compile Include="Migrations\201712151039222_Create_Posts_Scripts.Designer.cs">
+      <DependentUpon>201712151039222_Create_Posts_Scripts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712151201069_Update_Post_Scripts.cs" />
+    <Compile Include="Migrations\201712151201069_Update_Post_Scripts.Designer.cs">
+      <DependentUpon>201712151201069_Update_Post_Scripts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712151227223_Create_Post_Comment_Scripts.cs" />
+    <Compile Include="Migrations\201712151227223_Create_Post_Comment_Scripts.Designer.cs">
+      <DependentUpon>201712151227223_Create_Post_Comment_Scripts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NetCommunitySolutionDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -238,6 +250,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712140241587_Create_ContentLabel_Scripts.resx">
       <DependentUpon>201712140241587_Create_ContentLabel_Scripts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712151039222_Create_Posts_Scripts.resx">
+      <DependentUpon>201712151039222_Create_Posts_Scripts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712151201069_Update_Post_Scripts.resx">
+      <DependentUpon>201712151201069_Update_Post_Scripts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712151227223_Create_Post_Comment_Scripts.resx">
+      <DependentUpon>201712151227223_Create_Post_Comment_Scripts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

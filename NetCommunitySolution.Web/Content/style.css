@@ -2,9 +2,11 @@
 a,a:hover{text-decoration:none;}
 
 /* Top */
-.navbar-fixed-top .customer-status{
-    margin:0;
-    padding:0;
+.layui-header .layui-logo a{
+    color:#ff6a00;
+}.navbar-fixed-top .customer-status {
+    margin: 0;
+    padding: 0;
 }
 .navbar-fixed-top .customer-status li {
     margin: 0;
@@ -76,3 +78,86 @@ a,a:hover{text-decoration:none;}
     line-height: 40px;
     text-align: center;
 }
+
+
+/* Content Buttons */
+.site-content .buttons{
+    margin-bottom:12px;
+}
+
+/* Hot Posts*/
+.hot-posts .title h5{
+    font-weight:800;
+    color:#23262e;
+    font-size:18px;
+    border-bottom:1px solid #ccc;
+    padding-left:12px;
+}
+
+.hot-posts .question-item {
+    overflow: hidden;
+    padding: 12px 0 10px 0;
+    border-bottom: 1px solid #E4E6E8;
+}
+    .hot-posts .question-item .tip {
+        float:left;
+    }
+    .hot-posts .question-item .icon{
+        display:inline-block;
+        padding:15px;
+    }
+
+        .hot-posts .question-item .icon i,
+        .hot-posts .question-item .icon span {
+            display:block;
+            text-align:center;
+        }
+    .hot-posts .question-item .votes a{
+        color:#ff6a00;
+    }
+    .hot-posts .question-item .ans a{
+        color: #009688;
+    }
+    .hot-posts .question-item .view a {
+        color: #2f4056;
+    }
+ .hot-posts .question-item .layui-icon {
+    font-size: 30px;
+}
+
+    .hot-posts .question-item .summary {
+        padding: 0 0 30px 0;
+        margin-left: 200px;
+    }
+        .hot-posts .question-item .summary h3 {
+            color: #009688;
+            font-weight:600
+        }
+ 
+.hot-posts .question-item .summary .labels {
+    margin-top: 11px;
+}
+        .hot-posts .question-item .summary .labels .label-tag {
+            color: #33658A;
+            background-color: #CEE0ED;
+            border-color: transparent;
+            padding: 2px 9px;
+            margin-right:18px;
+            display:inline-table;
+        }
+            .hot-posts .question-item .summary .times{
+                color: #07C;
+                background-color: #CEE0ED;
+                border-color: transparent;
+                padding: 2px 9px;
+                position:absolute;
+                right:20px;
+                height:25px;
+                line-height:25px;
+            }
+
+
+        .hot-posts .question-item .summary .customer {
+            color:#000;
+            font-weight:600;
+        }

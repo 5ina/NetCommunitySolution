@@ -10,6 +10,7 @@ namespace NetCommunitySolution.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.IgnoreRoute("{*botdetect}", new { botdetect = @"(.*)BotDetectCaptcha\.ashx" });
             //ASP.NET Web API Route Config
             routes.MapHttpRoute(
                 name: "DefaultApi",

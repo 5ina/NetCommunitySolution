@@ -1,0 +1,88 @@
+﻿@model NetCommunitySolution.Web.Models.Catalog.PostModel
+@{
+    ViewBag.Title = "我要提问";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<div class="site-content">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+        <legend>发起提问</legend>
+    </fieldset>
+    @using (Html.BeginForm("NewPost", "Post", FormMethod.Post, new { @class = "layui-form" }))
+    {
+        <div class="layui-row">
+            <div class="layui-col-md-offset9 layui-col-md3">
+                <div class="buttons">
+                    <a class="layui-btn layui-btn-primary">返回首页</a>
+                    <a class="layui-btn layui-btn-danger">会员中心</a>
+                    <button type="submit" name="save-continue" class="layui-btn layui-btn-warm">
+                        发布
+                    </button>
+                    <button type="submit" name="save-continue" class="layui-btn layui-btn-normal">
+                        发布并编辑
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        @Html.AntiForgeryToken()
+        <div class="layui-form-item">
+            @Html.NETLabelFor(model => model.Title)
+            <div class="layui-input-block">
+                @Html.NETEditorFor(model => model.Title)
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            @Html.NETLabelFor(model => model.CategoryId)
+            <div class="layui-input-block">
+                @Html.NETDropDownListFor(model => model.CategoryId, Model.AvailableCategories, null, null, "lay-category")
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            @Html.NETLabelFor(model => model.ContentLabelIds)
+            <div class="layui-input-block" id="content-labels">
+
+            </div>
+        </div>
+        <div class="layui-form-item">
+            @Html.NETLabelFor(model => model.Content)
+            <div class="layui-input-block">
+                @Html.NETEditorFor(model => model.Content)
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    layui.use('form', function () {
+        var form = layui.form;
+        //各种基于事件的操作，下面会有进一步介绍
+        form.render();
+
+        form.on('select(lay-category)', function (data) {
+            if (data.value > 0) {
+                $.ajax({
+                    url: "GetCategoryLabel/",
+                    data: { categoryId: data.value },
+                    type: "POST",
+                    success: function (labels) {
+                        $("#content-labels").html('');
+
+                        $.each(labels, function (index, item) {
+                            $("#content-labels").append('<input type="checkbox" name="ContentLabelIds" title="' + item.Title + '" value="' + item.Value + '">');
+                            render();
+                        });
+                    }
+
+                });
+            }
+        });
+    });
+
+    function render() {
+        var form = layui.form;
+        //各种基于事件的操作，下面会有进一步介绍
+        form.render();}
+</script>

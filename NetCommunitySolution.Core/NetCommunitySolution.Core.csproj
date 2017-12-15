@@ -183,12 +183,14 @@
     <Compile Include="Domain\Catalog\Category.cs" />
     <Compile Include="Domain\Catalog\ContentLabel.cs" />
     <Compile Include="Domain\Catalog\Post.cs" />
+    <Compile Include="Domain\Catalog\PostComment.cs" />
     <Compile Include="Domain\Catalog\PostLabel.cs" />
     <Compile Include="Domain\Customers\Customer.cs" />
     <Compile Include="Domain\Customers\CustomerRole.cs" />
     <Compile Include="Domain\ISetting.cs" />
     <Compile Include="Domain\Settings\CommonSetting.cs" />
     <Compile Include="Domain\Settings\CustomerSetting.cs" />
+    <Compile Include="Domain\Settings\PostSetting.cs" />
     <Compile Include="Domain\Settings\RegistrationMode.cs" />
     <Compile Include="Domain\Settings\Setting.cs" />
     <Compile Include="NetCommunitySolutionConsts.cs" />

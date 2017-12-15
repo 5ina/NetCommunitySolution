@@ -29,7 +29,7 @@ namespace NetCommunitySolution.Web.Framework.Html
            Expression<Func<TModel, TValue>> expression, string placeholder = "", bool renderFormControlClass = true)
         {
             var result = new StringBuilder();
-
+            
             var htmlAttributes = new
             {
                 @class = renderFormControlClass ? "layui-input" : "",
@@ -41,16 +41,15 @@ namespace NetCommunitySolution.Web.Framework.Html
 
         public static MvcHtmlString NETDropDownListFor<TModel, TValue>(this HtmlHelper<TModel> helper,
           Expression<Func<TModel, TValue>> expression, IEnumerable<SelectListItem> itemList,
-          object htmlAttributes = null, string optionLabel = null, bool renderFormControlClass = false,
+          object htmlAttributes = null, string optionLabel = null, string layfilter = null,
           bool required = false)
         {
             var result = new StringBuilder();
 
             var attrs = HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
             attrs.Add("class", "layui-input layui-unselect");
-
-            if (renderFormControlClass)
-                attrs = AddFormControlClassToHtmlAttributes(attrs);
+            if (!String.IsNullOrWhiteSpace(layfilter))
+                attrs.Add("lay-filter", layfilter);            
 
             if (required)
                 result.AppendFormat("<div class=\"input-group input-group-required\">{0}<div class=\"input-group-btn\"><span class=\"required\">*</span></div></div>",
@@ -80,20 +79,6 @@ namespace NetCommunitySolution.Web.Framework.Html
             if (!attributes.ContainsKey("lay-filter"))
                 attributes["lay-filter"] = layName;
             return htmlHelper.RadioButtonFor(expression, value, attributes);
-        }
-
-        public static RouteValueDictionary AddFormControlClassToHtmlAttributes(RouteValueDictionary htmlAttributes)
-        {
-            //TODO test new implementation
-            if (!htmlAttributes.ContainsKey("class"))
-                htmlAttributes.Add("class", null);
-            if (htmlAttributes["class"] == null || string.IsNullOrEmpty(htmlAttributes["class"].ToString()))
-                htmlAttributes["class"] = "form-control";
-            else
-                if (!htmlAttributes["class"].ToString().Contains("form-control"))
-                htmlAttributes["class"] += " form-control";
-
-            return htmlAttributes;
         }
 
 

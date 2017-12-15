@@ -19,6 +19,11 @@ namespace NetCommunitySolution.Web.Models.Customers
         [DisplayName("保存密码")]
         public bool RememberMe { get; set; }
 
+        public bool EnabledCaptcha { get; set; }
+
+        [DisplayName("验证码")]
+        public string Captcha { get; set; }
+
 
         public void AddValidationErrors(CustomValidationContext context)
         {

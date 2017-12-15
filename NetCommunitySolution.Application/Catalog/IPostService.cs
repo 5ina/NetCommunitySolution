@@ -40,6 +40,6 @@ namespace NetCommunitySolution.Catalog
         IPagedResult<Post> GetAllPost(string keywords = "", int[] categoryIds = null,
             
             int[] contentLabelIds = null,
-            int pageIndex = 0, int pageSized = int.MaxValue);
+            int pageIndex = 0, int pageSize = int.MaxValue);
     }
 }

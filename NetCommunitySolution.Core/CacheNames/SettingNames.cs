@@ -67,4 +67,20 @@
 
 
     }
+
+    /// <summary>
+    /// 帖子配置
+    /// </summary>
+    public class PostSettingNames
+    {
+        /// <summary>
+        /// 热门帖子个数
+        /// </summary>
+        public static string HotPostsCount { get { return "net.setting.post.hotpostscount"; } }
+
+        /// <summary>
+        /// 帖子分页个数
+        /// </summary>
+        public static string PostPageSize { get { return "net.setting.post.pagesize"; } }
+    }
 }

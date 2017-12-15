@@ -1,5 +1,5 @@
 ﻿@model NetCommunitySolution.Web.Models.Customers.LoginModel
-
+@using BotDetect.Web.Mvc;
 @{
     Layout = null;
 }
@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="~/Content/bootstrap-cosmo.min.css" />
     <script type="text/javascript" src="~/Scripts/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+    <link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />
 </head>
 <body class="login">
     <div class="container">
@@ -34,7 +35,7 @@
                 </div>
             }
         }
-     
+
 
         <div class="span12">
             <div class="login_m">
@@ -44,34 +45,47 @@
 
                 <div class="login-body">
                     @using (Html.BeginForm("Login", "Customer", FormMethod.Post, new { @id = "login-form", @class = "form-horizontal", role = "form" }))
-                    {
+    {
 
-                        @Html.AntiForgeryToken()
-                        <div class="control-group">
-                            @Html.LabelFor(model => model.LoginName, new { @class = "control-label" })
-                            <div class="controls">
-                                @Html.TextBoxFor(model => model.LoginName, new { @class = "form-control" })
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            @Html.LabelFor(model => model.Password, new { @class = "control-label" })
-                            <div class="controls">
-                                @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
-                            </div>
-                        </div>
-                        <div class="control-group clearfix">
-                            <div class="pull-left">
-                                @Html.CheckBoxFor(model => model.RememberMe)
-                                @Html.LabelFor(model => model.RememberMe, new { @class = "remeber" })
-                            </div>
-                            <div class="pull-right">
-                                <a class="forget" href="">忘记密码？</a>
-                            </div>
-                        </div>
-                        <div class="control-group text-center">
-                            <button class="btn btn-success">登录</button>
-                        </div>
-                    }
+                @Html.AntiForgeryToken()
+                <div class="control-group">
+                    @Html.LabelFor(model => model.LoginName, new { @class = "control-label" })
+                    <div class="controls">
+                        @Html.TextBoxFor(model => model.LoginName, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="control-group">
+                    @Html.LabelFor(model => model.Password, new { @class = "control-label" })
+                    <div class="controls">
+                        @Html.PasswordFor(model => model.Password, new { @class = "form-control" })
+                    </div>
+                </div>
+
+if (Model.EnabledCaptcha)
+{
+    MvcCaptcha exampleCaptcha = new MvcCaptcha("ExampleCaptcha");
+                <div class="control-group">
+                    @Html.LabelFor(model => model.Captcha, new { @class = "control-label" })
+                    <div class="controls">
+                        @Html.Captcha(exampleCaptcha)
+                        @Html.TextBox("CaptchaCode")
+                    </div>
+                </div>
+                
+}
+                <div class="control-group clearfix">
+                    <div class="pull-left">
+                        @Html.CheckBoxFor(model => model.RememberMe)
+                        @Html.LabelFor(model => model.RememberMe, new { @class = "remeber" })
+                    </div>
+                    <div class="pull-right">
+                        <a class="forget" href="">忘记密码？</a>
+                    </div>
+                </div>
+                <div class="control-group text-center">
+                    <button class="btn btn-success">登录</button>
+                </div>
+}
                 </div>
             </div>
         </div>

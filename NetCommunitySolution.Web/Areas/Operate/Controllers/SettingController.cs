@@ -38,17 +38,32 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
             return View();
         }
 
+
         public ActionResult CustomerSetting()
         {
             var model = _settingService.GetCustomerSettings();
             return View(model);
         }
 
-
         [HttpPost]
         public ActionResult CustomerSetting(Domain.Settings.CustomerSetting model)
         {
             _settingService.SaveCustomerSettings(model);
+            ViewBag.Result = "true";
+            return View();
+        }
+
+
+        public ActionResult PostSetting()
+        {
+            var model = _settingService.GetPostSettings();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult PostSetting(Domain.Settings.PostSetting model)
+        {
+            _settingService.SavePostSettings(model);
             ViewBag.Result = "true";
             return View();
         }

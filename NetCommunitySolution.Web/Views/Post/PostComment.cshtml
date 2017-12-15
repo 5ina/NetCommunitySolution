@@ -1,0 +1,30 @@
+﻿@model IList<NetCommunitySolution.Web.Models.Catalog.PostCommentModel>
+
+
+<div class="comment-list">
+    <div class="title">
+        <strong>回答</strong>
+    </div>
+    <div class="comments">
+        @foreach (var comment in Model)
+        {
+            <div class="comment post-comment">
+                <div class="comment-info">
+                    <div class="user-info">
+                        <a href="@Url.Action("Detail", "Customer", new { customerId = comment.CreatorUserId })" class="username">@(comment.CreatorUserId)</a>
+                                               
+                    </div>
+                </div>
+                <div class="comment-content">
+                    <div class="comment-time">
+                        <label>评论时间:</label>
+                        <span class="stat-value">@comment.CreationTime.ToString("g")</span>
+                    </div>
+                    <div class="comment-body">
+                        <p class="comment-text">@Html.Raw(comment.Content)</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
