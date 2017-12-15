@@ -1,14 +1,18 @@
 ﻿@model IList<NetCommunitySolution.Web.Models.Catalog.CategoryModel>
 
 <div class="category-list">
-    <h5 class="category-title">编程分类</h5>
-    <ul class="list-group">
+    <ul class="layui-nav layui-nav-tree" lay-filter="category-nav">
         @foreach (var item in Model)
-        {
-        <li class="list-group-item">
-            <span class="badge">14</span>
-            <a title="@item.Description">@item.Name</a>
-        </li>
-        }
+    {
+        <li class="layui-nav-item"><a href="">@item.Name</a></li>
+}
     </ul>
 </div>
+
+<script>
+    layui.use('element', function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+        element.render();
+
+    });
+</script>

@@ -2,20 +2,24 @@
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
 }
 
-<div class="row">
-    <div class="col-md-2">
+<div class="layui-row">
+    <div class="layui-col-md2">
         <!-- 首页 类目-->
-        @Html.Action("TopMenu", "Catalog")
+        <div class="catalog-box">
+            @Html.Action("TopMenu", "Catalog")
+        </div>
         <!-- 首页 标签-->
-        @Html.Action("HotLabel", "ContentLabel")
+        <div class="content-label-box">
+            @Html.Action("HotLabel", "ContentLabel")
+        </div>
         
     </div>
 
-    <div class="col-md-7">
+    <div class="layui-col-md7">
 
     </div>
 
-    <div class="col-md-3">
+    <div class="layui-col-md3">
 
     </div>
 </div>

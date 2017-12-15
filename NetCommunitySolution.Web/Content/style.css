@@ -51,14 +51,14 @@ a,a:hover{text-decoration:none;}
 }
 
 /* Home Category */
-.category-list .category-title {
-    margin: 0;
-    padding: 10px;
-    background: #007FFF;
-    color: #fff;
-    font-weight: 600;
+.catalog-box {
+    margin-top:15px;
 }
-
+.content-label-box {
+    margin-top: 15px;
+    padding:15px;
+    border:1px solid #ccc;
+}
 .customer-status .dropdown .dropdown-menu {
     background: #007fff;
 }

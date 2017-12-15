@@ -17,10 +17,15 @@
 
     <title>NetCommunitySolution</title>
 
-    @Styles.Render("~/Bundles/css")
+    @Styles.Render("~/sytle/css")
+    @Styles.Render("~/layui/css")
+    @Scripts.Render("~/jquery")
+    @Scripts.Render("~/layui/js")
 
     <!-- View specific styles -->
     @RenderSection("styles", required: false)
+    <!-- View specific scripts -->
+    @RenderSection("scripts", required: false)
 
     <script type="text/javascript">
         var abp = abp || {}; abp.appPath = '@ApplicationPath';
@@ -31,20 +36,13 @@
         <script src="@Url.Content("~/Scripts/others/respond.min.js")"></script>
     <![endif]-->
 
-    @Scripts.Render("~/Bundles/vendor/js/top")
-
 </head>
 <body>
     @Html.Action("CustomerStatus", "Customer")
 
-    <div class="container-fluid">
-        <div class="wrapper">
+    <div class="layui-fluid">
             @RenderBody()
-        </div>
     </div>
-
-    @Scripts.Render("~/Bundles/vendor/js/bottom")
-    @Scripts.Render("~/Bundles/js")
 
     <script>
         abp.localization.defaultSourceName = '@LocalizationSourceName';
@@ -54,7 +52,5 @@
     <script src="~/api/AbpServiceProxies/GetAll?v=@(Clock.Now.Ticks)"></script>
     <script src="~/AbpScripts/GetScripts?v=@(Clock.Now.Ticks)" type="text/javascript"></script>
 
-    <!-- View specific scripts -->
-    @RenderSection("scripts", required: false)
 </body>
 </html>

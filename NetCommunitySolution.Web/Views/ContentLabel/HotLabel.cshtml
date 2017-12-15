@@ -2,13 +2,13 @@
 
 @{
 
-    var classNames = new string[] { "label label-default", "label label-primary", "label label-success", "label label-info", "label label-warning", "label label-danger" };
+    var classNames = new string[] { "","layui-bg-orange","layui-bg-green","layui-bg-cyan","layui-bg-blue","layui-bg-black", "layui-bg-gray" };
     Random rd = new Random();
 }
 
 <div class="content-labels">
     @foreach (var item in Model)
     {
-        <span class="@classNames[rd.Next(classNames.Length)]">@item.Name</span>
+        <span class="layui-badge @classNames[rd.Next(classNames.Length)]">@item.Name</span>
     }
 </div>
