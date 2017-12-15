@@ -173,7 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CacheExtensions.cs" />
-    <Compile Include="CacheNames\CommonSettingNames.cs" />
+    <Compile Include="CacheNames\SettingNames.cs" />
     <Compile Include="CacheNames\ModelCacheEventConsumer.cs" />
     <Compile Include="CommonExtensions.cs" />
     <Compile Include="CommonHelper.cs" />
@@ -188,6 +188,7 @@
     <Compile Include="Domain\Customers\CustomerRole.cs" />
     <Compile Include="Domain\ISetting.cs" />
     <Compile Include="Domain\Settings\CommonSetting.cs" />
+    <Compile Include="Domain\Settings\CustomerSetting.cs" />
     <Compile Include="Domain\Settings\RegistrationMode.cs" />
     <Compile Include="Domain\Settings\Setting.cs" />
     <Compile Include="NetCommunitySolutionConsts.cs" />

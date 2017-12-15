@@ -34,4 +34,37 @@
         
 
     }
+
+    /// <summary>
+    /// 用户配置
+    /// </summary>
+    public class CustomerSettingNames
+    {
+        /// <summary>
+        /// 是否允许修改昵称
+        /// </summary>
+        public static string ModifyNickName { get { return "net.setting.customer.modify.nickname"; } }
+
+        /// <summary>
+        /// 登录名最大长度
+        /// </summary>
+        public static string LoginNameLength { get { return "net.setting.customer.loginnamelength"; } }
+
+        /// <summary>
+        /// 密码最大长度
+        /// </summary>
+        public static string PasswordMaxLength { get { return "net.setting.customer.passwordmaxlength"; } }
+
+        /// <summary>
+        /// 密码最小长度
+        /// </summary>
+        public static string PasswordMinLength { get { return "net.setting.customer.passwordminlength"; } }
+
+        /// <summary>
+        /// 是否启用验证码
+        /// </summary>
+        public static string EnabledCaptcha { get { return "net.setting.customer.enabledcaptcha"; } }
+
+
+    }
 }

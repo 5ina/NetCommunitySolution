@@ -1,25 +1,25 @@
-﻿@model NetCommunitySolution.Domain.Settings.CommonSetting
+﻿@model NetCommunitySolution.Domain.Settings.CustomerSetting
 @using NetCommunitySolution.Domain.Settings;
 @{
-    ViewBag.Title = "公共配置";
+    ViewBag.Title = "用户配置";
     ViewBag.ActiveMenu = "Setting"; //The menu item will be active for this page.
-    ViewBag.ActiveItem = "Common-Setting"; //The menu item will be active for this page.
+    ViewBag.ActiveItem = "Customer-Setting"; //The menu item will be active for this page.
 }
-
 
 @if (!String.IsNullOrEmpty(ViewBag.Result))
 {
     <script type="text/javascript">
         layer.open({
             title: '修改配置'
-            , content: '公共配置保存成功'
+            , content: '用户配置保存成功'
         });
     </script>
 }
+
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
     <legend>公共配置</legend>
 </fieldset>
-@using (Html.BeginForm("Common", "Setting", FormMethod.Post, new { @id = "common-setting", @class = "layui-form" }))
+@using (Html.BeginForm("CustomerSetting", "Setting", FormMethod.Post, new { @id = "common-setting", @class = "layui-form" }))
 {
     @Html.AntiForgeryToken()
     <div class="layui-form-item">
@@ -30,50 +30,43 @@
         </div>
     </div>
     <div class="layui-form-item">
-        @Html.NETLabelFor(model => model.Title)
+        @Html.NETLabelFor(model => model.EnabledCaptcha)
 
         <div class="layui-input-block">
-            @Html.NETEditorFor(model => model.Title)
+            @Html.NETEditorFor(model => model.EnabledCaptcha)
         </div>
     </div>
 
     <div class="layui-form-item">
-        @Html.NETLabelFor(model => model.Keywords)
+        @Html.NETLabelFor(model => model.PasswordMaxLength)
 
         <div class="layui-input-block">
-            @Html.NETEditorFor(model => model.Keywords)
+            @Html.NETEditorFor(model => model.PasswordMaxLength)
         </div>
     </div>
     <div class="layui-form-item">
-        @Html.NETLabelFor(model => model.Description)
+        @Html.NETLabelFor(model => model.PasswordMinLength)
 
         <div class="layui-input-block">
-            @Html.TextAreaFor(model => model.Description, new { @class = "layui-textarea" })
+            @Html.NETEditorFor(model => model.PasswordMinLength)
         </div>
     </div>
     <div class="layui-form-item">
-        @Html.NETLabelFor(model => model.IsClose)
+        @Html.NETLabelFor(model => model.LoginNameLength)
 
         <div class="layui-input-block">
-            @Html.NETEditorFor(model => model.IsClose)
+            @Html.NETEditorFor(model => model.LoginNameLength)
         </div>
     </div>
     <div class="layui-form-item">
-        @Html.NETLabelFor(model => model.IsOpenRegistration)
+        @Html.NETLabelFor(model => model.ModifyNickName)
 
         <div class="layui-input-block">
-            @Html.NETEditorFor(model => model.IsOpenRegistration)
+            @Html.NETEditorFor(model => model.ModifyNickName)
 
         </div>
     </div>
 
-    <div class="layui-form-item">
-        @Html.NETLabelFor(model => model.RegistrationId)
-
-        <div class="layui-input-block">
-            @Html.NETDropDownListFor(model => model.RegistrationId, RegistrationMode.Mobile.ToSelectList())
-        </div>
-    </div>
 }
 <script>
     layui.use('form', function () {

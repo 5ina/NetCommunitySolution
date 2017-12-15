@@ -2,7 +2,10 @@
 
 namespace NetCommunitySolution.Domain.Settings
 {
-    public class CommonSetting
+    /// <summary>
+    /// 公共配置
+    /// </summary>
+    public class CommonSetting:ISetting
     {
         /// <summary>
         ///标题

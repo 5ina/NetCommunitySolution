@@ -1,4 +1,7 @@
-﻿/* Top */
+﻿/* Common */
+a,a:hover{text-decoration:none;}
+
+/* Top */
 .navbar-fixed-top .customer-status{
     margin:0;
     padding:0;
@@ -21,15 +24,15 @@
             background: #0066cc
         }
 
-.navbar-fixed-top .search-box {
-    height:50px;
-    padding:5px 0;
+.layui-header .search-box {
 }
-    .navbar-fixed-top .search-box .search-input {
+    .layui-header .search-box .search-input {
         border: none;
         display: inline-block;
-        padding: 10px;
-        width:300px;
+        margin: 11px;
+        padding:0 8px;
+        height: 38px;        
+        width: 380px;
     }
     .navbar-fixed-top .search-box .search-btn {
         border: none;
@@ -54,4 +57,22 @@
     background: #007FFF;
     color: #fff;
     font-weight: 600;
+}
+
+.customer-status .dropdown .dropdown-menu {
+    background: #007fff;
+}
+    .customer-status .dropdown .dropdown-menu .member-item {
+        margin:0 auto;
+        float:none;
+    }
+    .customer-status .dropdown .dropdown-menu .member-item a{
+        display:block;
+    }
+
+.customer-navigation .title {
+    background: #23262e;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
 }

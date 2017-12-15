@@ -1,40 +1,57 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using Microsoft.AspNet.Identity;
 using NetCommunitySolution.Domain.Customers;
 using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
-namespace NetCommunitySolution.Authentication.Dto
+namespace NetCommunitySolution.Web.Models.Customers
 {
-
     [AutoMap(typeof(Customer))]
-    public class CustomerDto : EntityDto, IUser<int>
+    public class CustomerInfoModel :EntityDto
     {
+
+        /// <summary>
+        /// 手机号
+        /// </summary>
+        [MaxLength(15)]
+        [DisplayName("手机")]
         public string Mobile { get; set; }
-        
+
+        /// <summary>
+        /// Email
+        /// </summary>
+        [MaxLength(50)]
+        [DisplayName("Email")]
         public string Email { get; set; }
-        
+
+        /// <summary>
+        /// 登录名
+        /// </summary>
+        [MaxLength(30)]
+        [DisplayName("登录名")]
         public string LoginName { get; set; }
 
-        
+
+        /// <summary>
+        /// 昵称
+        /// </summary>
+        [MaxLength(30)]
+        [DisplayName("昵称")]
         public string NickName { get; set; }
 
         /// <summary>
         /// 用户级别
         /// </summary>
         public int Level { get; set; }
-        
-        public string Password { get; set; }
-        
-        public string OpenId { get; set; }
 
         /// <summary>
-        /// 用户角色
+        /// 密码
         /// </summary>
-        public int CustomerRoleId { get; set; }
+        [Required, MaxLength(60)]
+        public string Password { get; set; }
         
-        public string PasswordSalt { get; set; }
-
+                
 
         /// <summary>
         /// 最后修改时间（不需要处理）
@@ -46,17 +63,5 @@ namespace NetCommunitySolution.Authentication.Dto
         /// </summary>
         public DateTime CreationTime { get; set; }
         
-        public string VerificationCode { get; set; }
-
-        /// <summary>
-        /// 验证码过期时间
-        /// </summary>
-        public DateTime VerificatExpiryTime { get; set; }
-
-        public string UserName
-        {
-            get { return LoginName; }
-            set { this.LoginName = value; }
-        }
     }
 }

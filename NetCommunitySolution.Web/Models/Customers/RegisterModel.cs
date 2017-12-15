@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using NetCommunitySolution.Domain.Settings;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
 
@@ -31,8 +32,12 @@ namespace NetCommunitySolution.Web.Models.Customers
         public string Email { get; set; }
 
         public bool CheckLoginName { get; set; }
-        [DisplayName("LoginName")]
+        [DisplayName("登录名")]
         [AllowHtml]
         public string LoginName { get; set; }
+
+        public RegistrationMode RegisterMode { get; set; }
+
+
     }
 }

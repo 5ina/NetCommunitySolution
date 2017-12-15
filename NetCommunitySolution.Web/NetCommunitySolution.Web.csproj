@@ -610,6 +610,7 @@
     <Content Include="layui\font\iconfont.eot" />
     <Content Include="layui\font\iconfont.ttf" />
     <Content Include="layui\font\iconfont.woff" />
+    <Content Include="Areas\Operate\Views\Setting\CustomerSetting.cshtml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
@@ -677,6 +678,9 @@
     <Compile Include="Framework\Mvc\NullJsonResult.cs" />
     <Compile Include="Models\Catalog\CategoryModel.cs" />
     <Compile Include="Models\Catalog\ContentLabelModel.cs" />
+    <Compile Include="Models\Customers\ChangePasswordModel.cs" />
+    <Compile Include="Models\Customers\CustomerInfoModel.cs" />
+    <Compile Include="Models\Customers\CustomerNavigationModel.cs" />
     <Compile Include="Models\Customers\LoginModel.cs" />
     <Compile Include="Models\Customers\RegisterModel.cs" />
     <Compile Include="Models\Customers\RegisterResultModel.cs" />
@@ -709,6 +713,10 @@
     <Content Include="Views\Catalog\TopMenu.cshtml" />
     <Content Include="Views\ContentLabel\HotLabel.cshtml" />
     <Content Include="Views\Customer\Register.cshtml" />
+    <Content Include="Views\Customer\ChangePassword.cshtml" />
+    <Content Include="Views\Shared\_CustomerLayout.cshtml" />
+    <Content Include="Views\Customer\CustomerNavigation.cshtml" />
+    <Content Include="Views\Customer\Info.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

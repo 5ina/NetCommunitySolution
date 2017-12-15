@@ -9,7 +9,7 @@ namespace NetCommunitySolution.Common
     public static class SettingExtension
     {
         /// <summary>
-        /// 获取微信的配置信息
+        /// 获取公共配置
         /// </summary>
         /// <param name="_settingService"></param>
         /// <returns></returns>
@@ -28,6 +28,11 @@ namespace NetCommunitySolution.Common
             return config;
         }
 
+        /// <summary>
+        /// 存储公共配置
+        /// </summary>
+        /// <param name="_settingService"></param>
+        /// <param name="setting"></param>
         public static void SaveCommonSettings(this ISettingService _settingService, CommonSetting setting)
         {
             _settingService.SaveSetting(CommonSettingNames.Description, setting.Description);
@@ -36,6 +41,40 @@ namespace NetCommunitySolution.Common
             _settingService.SaveSetting(CommonSettingNames.IsClose, setting.IsClose);
             _settingService.SaveSetting(CommonSettingNames.IsOpenRegistration, setting.IsOpenRegistration);
             _settingService.SaveSetting(CommonSettingNames.RegistrationId, setting.RegistrationId);
+        }
+
+        /// <summary>
+        /// 获取用户配置
+        /// </summary>
+        /// <param name="_settingService"></param>
+        /// <returns></returns>
+        public static CustomerSetting GetCustomerSettings(this ISettingService _settingService)
+        {
+
+            var config = new CustomerSetting
+            {
+                EnabledCaptcha = _settingService.GetSettingByKey<bool>(CustomerSettingNames.EnabledCaptcha),
+                LoginNameLength = _settingService.GetSettingByKey<int>(CustomerSettingNames.LoginNameLength),
+                ModifyNickName = _settingService.GetSettingByKey<bool>(CustomerSettingNames.ModifyNickName),
+                PasswordMaxLength = _settingService.GetSettingByKey<int>(CustomerSettingNames.PasswordMaxLength),
+                PasswordMinLength = _settingService.GetSettingByKey<int>(CustomerSettingNames.PasswordMinLength),
+            };
+            return config;
+        }
+
+
+        /// <summary>
+        /// 存储用户配置
+        /// </summary>
+        /// <param name="_settingService"></param>
+        /// <param name="setting"></param>
+        public static void SaveCustomerSettings(this ISettingService _settingService, CustomerSetting setting)
+        {
+            _settingService.SaveSetting(CustomerSettingNames.EnabledCaptcha, setting.EnabledCaptcha);
+            _settingService.SaveSetting(CustomerSettingNames.LoginNameLength, setting.LoginNameLength);
+            _settingService.SaveSetting(CustomerSettingNames.ModifyNickName, setting.ModifyNickName);
+            _settingService.SaveSetting(CustomerSettingNames.PasswordMaxLength, setting.PasswordMaxLength);
+            _settingService.SaveSetting(CustomerSettingNames.PasswordMinLength, setting.PasswordMinLength);
         }
     }
 }

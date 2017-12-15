@@ -17,5 +17,6 @@ namespace NetCommunitySolution.CacheNames
         /// </remarks>
         public const string CATEGORIES_LIST_KEY = "net.pres.admin.categories.list-{0}";
         public const string CATEGORIES_LIST_PATTERN_KEY = "net.pres.admin.categories.list";
+        
     }
 }

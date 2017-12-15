@@ -1,0 +1,22 @@
+﻿@model NetCommunitySolution.Web.Models.Customers.CustomerNavigationModel
+<div class="customer-navigation">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+        <legend>用户导航</legend>
+    </fieldset>
+    <ul class="layui-nav layui-nav-tree " lay-filter="member-nav">
+        @foreach (var item in Model.CustomerNavigationItems)
+        {
+            <li class="layui-nav-item @item.ItemClass @(Model.SelectedTab == item.Tab ? "layui-this" : "")">
+                <a href="@item.Url">@(item.Title)</a>
+            </li>
+        }
+    </ul>
+</div>
+
+<script>
+    layui.use('element', function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+        element.render();
+
+    });
+</script>

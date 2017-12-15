@@ -72,6 +72,16 @@ namespace NetCommunitySolution.Web.Framework.Html
             return helper.CheckBoxFor(expression, attrs);
         }
 
+        public static MvcHtmlString NETRadioButtonFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper, 
+            Expression<Func<TModel, TProperty>> expression, object value, object htmlAttributes = null, string layName =null)
+        {
+            var attributes =
+                HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
+            if (!attributes.ContainsKey("lay-filter"))
+                attributes["lay-filter"] = layName;
+            return htmlHelper.RadioButtonFor(expression, value, attributes);
+        }
+
         public static RouteValueDictionary AddFormControlClassToHtmlAttributes(RouteValueDictionary htmlAttributes)
         {
             //TODO test new implementation

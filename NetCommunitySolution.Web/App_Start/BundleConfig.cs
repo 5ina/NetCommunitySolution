@@ -63,12 +63,12 @@ namespace NetCommunitySolution.Web
             #region home
             bundles.Add(
               new StyleBundle("~/Bundles/css")
-                  .Include("~/Content/style.css", new CssRewriteUrlTransform())
                   .Include("~/Content/bootstrap-cosmo.min.css", new CssRewriteUrlTransform())
                   .Include("~/Content/toastr.min.css")
                   .Include("~/Scripts/sweetalert/sweet-alert.css")
                   .Include("~/Content/flags/famfamfam-flags.css", new CssRewriteUrlTransform())
                   .Include("~/Content/font-awesome.min.css", new CssRewriteUrlTransform())
+                  .Include("~/Content/style.css", new CssRewriteUrlTransform())
               );
             #endregion
 
@@ -89,14 +89,44 @@ namespace NetCommunitySolution.Web
                 );
             #endregion
 
+
+            #region sytle
+            bundles.Add(
+              new StyleBundle("~/sytle/css")
+                  .Include("~/Content/style.css", new CssRewriteUrlTransform())
+              );
+
+
+            #endregion
+
             #region Jquery
             
+            #endregion
+
+            #region abp && jquery
             bundles.Add(
                 new ScriptBundle("~/jquery")
-                    .Include("~/Scripts/jquery-3.2.1.js")
-                    .Include("~/Scripts/jquery-3.2.1.js")
-                    .Include("~/Scripts/jquery-3.2.1.js")
-                    .Include("~/Scripts/bootstrap.js")
+                    .Include(
+                        "~/Scripts/json2.min.js",
+
+                        "~/Scripts/jquery-3.2.1.min.js",
+                        "~/Scripts/jquery-ui-1.12.1.min.js",
+                        
+                        "~/Scripts/moment-with-locales.min.js",
+                        "~/Scripts/jquery.validate.min.js",
+                        "~/Scripts/jquery.blockUI.js",
+                        "~/Scripts/toastr.min.js",
+                        "~/Scripts/sweetalert/sweet-alert.min.js",
+                        "~/Scripts/others/spinjs/spin.js",
+                        "~/Scripts/others/spinjs/jquery.spin.js",
+
+                        "~/Abp/Framework/scripts/abp.js",
+                        "~/Abp/Framework/scripts/libs/abp.jquery.js",
+                        "~/Abp/Framework/scripts/libs/abp.toastr.js",
+                        "~/Abp/Framework/scripts/libs/abp.blockUI.js",
+                        "~/Abp/Framework/scripts/libs/abp.sweet-alert.js",
+                        "~/Abp/Framework/scripts/libs/abp.spin.js"
+                    )
                 );
             #endregion
 

@@ -1,0 +1,62 @@
+﻿@model CustomerInfoModel
+@using NetCommunitySolution.Web.Models.Customers;
+@{
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+@section left
+{
+    @Html.Action("CustomerNavigation", "Customer", new { selectedTabId = CustomerNavigationEnum.Info })
+}
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>修改密码</legend>
+</fieldset>
+<div style="padding:15px;margin:15px;">
+    @using (Html.BeginForm("Info", "Customer", FormMethod.Post, new { @class = "layui-form" }))
+    {
+        @Html.AntiForgeryToken()
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                @Html.NETLabelFor(model => model.Mobile)
+                <div class="layui-input-inline">
+                    @Html.NETEditorFor(model => model.Mobile)
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                @Html.NETLabelFor(model => model.Email)
+                <div class="layui-input-inline">
+                    @Html.NETEditorFor(model => model.Email)
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                @Html.NETLabelFor(model => model.LoginName)
+                <div class="layui-input-inline">
+                    @Html.NETEditorFor(model => model.LoginName)
+                </div>
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                @Html.NETLabelFor(model => model.NickName)
+                <div class="layui-input-inline">
+                    @Html.NETEditorFor(model => model.NickName)
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input type="submit" class=" layui-btn layui-btn-normal" value="保存" />
+            </div>
+        </div>
+    }
+</div>
