@@ -88,7 +88,12 @@ else
                             @Html.NETEditorFor(model => model.QQ)
                         </div>
                     </div>
-
+                    <div class="layui-form-item">
+                        @Html.NETLabelFor(model => model.Introduce)
+                        <div class="layui-input-block">
+                            @Html.TextAreaFor(model => model.Introduce,new { @class = "layui-textarea" })
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

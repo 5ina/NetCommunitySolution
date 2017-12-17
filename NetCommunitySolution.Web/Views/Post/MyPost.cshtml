@@ -1,0 +1,32 @@
+﻿@model PagedSimplePostModel
+@using NetCommunitySolution.Web.Models.Catalog;
+@using NetCommunitySolution.Web.Models.Customers;
+@{
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+@section left
+{
+    @Html.Action("CustomerNavigation", "Customer", new { selectedTabId = CustomerNavigationEnum.Posts })
+}
+
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>我的问答</legend>
+</fieldset>
+
+<div class="layui-tab">
+    <ul class="layui-tab-title">
+        <li class="layui-this">我发布的问答</li>
+        <li>我的评论</li>
+        <li>选中我的</li>
+    </ul>
+    <div class="layui-tab-content">
+        <div class="layui-tab-item layui-show">
+            @Html.Partial("_PostBox", Model)
+        </div>
+        <div class="layui-tab-item">内容2</div>
+        <div class="layui-tab-item">内容3</div>
+    </div>
+</div>
+

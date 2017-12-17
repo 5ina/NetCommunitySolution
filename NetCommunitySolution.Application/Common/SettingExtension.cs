@@ -62,6 +62,8 @@ namespace NetCommunitySolution.Common
                 ModifyNickName = _settingService.GetSettingByKey<bool>(CustomerSettingNames.ModifyNickName),
                 PasswordMaxLength = _settingService.GetSettingByKey<int>(CustomerSettingNames.PasswordMaxLength),
                 PasswordMinLength = _settingService.GetSettingByKey<int>(CustomerSettingNames.PasswordMinLength),
+                CaptchaLength = _settingService.GetSettingByKey<int>(CustomerSettingNames.CaptchaLength),
+                CaptchaName = _settingService.GetSettingByKey<string>(CustomerSettingNames.CaptchaName),
             };
             return config;
         }
@@ -79,6 +81,8 @@ namespace NetCommunitySolution.Common
             _settingService.SaveSetting(CustomerSettingNames.ModifyNickName, setting.ModifyNickName);
             _settingService.SaveSetting(CustomerSettingNames.PasswordMaxLength, setting.PasswordMaxLength);
             _settingService.SaveSetting(CustomerSettingNames.PasswordMinLength, setting.PasswordMinLength);
+            _settingService.SaveSetting(CustomerSettingNames.CaptchaName, setting.CaptchaName);
+            _settingService.SaveSetting(CustomerSettingNames.CaptchaLength, setting.CaptchaLength);
         }
 
 

@@ -70,6 +70,9 @@ namespace NetCommunitySolution.Web.Models.Customers
 
         public bool EnabledModifyName { get; set; }
 
+        [DisplayName("介绍")]
+        public string Introduce { get; set; }
+
         public string Result { get; set; }
 
     }

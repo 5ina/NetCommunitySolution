@@ -23,65 +23,59 @@
         text-align: center;
         font-size: 18px;
         background: #23262e;
-        color:#fff;
-        margin-bottom:40px;
+        color: #fff;
+        margin-bottom: 40px;
     }
 
-        body.login .login_m .login-header {
-            border-bottom:1px solid #ccc;
+    body.login .login_m .login-header {
+        border-bottom: 1px solid #ccc;
+    }
+
+    body.login .login_m .login-body {
+        min-height: 375px;
+        padding: 0 15px;
+    }
+
+        body.login .login_m .login-body .form-horizontal {
+            padding: 5px 25px;
         }
 
-        body.login .login_m .login-body {
-            min-height: 375px;
-            padding:0 15px;
+        body.login .login_m .login-body .control-group {
+            padding: 15px;
         }
 
-            body.login .login_m .login-body .form-horizontal {
-                padding: 5px 25px;
+            body.login .login_m .login-body .control-group .control-label {
+                margin-bottom: 12px;
             }
 
-            body.login .login_m .login-body .control-group {
-                padding: 15px;
+            body.login .login_m .login-body .control-group .forget {
+                font-size: 12px;
             }
 
-                body.login .login_m .login-body .control-group .control-label {
-                    margin-bottom: 12px;
+                body.login .login_m .login-body .control-group .forget:hover {
+                    text-decoration: none;
                 }
 
-                body.login .login_m .login-body .control-group .forget {
-                    font-size: 12px;
-                }
+            body.login .login_m .login-body .control-group .remeber {
+                font-size: 14px;
+                font-weight: normal;
+            }
 
-                    body.login .login_m .login-body .control-group .forget:hover {
-                        text-decoration: none;
-                    }
+            body.login .login_m .login-body .control-group .btn {
+                letter-spacing: 5px;
+                font-size: 12px;
+            }
 
-                body.login .login_m .login-body .control-group .remeber {
-                    font-size: 14px;
-                    font-weight: normal;
-                }
-
-                body.login .login_m .login-body .control-group .btn {
-                    letter-spacing: 5px;
-                    font-size: 12px;
-                }
-                body.login .login_m .login-body .control-group .control-label {
-                    font-weight:normal;
-                    padding:0;
-                
-                }
+            body.login .login_m .login-body .control-group .control-label {
+                font-weight: normal;
+                padding: 0;
+            }
 
 .buttons {
     margin-top: 15px;
-    text-align:center;
+    text-align: center;
 }
 
-.captcha {
-    width:200px;
-    float:left;
-    display:inline
-}
-.BDC_CaptchaDiv {
-    float:left;
-    display:inline;
+.captcha-img {
+    cursor: pointer;
 }

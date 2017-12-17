@@ -36,6 +36,22 @@
             @Html.NETEditorFor(model => model.EnabledCaptcha)
         </div>
     </div>
+    <div class="layui-form-item panel-captcha">
+        @Html.NETLabelFor(model => model.CaptchaLength)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.CaptchaLength)
+        </div>
+    </div>
+
+    <div class="layui-form-item  panel-captcha">
+        @Html.NETLabelFor(model => model.CaptchaName)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.CaptchaName)
+        </div>
+    </div>
+
 
     <div class="layui-form-item">
         @Html.NETLabelFor(model => model.PasswordMaxLength)

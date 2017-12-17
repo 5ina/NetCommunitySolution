@@ -72,6 +72,15 @@
         /// 是否启用验证码
         /// </summary>
         public static string EnabledCaptcha { get { return "net.setting.customer.enabledcaptcha"; } }
+        /// <summary>
+        /// 验证码长度
+        /// </summary>
+        public static string CaptchaLength { get { return "net.setting.customer.captchalength"; } }
+
+        /// <summary>
+        /// 验证码名称
+        /// </summary>
+        public static string CaptchaName { get { return "net.setting.customer.captchaname"; } }
 
 
     }

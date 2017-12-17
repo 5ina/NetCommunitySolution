@@ -1,5 +1,4 @@
 ﻿@model NetCommunitySolution.Web.Models.Customers.LoginModel
-@using BotDetect.Web.Mvc;
 @{
     Layout = null;
 }
@@ -15,8 +14,7 @@
     <link rel="stylesheet" type="text/css" href="~/Content/login.css" />
     @Scripts.Render("~/jquery")
     @Scripts.Render("~/layui/js")
-
-    <link href="@BotDetect.Web.CaptchaUrls.Absolute.LayoutStyleSheetUrl" rel="stylesheet" type="text/css" />
+    
 </head>
 <body class="login">
     <div class="container">
@@ -49,7 +47,7 @@
                     {
 
                         @Html.AntiForgeryToken()
-
+                        @Html.HiddenFor(model => model.EnabledCaptcha);
                         <div class="layui-form-item">
                             @Html.NETLabelFor(model => model.LoginName)
                             <div class="layui-input-block">
@@ -68,21 +66,14 @@
 
                         if (Model.EnabledCaptcha)
                         {
-                            MvcCaptcha exampleCaptcha = new MvcCaptcha("ExampleCaptcha");
 
                             <div class="layui-form-item">
                                 @Html.NETLabelFor(model => model.Captcha)
                                 <div class="layui-inline">
-                                    <div class="layui-input-inline">
-
-                                        @Html.TextBox("CaptchaCode", null, new { @class = "layui-input captcha-input" })
-                                    </div>
-                                    <div class="layui-input-inline">
-
-                                        <div class="captchat layui-input-inline">
-                                            @Html.Captcha(exampleCaptcha)
-                                        </div>
-                                    </div>
+                                    <input type="text" name="@Model.CaptchaName" id="@Model.CaptchaName" class="layui-input" />
+                                </div>
+                                <div class="layui-inline">
+                                    <img id="catpcha-img" class="captcha-img" alt="点击刷新验证码" src="@Url.Action("Captcha","Common",new { imageHeight = 41})" />
                                 </div>
                             </div>
                         }
@@ -104,7 +95,7 @@
                                     <div class="layui-input-inline">
 
                                         <div class="captchat layui-input-inline">
-                                            <a class="layui-btn layui-btn-warm">注册</a>
+                                            <a class="layui-btn layui-btn-warm" href="@Url.Action("Register","Customer")">注册</a>
                                         </div>
                                     </div>
                                 </div>
@@ -120,6 +111,11 @@
             var form = layui.form;
             //各种基于事件的操作，下面会有进一步介绍
             form.render();
+        });
+        $(function () {
+            $("#catpcha-img").bind("click", function () {
+                this.src = "@Url.Action("Captcha", "Common", new { imageHeight = 41 })&time=" + (new Date()).getTime();
+            });
         });
     </script>
 

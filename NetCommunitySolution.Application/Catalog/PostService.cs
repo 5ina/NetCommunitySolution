@@ -93,8 +93,11 @@ namespace NetCommunitySolution.Catalog
             return _cacheManager.GetCache(key).Get(key, () => _postRepository.Get(postId));
         }
 
-        public IPagedResult<Post> GetAllPost(string keywords = "", int[] categoryIds = null,
-            int[] contentLabelIds = null, int pageIndex = 0, int pageSize = int.MaxValue)
+        public IPagedResult<Post> GetAllPost(string keywords = "",
+            int customerId = 0,
+            int[] categoryIds = null,
+            int[] contentLabelIds = null,
+            int pageIndex = 0, int pageSize = int.MaxValue)
         {
             var query = _postRepository.GetAll();
 
@@ -103,6 +106,9 @@ namespace NetCommunitySolution.Catalog
 
             if (categoryIds != null && categoryIds.Count() > 0)
                 query = query.Where(p => categoryIds.Contains(p.CategoryId));
+
+            if (customerId > 0)
+                query = query.Where(p => p.CreatorUserId == customerId);
 
             //if (contentLabelIds != null && contentLabelIds.Count() > 0)
             //    query = query.Where(p => contentLabelIds.Contains(p.CategoryId));

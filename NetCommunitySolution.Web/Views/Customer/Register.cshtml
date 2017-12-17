@@ -43,9 +43,8 @@
                 <div class="login-body">
                     @using (Html.BeginForm("Register", "Customer", FormMethod.Post, new { @id = "login-form", @class = "layui-form" }))
                     {
-
                         @Html.AntiForgeryToken()
-
+                        @Html.HiddenFor(model => model.EnabledCaptcha)
                         <div class="layui-form-item" pane="">
                             <div class="layui-input-block">
                                 @Html.NETRadioButtonFor(Model => Model.RegisterMode, RegistrationMode.Mobile, new { title = "手机号", @checked = "checked" }, "mode")
@@ -78,6 +77,19 @@
                             </div>
                         </div>
 
+                        if (Model.EnabledCaptcha)
+                        {
+
+                            <div class="layui-form-item">
+                                @Html.NETLabelFor(model => model.Captcha)
+                                <div class="layui-inline">
+                                    <input type="text" name="@Model.CaptchaName" id="@Model.CaptchaName" class="layui-input" />
+                                </div>
+                                <div class="layui-inline">
+                                    <img id="catpcha-img" class="captcha-img" alt="点击刷新验证码" src="@Url.Action("Captcha","Common",new { imageHeight = 41})" />
+                                </div>
+                            </div>
+                        }
                         <div class="layui-form-item" pane="">
                             @Html.NETLabelFor(model => model.ConfirmPassword)
                             <div class="layui-input-block">

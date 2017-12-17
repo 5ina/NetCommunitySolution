@@ -9,8 +9,7 @@ namespace NetCommunitySolution.Web
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
-            routes.IgnoreRoute("{*botdetect}", new { botdetect = @"(.*)BotDetectCaptcha\.ashx" });
+            
             //ASP.NET Web API Route Config
             routes.MapHttpRoute(
                 name: "DefaultApi",
@@ -24,9 +23,8 @@ namespace NetCommunitySolution.Web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
                 namespaces: new string[] { "NetCommunitySolution.Web.Controllers" }
-            );
-
-            
+            );                        
         }
     }
 }
+    

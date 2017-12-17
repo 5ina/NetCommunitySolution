@@ -99,6 +99,7 @@ namespace NetCommunitySolution.Web.Controllers
             }).ToList();
         }
         #endregion
+
         #region Method
 
         public ActionResult New()
@@ -212,6 +213,7 @@ namespace NetCommunitySolution.Web.Controllers
         }
         
         [HttpPost]
+        [UnitOfWork]
         [ValidateInput(false)]
         public ActionResult Comment(PostCommentModel model)
         {
@@ -259,6 +261,22 @@ namespace NetCommunitySolution.Web.Controllers
             model.Post = new PagedSimplePostModel
             {
                 PageIndex = 0,
+                PageSize = postSetting.PostPageSize,
+                Posts = posts.Items.MapTo<IList<SimplePostModel>>(),
+                Total = posts.TotalCount
+            };
+            return View(model);
+        }
+
+        public ActionResult MyPost(int pageIndex = 0)
+        {
+            var postSetting = _settingService.GetPostSettings();
+            var customerId = Convert.ToInt32(AbpSession.UserId);
+            var posts = _postService.GetAllPost(customerId: customerId, pageIndex: pageIndex, pageSize: postSetting.PostPageSize);
+
+            var model = new PagedSimplePostModel
+            {
+                PageIndex = pageIndex,
                 PageSize = postSetting.PostPageSize,
                 Posts = posts.Items.MapTo<IList<SimplePostModel>>(),
                 Total = posts.TotalCount

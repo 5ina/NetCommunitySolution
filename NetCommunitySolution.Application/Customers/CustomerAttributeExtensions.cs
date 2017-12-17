@@ -101,6 +101,8 @@ namespace NetCommunitySolution.Customers
                 QQ = GetCustomerAttributeValue<string>(customer, CustomerAttributeNames.QQ),
                 Reward = GetCustomerAttributeValue<string>(customer, CustomerAttributeNames.Reward),
                 Sex = GetCustomerAttributeValue<string>(customer, CustomerAttributeNames.Sex),
+                Introduce = GetCustomerAttributeValue<string>(customer, CustomerAttributeNames.Introduce),
+
             };
             return model;
         }

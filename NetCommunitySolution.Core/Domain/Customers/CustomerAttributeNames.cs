@@ -7,6 +7,7 @@
     {
 
         #region 基本信息
+        public static string Introduce { get { return "customer.attribute.introduce"; } }
         public static string Sex { get { return "customer.attribute.sex"; } }
         public static string Avatar { get { return "customer.attribute.avatar"; } }
         /// <summary>

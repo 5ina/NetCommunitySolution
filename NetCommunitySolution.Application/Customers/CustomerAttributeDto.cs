@@ -16,5 +16,7 @@ namespace NetCommunitySolution.Customers
         /// 积分
         /// </summary>
         public string QQ { get; set; }
+
+        public string Introduce { get; set; }
     }
 }

@@ -23,7 +23,7 @@
                     <dl class="layui-nav-child">
                         <dd class="member-item"><a href="@Url.Action("Info","Customer")">会员中心</a></dd>
                         <dd class="member-item"><a href="@Url.Action("New","Post")">发布问答</a></dd>
-                        <dd class="member-item"><a>修改密码</a></dd>
+                        <dd class="member-item"><a href="@Url.Action("ChangePassword","Customer")">修改密码</a></dd>
                         @if (Model.CustomerRole == NetCommunitySolution.Domain.Customers.CustomerRole.System)
                         {
                             <dd class="member-item"><a href="@Url.Action("Index","Home",new { Area ="Operate"})">管理系统</a></dd>

@@ -37,8 +37,9 @@ namespace NetCommunitySolution.Catalog
         /// <returns></returns>
         Post GetPostById(int postId);
 
-        IPagedResult<Post> GetAllPost(string keywords = "", int[] categoryIds = null,
-            
+        IPagedResult<Post> GetAllPost(string keywords = "",
+            int customerId = 0,
+            int[] categoryIds = null,
             int[] contentLabelIds = null,
             int pageIndex = 0, int pageSize = int.MaxValue);
     }

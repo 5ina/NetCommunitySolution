@@ -33,5 +33,11 @@ namespace NetCommunitySolution.Domain.Settings
         /// </summary>
         [DisplayName("是否启用验证码")]
         public bool EnabledCaptcha { get; set; }
+
+        [DisplayName("验证码长度")]
+        public int CaptchaLength { get; set; }
+
+        [DisplayName("验证码名称")]
+        public string CaptchaName { get; set; }
     }
 }

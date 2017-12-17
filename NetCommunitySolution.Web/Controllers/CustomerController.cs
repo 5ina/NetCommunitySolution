@@ -1,7 +1,6 @@
 ﻿using Abp.AutoMapper;
 using Abp.Runtime.Caching;
 using Abp.Runtime.Session;
-using BotDetect.Web.Mvc;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using NetCommunitySolution.Authentication;
@@ -21,6 +20,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NetCommunitySolution.Web.Framework.UI;
 
 namespace NetCommunitySolution.Web.Controllers
 {
@@ -86,6 +86,7 @@ namespace NetCommunitySolution.Web.Controllers
 
             var customerSetting = _settingService.GetCustomerSettings();
             model.EnabledCaptcha = customerSetting.EnabledCaptcha;
+            model.CaptchaName = customerSetting.CaptchaName;
         }
 
         [NonAction]
@@ -105,6 +106,7 @@ namespace NetCommunitySolution.Web.Controllers
 
             var attributeModel = customer.GetCustomerAttributes(_attribteService);
             model.QQ = attributeModel.QQ;
+            model.Introduce = attributeModel.Introduce;
         }
         #endregion
 
@@ -118,10 +120,14 @@ namespace NetCommunitySolution.Web.Controllers
         }
 
         [HttpPost]
-        [CaptchaValidation("CaptchaCode", "ExampleCaptcha", "Incorrect CAPTCHA code!")]
         [AllowAnonymous]
-        public ActionResult Login(LoginModel model)
+        [Captcha]
+        public ActionResult Login(LoginModel model,bool captchaValid)
         {
+            if (model.EnabledCaptcha && !captchaValid)
+            {
+                ModelState.AddModelError("", "验证码错误");
+            }
 
             if (ModelState.IsValid)
             {
@@ -183,14 +189,25 @@ namespace NetCommunitySolution.Web.Controllers
                 return RedirectToAction("RegisterClose");
 
             var model = new RegisterModel();
+            var customerSetting = _cacheManager.GetCache(string.Format(NetCommunitySolutionConsts.CACHE_SETTINGS, "customer"))
+                .Get(string.Format(NetCommunitySolutionConsts.CACHE_SETTINGS, "customer"),
+                () => _settingService.GetCustomerSettings());
+
+            model.EnabledCaptcha = customerSetting.EnabledCaptcha;
+            model.CaptchaName = customerSetting.CaptchaName;
 
             return View(model);
         }
 
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult Register(RegisterModel model)
+        [Captcha]
+        public ActionResult Register(RegisterModel model, bool captchaValid)
         {
+            if (model.EnabledCaptcha && !captchaValid)
+            {
+                ModelState.AddModelError("", "验证码错误");
+            }
             var key = string.Format(NetCommunitySolutionConsts.CACHE_SETTINGS, "common");
             var commonSetting = _cacheManager.GetCache(key).Get(key, () => _settingService.GetCommonSettings());
 
@@ -243,6 +260,13 @@ namespace NetCommunitySolution.Web.Controllers
                 AuthenticationManager.SignIn(new AuthenticationProperties { IsPersistent = false }, identity);
                 return RedirectToAction("Index", "Home");
             }
+
+            var customerSetting = _cacheManager.GetCache(string.Format(NetCommunitySolutionConsts.CACHE_SETTINGS, "customer"))
+                .Get(string.Format(NetCommunitySolutionConsts.CACHE_SETTINGS, "customer"),
+                () => _settingService.GetCustomerSettings());
+
+            model.EnabledCaptcha = customerSetting.EnabledCaptcha;
+            model.CaptchaName = customerSetting.CaptchaName;
             return View(model);
         }
         

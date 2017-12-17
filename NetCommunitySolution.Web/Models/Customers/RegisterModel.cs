@@ -10,6 +10,8 @@ namespace NetCommunitySolution.Web.Models.Customers
     /// </summary>
     public partial class RegisterModel 
     {
+        public bool EnabledCaptcha { get; set; }
+        public string CaptchaName { get; set; }
         [DataType(DataType.Password)]
         [DisplayName("密码")]
         [AllowHtml]
