@@ -1,22 +1,22 @@
 ﻿using Abp.Domain.Entities;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace NetCommunitySolution.Domain.Catalog
 {
     /// <summary>
-    /// 内容标签
+    /// 用户级别
     /// </summary>
-    public class ContentLabel : Entity
+    public class CustomerLevel : Entity
     {
-        public int CategoryId { get; set; }
         /// <summary>
-        /// 内容标签名称
+        /// 用户的级别名称
         /// </summary>
-        [Required, MaxLength(50)]
-        public string Name { get; set; }
+        [Required, MaxLength(10)]
+        public string LevelName { get; set; }
+        
 
-        public bool Published { get; set; }
-
+        public int Level { get; set; }
         public int DisplayOrder { get; set; }
     }
 }

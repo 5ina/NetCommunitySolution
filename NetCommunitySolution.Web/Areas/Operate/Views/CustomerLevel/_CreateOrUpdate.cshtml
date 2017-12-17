@@ -1,0 +1,35 @@
+﻿@model NetCommunitySolution.Web.Areas.Operate.Models.Customers.CustomerLevelModel
+
+
+@Html.HiddenFor(model => model.Id)
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.LevelName)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.LevelName)
+
+    </div>
+</div>
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.Level)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.Level)
+    </div>
+</div>
+
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.DisplayOrder)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.DisplayOrder)
+    </div>
+</div>
+
+<script>
+    layui.use('form', function () {
+        var form = layui.form;
+        //各种基于事件的操作，下面会有进一步介绍
+        form.render();
+    });
+</script>

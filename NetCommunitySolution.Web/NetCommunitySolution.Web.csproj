@@ -620,6 +620,13 @@
     <Content Include="Areas\Operate\Views\Setting\CustomerSetting.cshtml" />
     <Content Include="Areas\Operate\Views\Setting\PostSetting.cshtml" />
     <Content Include="Areas\Operate\Views\Setting\MediaSetting.cshtml" />
+    <Content Include="Areas\Operate\Views\CustomerLevel\Index.cshtml" />
+    <Content Include="Areas\Operate\Views\Customer\Index.cshtml" />
+    <Content Include="Areas\Operate\Views\CustomerLevel\Create.cshtml" />
+    <Content Include="Areas\Operate\Views\CustomerLevel\Edit.cshtml" />
+    <Content Include="Areas\Operate\Views\CustomerLevel\_CreateOrUpdate.cshtml" />
+    <Content Include="Areas\Operate\Views\Customer\CustomerHeader.cshtml" />
+    <Content Include="Areas\Operate\Views\Home\Index.cshtml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
@@ -668,10 +675,15 @@
     <Compile Include="Areas\Operate\Controllers\AdminBaseController.cs" />
     <Compile Include="Areas\Operate\Controllers\CatalogController.cs" />
     <Compile Include="Areas\Operate\Controllers\ContentLabelController.cs" />
+    <Compile Include="Areas\Operate\Controllers\CustomerController.cs" />
+    <Compile Include="Areas\Operate\Controllers\CustomerLevelController.cs" />
+    <Compile Include="Areas\Operate\Controllers\HomeController.cs" />
     <Compile Include="Areas\Operate\Controllers\SettingController.cs" />
     <Compile Include="Areas\Operate\Models\Catalog\CategoryListModel.cs" />
     <Compile Include="Areas\Operate\Models\Catalog\CategoryModel.cs" />
     <Compile Include="Areas\Operate\Models\Catalog\ContentLabelModel.cs" />
+    <Compile Include="Areas\Operate\Models\Customers\CustomerBoxModel.cs" />
+    <Compile Include="Areas\Operate\Models\Customers\CustomerLevelModel.cs" />
     <Compile Include="Areas\Operate\OperateAreaRegistration.cs" />
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\CatalogController.cs" />
@@ -690,6 +702,7 @@
     <Compile Include="Models\Catalog\CategoryModel.cs" />
     <Compile Include="Models\Catalog\ContentLabelModel.cs" />
     <Compile Include="Models\Catalog\CustomerPostCommentModel.cs" />
+    <Compile Include="Models\Catalog\PagedSimplePostModel.cs" />
     <Compile Include="Models\Catalog\PostCommentModel.cs" />
     <Compile Include="Models\Catalog\PostDetailModel.cs" />
     <Compile Include="Models\Catalog\SimplePostModel.cs" />
@@ -744,6 +757,8 @@
     <Content Include="Views\Customer\NotLogged.cshtml" />
     <Content Include="Views\Post\LabelPost.cshtml" />
     <Content Include="Views\Post\Comment.cshtml" />
+    <Content Include="Views\Shared\_PostBox.cshtml" />
+    <Content Include="Views\Post\PostCatalog.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

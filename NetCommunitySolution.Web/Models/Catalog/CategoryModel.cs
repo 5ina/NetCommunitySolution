@@ -28,4 +28,16 @@ namespace NetCommunitySolution.Web.Models.Catalog
         
         public int DisplayOrder { get; set; }
     }
+
+    public class CategoryPostModel
+    {
+        public CategoryPostModel()
+        {
+            this.Category = new CategoryModel();
+            this.Post = new PagedSimplePostModel();
+        }
+
+        public CategoryModel Category { get; set; }
+        public PagedSimplePostModel Post { get; set; }
+    }
 }

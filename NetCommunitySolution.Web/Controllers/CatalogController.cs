@@ -35,10 +35,11 @@ namespace NetCommunitySolution.Web.Controllers
 
         #region Child Method
         [ChildActionOnly]
-        public ActionResult TopMenu()
+        public ActionResult TopMenu(int categoryId= 0)
         {
             var topCatalogs = _categoryService.GetAllCategoriesDisplayedOnHomePage();
             var models = topCatalogs.MapTo<IList<CategoryModel>>();
+            ViewBag.CurrentId = categoryId;
             return PartialView(models);
         }
         #endregion

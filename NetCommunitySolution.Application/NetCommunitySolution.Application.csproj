@@ -240,9 +240,11 @@
     <Compile Include="Customers\CustomerAttributeExtensions.cs" />
     <Compile Include="Customers\CustomerAttributeService.cs" />
     <Compile Include="Customers\CustomerFollowService.cs" />
+    <Compile Include="Customers\CustomerLevelService.cs" />
     <Compile Include="Customers\CustomerService.cs" />
     <Compile Include="Customers\ICustomerAttributeService.cs" />
     <Compile Include="Customers\ICustomerFollowService.cs" />
+    <Compile Include="Customers\ICustomerLevelService.cs" />
     <Compile Include="Customers\ICustomerService.cs" />
     <Compile Include="Media\IOssService.cs" />
     <Compile Include="Media\OssService.cs" />

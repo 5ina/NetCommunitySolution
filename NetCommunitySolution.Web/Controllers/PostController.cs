@@ -245,6 +245,26 @@ namespace NetCommunitySolution.Web.Controllers
             var model = contentLabel.MapTo<ContentLabelModel>();
             return View(model);
         }
+
+        public ActionResult PostCatalog(int categoryId)
+        {
+            var category = _categoryService.GetCategoryById(categoryId);
+            var model = new CategoryPostModel();
+            model.Category = category.MapTo<CategoryModel>();
+
+            var allCategories = _categoryService.GetAllCategoriesByParentCategoryId(category.Id);
+            var categoryIds = allCategories.Select(c => c.Id).ToArray();
+            var postSetting = _settingService.GetPostSettings();
+            var posts = _postService.GetAllPost(categoryIds: categoryIds, pageIndex: 0, pageSize: postSetting.PostPageSize);
+            model.Post = new PagedSimplePostModel
+            {
+                PageIndex = 0,
+                PageSize = postSetting.PostPageSize,
+                Posts = posts.Items.MapTo<IList<SimplePostModel>>(),
+                Total = posts.TotalCount
+            };
+            return View(model);
+        }
         #endregion
     }
 }

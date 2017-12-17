@@ -4,3 +4,10 @@
     display: table;
     content: " ";
 }
+
+a,a:hover{
+    text-decoration:none;
+}
+.layui-layout-body .layui-layout-admin .layui-header .layui-logo a {
+    color: #009688;
+}

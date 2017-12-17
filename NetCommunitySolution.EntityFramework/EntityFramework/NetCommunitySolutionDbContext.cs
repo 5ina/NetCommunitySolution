@@ -23,6 +23,7 @@ namespace NetCommunitySolution.EntityFramework
 
         //Customer
         public virtual IDbSet<Customer> Customer { get; set; }
+        public virtual IDbSet<CustomerLevel> CustomerLevel { get; set; }
         public virtual IDbSet<CustomerAttribute> CustomerAttribute { get; set; }
         public virtual IDbSet<CustomerFollow> CustomerFollow { get; set; }
         

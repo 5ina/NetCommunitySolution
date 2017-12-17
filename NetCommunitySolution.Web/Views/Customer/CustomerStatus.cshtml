@@ -26,8 +26,7 @@
                         <dd class="member-item"><a>修改密码</a></dd>
                         @if (Model.CustomerRole == NetCommunitySolution.Domain.Customers.CustomerRole.System)
                         {
-                            <dd class="member-item"><a href="@Url.Action("Index","Home","Operate")">管理系统</a></dd>
-
+                            <dd class="member-item"><a href="@Url.Action("Index","Home",new { Area ="Operate"})">管理系统</a></dd>
                         }
                     </dl>
                 </li>

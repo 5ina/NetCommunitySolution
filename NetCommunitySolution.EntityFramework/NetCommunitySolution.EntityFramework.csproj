@@ -233,6 +233,10 @@
     <Compile Include="Migrations\201712170315034_Create_Follow_Scripts.Designer.cs">
       <DependentUpon>201712170315034_Create_Follow_Scripts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712170725397_Create_CustomerLevel_Scripts.cs" />
+    <Compile Include="Migrations\201712170725397_Create_CustomerLevel_Scripts.Designer.cs">
+      <DependentUpon>201712170725397_Create_CustomerLevel_Scripts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NetCommunitySolutionDataModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -280,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712170315034_Create_Follow_Scripts.resx">
       <DependentUpon>201712170315034_Create_Follow_Scripts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712170725397_Create_CustomerLevel_Scripts.resx">
+      <DependentUpon>201712170725397_Create_CustomerLevel_Scripts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

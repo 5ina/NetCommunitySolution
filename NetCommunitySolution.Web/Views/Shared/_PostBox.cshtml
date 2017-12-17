@@ -1,0 +1,60 @@
+﻿@model NetCommunitySolution.Web.Models.Catalog.PagedSimplePostModel
+
+
+<div class="post-box">
+        <div class="post-list">
+            @foreach (var item in Model.Posts)
+        {
+            <div class="question-item">
+                <div class="tip">
+                    <div class="votes icon">
+                        <a title="支持">
+                            <i class="layui-icon">&#xe6c6;</i>
+                            <span>@item.Support</span>
+                        </a>
+                    </div>
+
+                    <div class="ans icon">
+                        <a title="回复">
+                            <i class="layui-icon">&#xe611;</i>
+                            <span>@item.Answer</span>
+                        </a>
+                    </div>
+
+                    <div class="view icon">
+                        <a title="浏览">
+                            <i class="layui-icon">&#xe638;</i>
+                            <span>@item.Views</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="summary">
+                    <h3><a class="hot-posts-title" href="@Url.Action("Detail", "Post", new { postId = item.Id })" title="@item.Title">@item.Title</a></h3>
+                    <div class="labels">
+                        <span class="label-tag">DI</span>
+                        <span class="label-tag">AOP</span>
+                    </div>
+                    <div class="times">
+                        发布于 - @item.CreationTime.ToString("MM/dd") ,发布人 <a class="customer" href="@Url.Action("Detail","Customer")" title="@item.CustomerName"> @item.CustomerName</a>
+                    </div>
+                </div>
+            </div>
+    }
+        </div>
+
+    <div class="post-page">
+        <div id="post-page"></div>
+    </div>
+
+    <script>
+layui.use('laypage', function(){
+  var laypage = layui.laypage;
+
+  //执行一个laypage实例
+  laypage.render({
+      elem: 'post-page' //注意，这里的 test1 是 ID，不用加 # 号
+    ,count: @Model.Total //数据总数，从服务端得到
+  });
+});
+    </script>
+</div>

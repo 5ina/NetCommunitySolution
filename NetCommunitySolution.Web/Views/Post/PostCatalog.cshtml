@@ -1,0 +1,25 @@
+﻿@model NetCommunitySolution.Web.Models.Catalog.CategoryPostModel
+@{
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
+
+<div class="layui-row">
+    <div class="layui-col-md2">
+        <!-- 首页 类目-->
+        <div class="catalog-box">
+            @Html.Action("TopMenu", "Catalog",new { categoryId = Model.Category.Id})
+        </div>
+        <!-- 首页 标签-->
+        <div class="content-label-box">
+            @Html.Action("HotLabel", "ContentLabel")
+        </div>
+
+    </div>
+
+    <div class="layui-col-md8">
+        @Html.Partial("_PostBox", Model.Post)
+    </div>
+
+    <div class="layui-col-md2">
+    </div>
+</div>

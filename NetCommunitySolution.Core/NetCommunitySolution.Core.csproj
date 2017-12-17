@@ -182,6 +182,7 @@
     <Compile Include="ComponentModel\WriteLockDisposable.cs" />
     <Compile Include="Domain\Catalog\Category.cs" />
     <Compile Include="Domain\Catalog\ContentLabel.cs" />
+    <Compile Include="Domain\Catalog\CustomerLevel.cs" />
     <Compile Include="Domain\Catalog\Post.cs" />
     <Compile Include="Domain\Catalog\PostComment.cs" />
     <Compile Include="Domain\Catalog\PostLabel.cs" />

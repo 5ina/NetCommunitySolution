@@ -7,7 +7,7 @@
     <ul class="layui-nav layui-nav-tree" lay-filter="category-nav">
         @foreach (var item in Model)
     {
-        <li class="layui-nav-item"><a href="">@item.Name</a></li>
+        <li class="layui-nav-item @if (ViewBag.CurrentId == item.Id) { <text> layui-this</text>} "><a href="@Url.Action("PostCatalog", "Post", new { categoryId = item.Id })">@item.Name</a></li>
 }
     </ul>
 </div>

@@ -120,17 +120,17 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
             {
                 var entity = _labelService.GetContentLabelById(model.Id);
                 entity = model.MapTo<ContentLabelModel, ContentLabel>(entity);
-                var labelId = _labelService.InsertContentLabel(entity);
+                _labelService.UpdateContentLabel(entity);
 
                 if (continueEditing)
                 {
-                    return RedirectToAction("Edit", new { id = labelId });
+                    return RedirectToAction("Edit", new { id = model.Id });
                 }
                 return RedirectToAction("Index");
             }
 
             PrepareContentLabelModel(model);
-            return View();
+            return View(model);
         }
 
         [HttpPost]

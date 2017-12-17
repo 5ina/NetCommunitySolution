@@ -124,53 +124,53 @@ a,a:hover{text-decoration:none;}
     padding-left:12px;
 }
 
-.hot-posts .question-item {
+.post-box .question-item {
     overflow: hidden;
     padding: 12px 0 10px 0;
     border-bottom: 1px solid #E4E6E8;
 }
-    .hot-posts .question-item .tip {
+    .post-box .question-item .tip {
         float:left;
     }
-    .hot-posts .question-item .icon{
+    .post-box .question-item .icon{
         display:inline-block;
         padding:15px;
     }
 
-        .hot-posts .question-item .icon i,
-        .hot-posts .question-item .icon span {
+        .post-box .question-item .icon i,
+        .post-box .question-item .icon span {
             display:block;
             text-align:center;
         }
-    .hot-posts .question-item .votes a{
+    .post-box .question-item .votes a{
         color:#ff6a00;
     }
-    .hot-posts .question-item .ans a{
+    .post-box .question-item .ans a{
         color: #009688;
     }
-    .hot-posts .question-item .view a {
+    .post-box .question-item .view a {
         color: #2f4056;
     }
- .hot-posts .question-item .layui-icon {
+ .post-box .question-item .layui-icon {
     font-size: 30px;
 }
 
-    .hot-posts .question-item .summary {
+    .post-box .question-item .summary {
         padding: 0 0 30px 0;
         margin-left: 200px;
     }
-        .hot-posts .question-item .summary .hot-posts-title {
+        .post-box .question-item .summary .post-box-title {
             color: #005999;
             font-weight: 600
         }
-            .hot-posts .question-item .summary .hot-posts-title:hover {
+            .post-box .question-item .summary .post-box-title:hover {
                 color: #3AF;
             }
  
-.hot-posts .question-item .summary .labels {
+.post-box .question-item .summary .labels {
     margin-top: 11px;
 }
-        .hot-posts .question-item .summary .labels .label-tag {
+        .post-box .question-item .summary .labels .label-tag {
             color: #33658A;
             background-color: #CEE0ED;
             border-color: transparent;
@@ -178,7 +178,7 @@ a,a:hover{text-decoration:none;}
             margin-right:18px;
             display:inline-table;
         }
-            .hot-posts .question-item .summary .times{
+            .post-box .question-item .summary .times{
                 color: #07C;
                 background-color: #CEE0ED;
                 border-color: transparent;
@@ -190,7 +190,7 @@ a,a:hover{text-decoration:none;}
             }
 
 
-        .hot-posts .question-item .summary .customer {
+        .post-box .question-item .summary .customer {
             color:#000;
             font-weight:600;
         }
