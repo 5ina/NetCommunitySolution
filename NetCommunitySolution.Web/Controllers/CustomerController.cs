@@ -6,14 +6,18 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using NetCommunitySolution.Authentication;
 using NetCommunitySolution.Authentication.Dto;
+using NetCommunitySolution.CacheNames;
 using NetCommunitySolution.Common;
 using NetCommunitySolution.Customers;
 using NetCommunitySolution.Domain.Customers;
 using NetCommunitySolution.Domain.Settings;
+using NetCommunitySolution.Media;
 using NetCommunitySolution.Security;
+using NetCommunitySolution.Web.Framework.Controllers;
 using NetCommunitySolution.Web.Models.Customers;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -31,6 +35,8 @@ namespace NetCommunitySolution.Web.Controllers
         private readonly ICustomerService _customerService;
         private readonly ICacheManager _cacheManager;
         private readonly ISettingService _settingService;
+        private readonly IOssService _ossService;
+        private readonly ICustomerAttributeService _attribteService;
         private readonly IEncryptionService _encryptionService;
 
         private const string CACHE_CUSTOMER_STATISTICAL_OVERVIEW = "net.cache.customer.statistical.overview";
@@ -39,6 +45,8 @@ namespace NetCommunitySolution.Web.Controllers
             LoginManager loginManager,
             CustomerManager customerManager,
             ISettingService settingService,
+            IOssService ossService,
+            ICustomerAttributeService attribteService,
             IEncryptionService encryptionService)
         {
             this._customerService = customerService;
@@ -46,7 +54,9 @@ namespace NetCommunitySolution.Web.Controllers
             this._loginManager = loginManager;
             this._cacheManager = cacheManager;
             this._settingService = settingService;
+            this._attribteService = attribteService;
             this._encryptionService = encryptionService;
+            this._ossService = ossService;
         }
         #endregion
 
@@ -76,6 +86,25 @@ namespace NetCommunitySolution.Web.Controllers
 
             var customerSetting = _settingService.GetCustomerSettings();
             model.EnabledCaptcha = customerSetting.EnabledCaptcha;
+        }
+
+        [NonAction]
+        protected virtual void PrepareCustomerInfoModel(CustomerInfoModel model)
+        {
+            if (model == null)
+                throw new ArgumentNullException("model");
+            var customerSetting = _settingService.GetCustomerSettings();
+            model.EnabledModifyName = customerSetting.ModifyNickName;
+        }
+
+        [NonAction]
+        protected virtual void PrepareCustomerAttributeModel(CustomerInfoModel model,Customer customer)
+        {
+            if (model == null)
+                throw new ArgumentNullException("model");
+
+            var attributeModel = customer.GetCustomerAttributes(_attribteService);
+            model.QQ = attributeModel.QQ;
         }
         #endregion
 
@@ -232,9 +261,20 @@ namespace NetCommunitySolution.Web.Controllers
 
         #region ChildAction
         [ChildActionOnly]
+        public ActionResult CustomerBoxInfo(int customerId)
+        {
+            var customer = _customerService.GetCustomerId(customerId);
+            var model = customer.GetCustomerAttributes(_attribteService);
+            return PartialView(model);
+        }
+
+        [ChildActionOnly]
         public ActionResult CustomerStatus()
         {
             var model = new SimpleCustomerModel();
+            var commonSettings = _settingService.GetCommonSettings();
+            model.Name = commonSettings.Name;
+            model.SubTitle = commonSettings.Subtitle;
             var customerId = Convert.ToInt32(AbpSession.UserId);            
             if (customerId > 0)
             {
@@ -244,12 +284,14 @@ namespace NetCommunitySolution.Web.Controllers
                 model.Mobile = customer.Mobile;
                 model.LoginName = customer.LoginName;
                 model.NickName = customer.NickName;
+                model.CustomerRole = (CustomerRole)customer.CustomerRoleId;
             }
             return PartialView(model);
         }
         #endregion
 
         #region Change Password / Info
+        [MemberLogin(true)]
         public ActionResult ChangePassword()
         {
             var customer = GetCurrentCustomer();
@@ -258,7 +300,8 @@ namespace NetCommunitySolution.Web.Controllers
             model.LoginName = model.LoginName;
             return View(model);
         }
-        
+
+        [MemberLogin(true)]
         [HttpPost]
         public ActionResult ChangePassword(ChangePasswordModel model)
         {
@@ -283,13 +326,88 @@ namespace NetCommunitySolution.Web.Controllers
             return View(model);
         }
 
+        [MemberLogin(true)]
         public ActionResult Info()
         {
             var customer = GetCurrentCustomer();
             var model = customer.MapTo<CustomerInfoModel>();
+            PrepareCustomerInfoModel(model);
+            PrepareCustomerAttributeModel(model, customer);
             return View(model);
         }
 
+        [MemberLogin(true)]
+        [HttpPost]
+        public ActionResult Info(CustomerInfoModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                var customer = _customerService.GetCustomerId(model.Id);
+                customer = model.MapTo<CustomerInfoModel, Customer>(customer);
+                _customerService.UpdateCustomer(customer);
+
+                customer.SaveCustomerAttribute<string>(CustomerAttributeNames.QQ, model.QQ);
+
+                model.Result = "true";
+            }
+
+            return View(model);
+        }
+
+        [MemberLogin(true)]
+        public ActionResult Avatar()
+        {
+            var customer = GetCurrentCustomer();
+            var mediaSetting = _settingService.GetMediaSettings();
+            var avatar = customer.GetCustomerAttributeValue<string>(CustomerAttributeNames.Avatar);
+            var model = new CustomerAvatarModel
+            {
+                Id = customer.Id,
+                AvatarUrl = avatar,
+                MaxSize = mediaSetting.MaxAvatarSize,
+                Exts = mediaSetting.AvatarFile
+            };
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult UploadAvatar()
+        {
+            if (Request.Files.Count <= 0)
+                return AbpJson(null);
+            
+            HttpPostedFileBase httpPostedFile = Request.Files[0];
+            Stream stream = httpPostedFile.InputStream;
+            var fileName = Path.GetFileName(httpPostedFile.FileName);
+            var contentType = httpPostedFile.ContentType;
+
+            var fileBinary = new byte[stream.Length];
+            stream.Read(fileBinary, 0, fileBinary.Length);
+
+            var fileExtension = Path.GetExtension(fileName);
+            if (!String.IsNullOrEmpty(fileExtension))
+                fileExtension = fileExtension.ToLowerInvariant();
+            var mediaMode = _settingService.GetSettingByKey<MediaMode>(MediaSettingNames.MediaMode);
+            var url = string.Empty;
+            if (mediaMode == MediaMode.Local)
+                url = "/images/default_avatar.png";
+            else if (mediaMode == MediaMode.Alyun)
+                url = _ossService.UploadImage(images: fileBinary, isBuildThumbnail: false);
+
+
+            var customer = GetCurrentCustomer();
+            customer.SaveCustomerAttribute<string>(CustomerAttributeNames.Avatar, url);
+
+            return AbpJson(new
+            {
+                code = 0,
+                msg = "",
+                data = new
+                {
+                    src = url
+                }
+            });
+        }
 
         [ChildActionOnly]
         public ActionResult CustomerNavigation(int selectedTabId = 0)
@@ -319,7 +437,19 @@ namespace NetCommunitySolution.Web.Controllers
                     Tab = CustomerNavigationEnum.RewardPoints,
                     ItemClass = "customer-reward"
                 });
-            
+
+            var mediaSetting = _settingService.GetMediaSettings();
+            if(mediaSetting.EnabledAvatar)
+            {
+                model.CustomerNavigationItems.Add(new CustomerNavigationItemModel
+                {
+                    Url = Url.Action("Avatar", "Customer"),
+                    Title = "我的头像",
+                    Tab = CustomerNavigationEnum.Avatar,
+                    ItemClass = "customer-avatar"
+                });
+
+            }
 
             model.CustomerNavigationItems.Add(new CustomerNavigationItemModel
             {
@@ -335,6 +465,15 @@ namespace NetCommunitySolution.Web.Controllers
             return PartialView(model);
         }
         #endregion
+
+        #region No Login
+
+        public ActionResult NotLogged()
+        {
+            return View();
+        }
+        #endregion
+
     }
 
 }

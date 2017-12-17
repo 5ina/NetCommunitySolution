@@ -41,6 +41,9 @@
     <Reference Include="Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Abp.AutoMapper.3.2.5\lib\netstandard2.0\Abp.AutoMapper.dll</HintPath>
     </Reference>
+    <Reference Include="Aliyun.OSS, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aliyun.OSS.SDK.2.6.0\lib\Aliyun.OSS.dll</HintPath>
+    </Reference>
     <Reference Include="AutoMapper, Version=6.2.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
       <HintPath>..\packages\AutoMapper.6.2.2\lib\net45\AutoMapper.dll</HintPath>
     </Reference>
@@ -233,8 +236,16 @@
     <Compile Include="Common\ISettingService.cs" />
     <Compile Include="Common\SettingExtension.cs" />
     <Compile Include="Common\SettingService.cs" />
+    <Compile Include="Customers\CustomerAttributeDto.cs" />
+    <Compile Include="Customers\CustomerAttributeExtensions.cs" />
+    <Compile Include="Customers\CustomerAttributeService.cs" />
+    <Compile Include="Customers\CustomerFollowService.cs" />
     <Compile Include="Customers\CustomerService.cs" />
+    <Compile Include="Customers\ICustomerAttributeService.cs" />
+    <Compile Include="Customers\ICustomerFollowService.cs" />
     <Compile Include="Customers\ICustomerService.cs" />
+    <Compile Include="Media\IOssService.cs" />
+    <Compile Include="Media\OssService.cs" />
     <Compile Include="NetCommunitySolutionApplicationModule.cs" />
     <Compile Include="NetCommunitySolutionAppServiceBase.cs" />
     <Compile Include="PagedResult.cs" />

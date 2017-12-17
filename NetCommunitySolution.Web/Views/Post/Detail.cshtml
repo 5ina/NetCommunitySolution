@@ -1,4 +1,53 @@
-﻿
+﻿@model NetCommunitySolution.Web.Models.Catalog.PostDetailModel
 @{
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
 }
+
+
+<div class="layui-row">
+    <div class="layui-col-md2">
+        <!-- 首页 类目-->
+        <div class="catalog-box">
+            @Html.Action("TopMenu", "Catalog")
+        </div>
+        <!-- 首页 标签-->
+        <div class="content-label-box">
+            @Html.Action("HotLabel", "ContentLabel")
+        </div>
+
+        <!-- 关联问题 -->
+        <div class="related-box">
+
+        </div>
+    </div>
+
+    <div class="layui-col-md8">
+        <div class="content" style="padding:15px">
+            <blockquote class="layui-elem-quote">
+                <h3>@Model.Title</h3></blockquote>
+
+            <div class="post-content">
+                @Html.Raw(Model.Content)
+            </div>
+
+            <div class="post-comment">
+                <!-- Post Comment List-->
+                @Html.Action("PostComment", "Post", new { postId = Model.Id })
+                                
+                <hr class="layui-bg-orange">
+
+                <!-- Post Comment From-->
+                @Html.Action("Comment", "Post", new { postId = Model.Id })
+            </div>
+        </div>
+    </div>
+
+    <div class="layui-col-md2">
+        @Html.Action("CustomerBoxInfo", "Customer", new { customerId = Model.CreatorUserId })
+    </div>
+</div>
+<script>
+layui.use('code', function(){
+    layui.code({ elem: 'pre', about: false });// 实际使用时，执行该方法即可。而此处注释是因为修饰器在别的js中已经执行过了
+});
+</script>

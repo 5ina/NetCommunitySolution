@@ -32,5 +32,6 @@ namespace NetCommunitySolution.Web.Models.Customers
         RewardPoints = 60,
         ChangePassword = 70,
         Avatar = 80,
+        None = 100,
     }
 }

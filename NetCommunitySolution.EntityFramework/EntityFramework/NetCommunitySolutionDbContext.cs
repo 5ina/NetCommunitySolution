@@ -20,8 +20,12 @@ namespace NetCommunitySolution.EntityFramework
          *   pass connection string name to base classes. ABP works either way.
          */
         public virtual IDbSet<Setting> Setting { get; set; }
-        public virtual IDbSet<Customer> Customer { get; set; }
 
+        //Customer
+        public virtual IDbSet<Customer> Customer { get; set; }
+        public virtual IDbSet<CustomerAttribute> CustomerAttribute { get; set; }
+        public virtual IDbSet<CustomerFollow> CustomerFollow { get; set; }
+        
         //Catalog
         public virtual IDbSet<Category> Category { get; set; }
         public virtual IDbSet<ContentLabel> ContentLabel { get; set; }

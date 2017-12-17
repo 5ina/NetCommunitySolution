@@ -4,7 +4,10 @@
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header">
 
-        <div class="layui-logo"><a href="@Url.Action("Index","Home")">layui 后台布局</a></div>
+        <div class="layui-logo"><a href="@Url.Action("Index","Home")" title="@Model.SubTitle">@Model.Name</a></div>
+        <div class="layui-subtitle">
+            <span>@Model.SubTitle</span>
+        </div>
         <div class="search-box layui-layout-left">
             <input type="text" placeholder="关键字搜索" class="search-input" />
             <a class="layui-btn layui-btn-danger search-btn">搜索</a>
@@ -18,9 +21,14 @@
                         <span class="caret"></span>
                     </a>
                     <dl class="layui-nav-child">
-                        <dd class="member-item"><a>会员中心</a></dd>
+                        <dd class="member-item"><a href="@Url.Action("Info","Customer")">会员中心</a></dd>
                         <dd class="member-item"><a href="@Url.Action("New","Post")">发布问答</a></dd>
                         <dd class="member-item"><a>修改密码</a></dd>
+                        @if (Model.CustomerRole == NetCommunitySolution.Domain.Customers.CustomerRole.System)
+                        {
+                            <dd class="member-item"><a href="@Url.Action("Index","Home","Operate")">管理系统</a></dd>
+
+                        }
                     </dl>
                 </li>
                 <li class="layui-nav-item"><a href="@Url.Action("Logout", "Customer")">退出</a></li>

@@ -22,6 +22,13 @@ namespace NetCommunitySolution.Catalog
         void UpdateComment(PostComment comment);
 
         /// <summary>
+        /// 根据主键获取评论
+        /// </summary>
+        /// <param name="commentId"></param>
+        /// <returns></returns>
+        PostComment GetPostComment(int commentId);
+
+        /// <summary>
         /// 删除评论
         /// </summary>
         /// <param name="commentId"></param>

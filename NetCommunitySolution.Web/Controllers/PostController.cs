@@ -5,6 +5,7 @@ using NetCommunitySolution.Catalog;
 using NetCommunitySolution.Common;
 using NetCommunitySolution.Customers;
 using NetCommunitySolution.Domain.Catalog;
+using NetCommunitySolution.Domain.Customers;
 using NetCommunitySolution.Web.Framework.Controllers;
 using NetCommunitySolution.Web.Framework.Html;
 using NetCommunitySolution.Web.Models.Catalog;
@@ -178,7 +179,7 @@ namespace NetCommunitySolution.Web.Controllers
             _postService.UpdatePost(entity);
             var model = entity.MapTo<PostDetailModel>();
             PreparePostDetailModel(model, entity);
-            return View();
+            return View(model);
         }
         #endregion
 
@@ -187,9 +188,62 @@ namespace NetCommunitySolution.Web.Controllers
         public ActionResult PostComment(int postId)
         {
             var comments = _commentService.GetCommentByPostId(postId);
-            var items = comments.MapTo<IList<PostCommentModel>>();
 
+            var items = comments.Select(c =>
+            {
+                var model = new CustomerPostCommentModel();
+                model.Comment = c.MapTo<PostCommentModel>();
+                model.CustomerId = Convert.ToInt32(c.CreatorUserId);
+                var customer = _customerService.GetCustomerId(model.CustomerId);
+                model.NickName = customer.NickName;
+                model.Avatar = customer.GetCustomerAttributeValue<string>(CustomerAttributeNames.Avatar);
+                return model;
+            }).ToList();
             return PartialView(items);
+        }
+
+        [ChildActionOnly]
+        public ActionResult Comment(int postId)
+        {
+            var model = new PostCommentModel();
+            model.PostId = postId;
+            model.CreatorUserId = AbpSession.UserId;
+            return PartialView(model);
+        }
+        
+        [HttpPost]
+        [ValidateInput(false)]
+        public ActionResult Comment(PostCommentModel model)
+        {
+            if (model.PostId <= 0)
+                return AbpJson(null);
+
+            var entity = model.MapTo<PostComment>();
+            _commentService.InsertComment(entity);
+            return AbpJson("success");            
+        }
+
+        [UnitOfWork]
+        [HttpPost]
+        public ActionResult SelectComment(int commentId, int postId)
+        {
+            var post = _postService.GetPostById(postId);
+            post.Solve = true;
+            _postService.UpdatePost(post);
+            var comment = _commentService.GetPostComment(commentId);
+            comment.Selected = true;
+            _commentService.UpdateComment(comment);
+            return AbpJson("success");
+        }
+        #endregion
+
+
+        #region PostList
+        public ActionResult LabelPost(int labelId)
+        {
+            var contentLabel = _labelService.GetContentLabelById(labelId);
+            var model = contentLabel.MapTo<ContentLabelModel>();
+            return View(model);
         }
         #endregion
     }

@@ -16,7 +16,11 @@ namespace NetCommunitySolution.Web.Models.Catalog
         }
 
         public string Title { get; set; }
-        
+
+        /// <summary>
+        /// 是否解决
+        /// </summary>
+        public bool Solve { get; set; }
         public int CategoryId { get; set; }
 
         public string CategoryName { get; set; }

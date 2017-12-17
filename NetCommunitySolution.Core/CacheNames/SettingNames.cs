@@ -6,6 +6,14 @@
     public class CommonSettingNames
     {
         /// <summary>
+        /// 网站名称
+        /// </summary>
+        public static string Name { get { return "net.setting.common.name"; } }
+        /// <summary>
+        /// 副标题
+        /// </summary>
+        public static string Subtitle { get { return "net.setting.common.subtitle"; } }
+        /// <summary>
         /// 项目Title
         /// </summary>
         public static string Title { get { return "net.setting.common.title"; } }
@@ -82,5 +90,51 @@
         /// 帖子分页个数
         /// </summary>
         public static string PostPageSize { get { return "net.setting.post.pagesize"; } }
+    }
+
+
+    /// <summary>
+    /// 帖子配置
+    /// </summary>
+    public class MediaSettingNames
+    {
+        /// <summary>
+        /// 是否启用头像
+        /// </summary>
+        public static string EnabledAvatar { get { return "net.setting.media.enabledavatar"; } }
+
+        /// <summary>
+        /// 媒体存储模式
+        /// </summary>
+        public static string MediaMode { get { return "net.setting.media.mediamode"; } }
+
+
+        /// <summary>
+        /// 头像最大限制
+        /// </summary>
+        public static string MaxAvatarSize { get { return "net.setting.media.maxavatarsize"; } }
+
+        /// <summary>
+        /// 头像图像文件类型
+        /// </summary>
+        public static string AvatarFile { get { return "net.setting.media.avatarfile"; } }
+
+
+        /// <summary>
+        /// 头像图像文件类型
+        /// </summary>
+        public static string AccessKeyId { get { return "net.setting.media.accesskeyid"; } }
+        /// <summary>
+        /// 头像图像文件类型
+        /// </summary>
+        public static string AccessKeySecret { get { return "net.setting.media.accesskeysecret"; } }
+        /// <summary>
+        /// 头像图像文件类型
+        /// </summary>
+        public static string Endpoint { get { return "net.setting.media.endpoint"; } }
+        /// <summary>
+        /// bucket
+        /// </summary>
+        public static string Bucket { get { return "net.setting.media.bucket"; } }
     }
 }

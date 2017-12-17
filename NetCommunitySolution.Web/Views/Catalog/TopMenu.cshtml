@@ -1,5 +1,8 @@
 ﻿@model IList<NetCommunitySolution.Web.Models.Catalog.CategoryModel>
 
+<div class="category-title">
+    热门分类
+</div>
 <div class="category-list">
     <ul class="layui-nav layui-nav-tree" lay-filter="category-nav">
         @foreach (var item in Model)

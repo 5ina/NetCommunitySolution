@@ -14,8 +14,12 @@ namespace NetCommunitySolution.Web.Models.Catalog
 
         [DisplayName("技术分类")]
         public int CategoryId { get; set; }
-                
 
+
+        /// <summary>
+        /// 是否解决
+        /// </summary>
+        public bool Solve { get; set; }
         /// <summary>
         /// 发布状态
         /// </summary>

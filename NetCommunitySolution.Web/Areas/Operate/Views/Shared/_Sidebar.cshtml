@@ -10,8 +10,7 @@
                     <dd><a href="@Url.Action("Common","Setting")" @if (ViewBag.ActiveItem == "Common-Setting") { <text> class="layui-this" </text> }>公共配置</a></dd>
                     <dd><a href="@Url.Action("CustomerSetting","Setting")" @if (ViewBag.ActiveItem == "Customer-Setting") { <text> class="layui-this" </text> }>用户配置</a></dd>
                     <dd><a href="@Url.Action("PostSetting","Setting")" @if (ViewBag.ActiveItem == "Post-Setting") { <text> class="layui-this" </text> }>帖子配置</a></dd>
-                    <dd><a href="javascript:;">选项三</a></dd>
-                    <dd><a href="">跳转项</a></dd>
+                    <dd><a href="@Url.Action("MediaSetting","Setting")" @if (ViewBag.ActiveItem == "Media-Setting") { <text> class="layui-this" </text> }>媒体配置</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item @if (ViewBag.ActiveMenu == "Catalog") { <text> layui-nav-itemed</text>}">

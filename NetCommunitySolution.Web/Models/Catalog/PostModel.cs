@@ -28,6 +28,10 @@ namespace NetCommunitySolution.Web.Models.Catalog
         public int[] ContentLabelIds { get; set; }
 
         /// <summary>
+        /// 是否解决
+        /// </summary>
+        public bool Solve { get; set; }
+        /// <summary>
         /// 发布状态
         /// </summary>
         public bool Published { get; set; }

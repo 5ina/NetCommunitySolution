@@ -103,6 +103,17 @@ namespace NetCommunitySolution.Catalog
                 return items.ToList();
             });
         }
+
+        public PostComment GetPostComment(int commentId)
+        {
+            if (commentId <= 0)
+                return null;
+            var key = string.Format(COMMENTS_BY_ID_KEY, commentId);
+            return _cacheManager.GetCache(key).Get(key, () =>
+            {
+                return _commentRepository.Get(commentId);
+            });
+        }
         #endregion
     }
 }

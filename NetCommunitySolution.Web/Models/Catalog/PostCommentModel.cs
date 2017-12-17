@@ -2,6 +2,8 @@
 using Abp.AutoMapper;
 using NetCommunitySolution.Domain.Catalog;
 using System;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace NetCommunitySolution.Web.Models.Catalog
 {
@@ -12,8 +14,14 @@ namespace NetCommunitySolution.Web.Models.Catalog
 
         public int CommentId { get; set; }
 
+        [DisplayName("内容")]
+        [UIHint("Editor")]
         public string Content { get; set; }
 
+        /// <summary>
+        /// 是否选定
+        /// </summary>
+        public bool Selected { get; set; }
         public long? CreatorUserId { get; set; }
         public DateTime CreationTime { get; set; }
         public long? LastModifierUserId { get; set; }

@@ -62,6 +62,15 @@ namespace NetCommunitySolution.Web.Models.Customers
         /// 创建时间（不需要处理）
         /// </summary>
         public DateTime CreationTime { get; set; }
-        
+
+
+        [MaxLength(30)]
+        [DisplayName("QQ")]
+        public string QQ { get; set; }
+
+        public bool EnabledModifyName { get; set; }
+
+        public string Result { get; set; }
+
     }
 }

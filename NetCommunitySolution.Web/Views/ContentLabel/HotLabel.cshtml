@@ -7,8 +7,13 @@
 }
 
 <div class="content-labels">
-    @foreach (var item in Model)
+    <div class="content-label-title">
+        热门标签
+    </div>
+    <div class="content-label-body">
+        @foreach (var item in Model)
     {
         <span class="layui-badge @classNames[rd.Next(classNames.Length)]">@item.Name</span>
-    }
+}
+    </div>
 </div>

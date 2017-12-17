@@ -477,6 +477,7 @@
     <Content Include="Content\flags\famfamfam-flags.png" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="images\default_avatar.png" />
     <Content Include="images\login_bgx.gif" />
     <Content Include="js\main.js" />
     <Content Include="layui\css\layui.css" />
@@ -618,6 +619,7 @@
     <Content Include="layui\font\iconfont.woff" />
     <Content Include="Areas\Operate\Views\Setting\CustomerSetting.cshtml" />
     <Content Include="Areas\Operate\Views\Setting\PostSetting.cshtml" />
+    <Content Include="Areas\Operate\Views\Setting\MediaSetting.cshtml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
@@ -677,6 +679,7 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PostController.cs" />
+    <Compile Include="Framework\Controllers\MemberLoginAttribute.cs" />
     <Compile Include="Framework\Controllers\ParameterBasedOnFormNameAttribute.cs" />
     <Compile Include="Framework\Html\EnumExtensions.cs" />
     <Compile Include="Framework\Html\HtmlExtensions.cs" />
@@ -686,11 +689,13 @@
     <Compile Include="Framework\Mvc\NullJsonResult.cs" />
     <Compile Include="Models\Catalog\CategoryModel.cs" />
     <Compile Include="Models\Catalog\ContentLabelModel.cs" />
+    <Compile Include="Models\Catalog\CustomerPostCommentModel.cs" />
     <Compile Include="Models\Catalog\PostCommentModel.cs" />
     <Compile Include="Models\Catalog\PostDetailModel.cs" />
     <Compile Include="Models\Catalog\SimplePostModel.cs" />
     <Compile Include="Models\Catalog\PostModel.cs" />
     <Compile Include="Models\Customers\ChangePasswordModel.cs" />
+    <Compile Include="Models\Customers\CustomerAvatarModel.cs" />
     <Compile Include="Models\Customers\CustomerInfoModel.cs" />
     <Compile Include="Models\Customers\CustomerNavigationModel.cs" />
     <Compile Include="Models\Customers\LoginModel.cs" />
@@ -734,6 +739,11 @@
     <Content Include="Views\Post\HotPost.cshtml" />
     <Content Include="Views\Post\Detail.cshtml" />
     <Content Include="Views\Post\PostComment.cshtml" />
+    <Content Include="Views\Customer\CustomerBoxInfo.cshtml" />
+    <Content Include="Views\Customer\Avatar.cshtml" />
+    <Content Include="Views\Customer\NotLogged.cshtml" />
+    <Content Include="Views\Post\LabelPost.cshtml" />
+    <Content Include="Views\Post\Comment.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -761,6 +771,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Framework\UI\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

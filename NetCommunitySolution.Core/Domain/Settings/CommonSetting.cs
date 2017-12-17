@@ -5,8 +5,13 @@ namespace NetCommunitySolution.Domain.Settings
     /// <summary>
     /// 公共配置
     /// </summary>
-    public class CommonSetting:ISetting
+    public class CommonSetting : ISetting
     {
+
+        [DisplayName("网站名称")]
+        public string Name { get; set; }
+        [DisplayName("副标题")]
+        public string Subtitle { get; set; }
         /// <summary>
         ///标题
         /// </summary>

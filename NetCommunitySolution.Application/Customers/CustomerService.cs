@@ -19,7 +19,7 @@ namespace NetCommunitySolution.Customers
         /// <summary>
         /// 用户缓存key，{0}为用户ID
         /// </summary>
-        private const string CUSTOMER_BY_ID = "art.customer.by-id.{0}";
+        private const string CUSTOMER_BY_ID = "net.customer.by-id.{0}";
 
 
         private readonly IRepository<Customer> _customerRepository;

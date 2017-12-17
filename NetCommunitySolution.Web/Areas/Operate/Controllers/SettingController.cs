@@ -67,6 +67,21 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
             ViewBag.Result = "true";
             return View();
         }
+
+
+        public ActionResult MediaSetting()
+        {
+            var model = _settingService.GetMediaSettings();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult MediaSetting(Domain.Settings.MediaSetting model)
+        {
+            _settingService.SaveMediaSettings(model);
+            ViewBag.Result = "true";
+            return View();
+        }
         #endregion
 
     }

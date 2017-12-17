@@ -24,6 +24,8 @@ namespace NetCommunitySolution.Common
                 IsClose = _settingService.GetSettingByKey<bool>(CommonSettingNames.IsClose),
                 IsOpenRegistration = _settingService.GetSettingByKey<bool>(CommonSettingNames.IsOpenRegistration),
                 RegistrationId = _settingService.GetSettingByKey<int>(CommonSettingNames.RegistrationId),
+                Name = _settingService.GetSettingByKey<string>(CommonSettingNames.Name),
+                Subtitle = _settingService.GetSettingByKey<string>(CommonSettingNames.Subtitle),
             };
             return config;
         }
@@ -41,6 +43,8 @@ namespace NetCommunitySolution.Common
             _settingService.SaveSetting(CommonSettingNames.IsClose, setting.IsClose);
             _settingService.SaveSetting(CommonSettingNames.IsOpenRegistration, setting.IsOpenRegistration);
             _settingService.SaveSetting(CommonSettingNames.RegistrationId, setting.RegistrationId);
+            _settingService.SaveSetting(CommonSettingNames.Name, setting.Name);
+            _settingService.SaveSetting(CommonSettingNames.Subtitle, setting.Subtitle);
         }
 
         /// <summary>
@@ -105,5 +109,47 @@ namespace NetCommunitySolution.Common
             _settingService.SaveSetting(PostSettingNames.HotPostsCount, setting.HotPostsCount);
             _settingService.SaveSetting(PostSettingNames.PostPageSize, setting.PostPageSize);
         }
+
+        
+        /// <summary>
+        /// 获取媒体配置
+        /// </summary>
+        /// <param name="_settingService"></param>
+        /// <returns></returns>
+        public static MediaSetting GetMediaSettings(this ISettingService _settingService)
+        {
+
+            var config = new MediaSetting
+            {
+                AvatarFile = _settingService.GetSettingByKey<string>(MediaSettingNames.AvatarFile),
+                EnabledAvatar = _settingService.GetSettingByKey<bool>(MediaSettingNames.EnabledAvatar),
+                MaxAvatarSize = _settingService.GetSettingByKey<int>(MediaSettingNames.MaxAvatarSize),
+                MediaMode = _settingService.GetSettingByKey<MediaMode>(MediaSettingNames.MediaMode),
+                AccessKeyId = _settingService.GetSettingByKey<string>(MediaSettingNames.AccessKeyId),
+                AccessKeySecret = _settingService.GetSettingByKey<string>(MediaSettingNames.AccessKeySecret),
+                Bucket = _settingService.GetSettingByKey<string>(MediaSettingNames.Bucket),
+                Endpoint = _settingService.GetSettingByKey<string>(MediaSettingNames.Endpoint),
+            };
+            return config;
+        }
+
+
+        /// <summary>
+        /// 存储媒体配置
+        /// </summary>
+        /// <param name="_settingService"></param>
+        /// <param name="setting"></param>
+        public static void SaveMediaSettings(this ISettingService _settingService, MediaSetting setting)
+        {
+            _settingService.SaveSetting(MediaSettingNames.AvatarFile, setting.AvatarFile);
+            _settingService.SaveSetting(MediaSettingNames.EnabledAvatar, setting.EnabledAvatar);
+            _settingService.SaveSetting(MediaSettingNames.MaxAvatarSize, setting.MaxAvatarSize);
+            _settingService.SaveSetting(MediaSettingNames.MediaMode, setting.MediaMode);
+            _settingService.SaveSetting(MediaSettingNames.AccessKeySecret, setting.AccessKeySecret);
+            _settingService.SaveSetting(MediaSettingNames.AccessKeyId, setting.AccessKeyId);
+            _settingService.SaveSetting(MediaSettingNames.Bucket, setting.Bucket);
+            _settingService.SaveSetting(MediaSettingNames.Endpoint, setting.Endpoint);
+        }
+
     }
 }

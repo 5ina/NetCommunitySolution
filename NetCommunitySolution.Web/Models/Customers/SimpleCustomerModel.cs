@@ -37,5 +37,17 @@ namespace NetCommunitySolution.Web.Models.Customers
         /// </summary>
         public int Level { get; set; }
 
+        public CustomerRole CustomerRole { get; set; }
+
+        /// <summary>
+        /// 网站名称
+        /// </summary>
+        public string Name { get; set; }
+
+        /// <summary>
+        /// 副标题
+        /// </summary>
+        public string SubTitle { get; set; }
+
     }
 }

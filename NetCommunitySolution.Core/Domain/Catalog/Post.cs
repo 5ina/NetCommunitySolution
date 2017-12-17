@@ -31,6 +31,10 @@ namespace NetCommunitySolution.Domain.Catalog
         public DateTime? LastModificationTime { get; set; }
 
         public int Answer { get; set; }
+        /// <summary>
+        /// 是否解决
+        /// </summary>
+        public bool Solve { get; set; }
 
         public int Views { get; set; }
 

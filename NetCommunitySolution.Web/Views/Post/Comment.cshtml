@@ -1,0 +1,48 @@
+﻿@model NetCommunitySolution.Web.Models.Catalog.PostCommentModel
+
+<div class="post-from">
+    <div class="comment-title layui-row">
+        <h5 class="layui-col-md6">
+            <i class="layui-icon">&#xe6b2;</i>  我来灌水
+        </h5>
+        <div class="layui-col-md6 text-right">
+            <span>发帖请遵循发帖内容</span>
+        </div>
+    </div>
+    <div class="comment-content">
+        @using (Html.BeginForm("Comment", "Post", FormMethod.Post, new { @class = "layui-form", id = "comment-form" }))
+    {
+            @Html.HiddenFor(model => model.PostId)
+        @Html.AntiForgeryToken()
+
+
+        <div class="layui-form-item layui-form-text">
+            <label class="layui-form-label">文本域</label>
+            <div class="layui-input-block">
+                @Html.NETEditorFor(model => model.Content)
+            </div>
+        </div>
+
+
+        <div class="layui-form-item layui-form-text">
+            <div class="layui-input-block">
+                @if (Model.CreatorUserId.HasValue)
+                {
+            <button class="layui-btn layui-btn-warm">提交</button>
+                }
+                else
+                {
+                <span>兄弟，请登录后再去灌水好吗？</span>
+                }
+            </div>
+        </div>
+}
+    </div>
+</div>
+
+<script type="text/javascript">
+    layui.use('form', function () {
+        var form = layui.form;
+        //各种基于事件的操作，下面会有进一步介绍
+        form.render();
+</script>

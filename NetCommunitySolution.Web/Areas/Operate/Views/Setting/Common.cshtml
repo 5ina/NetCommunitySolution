@@ -30,13 +30,27 @@
         </div>
     </div>
     <div class="layui-form-item">
+        @Html.NETLabelFor(model => model.Name)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.Name)
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        @Html.NETLabelFor(model => model.Subtitle)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.Subtitle)
+        </div>
+    </div>
+    <div class="layui-form-item">
         @Html.NETLabelFor(model => model.Title)
 
         <div class="layui-input-block">
             @Html.NETEditorFor(model => model.Title)
         </div>
     </div>
-
     <div class="layui-form-item">
         @Html.NETLabelFor(model => model.Keywords)
 

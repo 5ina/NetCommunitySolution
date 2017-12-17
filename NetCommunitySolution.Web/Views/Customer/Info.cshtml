@@ -10,48 +10,89 @@
 }
 
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-    <legend>修改密码</legend>
+    <legend>用户信息</legend>
 </fieldset>
 <div style="padding:15px;margin:15px;">
+
+    @if (!String.IsNullOrWhiteSpace(Model.Result))
+    {
+        <script type="text/javascript">
+            layui.use('layer', function () {
+                var layer = layui.layer;
+
+                layer.msg('用户信息已经保存');
+            });
+        </script>
+    }
+
     @using (Html.BeginForm("Info", "Customer", FormMethod.Post, new { @class = "layui-form" }))
     {
         @Html.AntiForgeryToken()
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                @Html.NETLabelFor(model => model.Mobile)
-                <div class="layui-input-inline">
-                    @Html.NETEditorFor(model => model.Mobile)
-                </div>
-            </div>
-        </div>
 
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                @Html.NETLabelFor(model => model.Email)
-                <div class="layui-input-inline">
-                    @Html.NETEditorFor(model => model.Email)
-                </div>
-            </div>
-        </div>
+        <div class="layui-tab">
+            <ul class="layui-tab-title">
+                <li class="layui-this">基本信息</li>
+                <li>详细信息</li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
 
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                @Html.NETLabelFor(model => model.LoginName)
-                <div class="layui-input-inline">
-                    @Html.NETEditorFor(model => model.LoginName)
-                </div>
-            </div>
-        </div>
 
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                @Html.NETLabelFor(model => model.NickName)
-                <div class="layui-input-inline">
+                    <div class="layui-form-item">
+                        @Html.NETLabelFor(model => model.Mobile)
+                        <div class="layui-input-block">
+                            @Html.NETEditorFor(model => model.Mobile)
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        @Html.NETLabelFor(model => model.Email)
+                        <div class="layui-input-block">
+                            @Html.NETEditorFor(model => model.Email)
+                        </div>
+                    </div>
+
+                    <div class="layui-form-item">
+                        @Html.NETLabelFor(model => model.LoginName)
+                        <div class="layui-input-block">
+                            @Html.NETEditorFor(model => model.LoginName)
+                        </div>
+                    </div>
+
+                </div>
+                <div class="layui-tab-item">
+                    <div class="layui-form-item">
+                        <div class="layui-inline">
+                            @Html.NETLabelFor(model => model.NickName)
+                            <div class="layui-input-inline">
+                                @if (Model.EnabledModifyName)
+                {
                     @Html.NETEditorFor(model => model.NickName)
+}
+else
+{
+                <div class="layui-form-mid layui-word-aux">
+                    @Html.Raw(Model.NickName)
+
+                </div>
+
+}
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="layui-form-item">
+                        @Html.NETLabelFor(model => model.QQ)
+                        <div class="layui-input-block">
+                            @Html.NETEditorFor(model => model.QQ)
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-        
+
 
         <div class="layui-form-item">
             <div class="layui-input-block">

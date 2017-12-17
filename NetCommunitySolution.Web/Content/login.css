@@ -11,18 +11,21 @@
 
     body.login .login_m {
         margin: 0px auto 0;
-        width: 483px;
+        width: 620px;
         overflow: hidden;
         background: #fff no-repeat scroll 0 0;
         border-radius: 5px;
         box-shadow: 5px 5px 5px 1px #808080;
     }
 
-        body.login .login_m h5 {
-            text-align: center;
-            font-weight: 500;
-            font-size: 25px;
-        }
+    body.login .login-header {
+        padding: 30px;
+        text-align: center;
+        font-size: 18px;
+        background: #23262e;
+        color:#fff;
+        margin-bottom:40px;
+    }
 
         body.login .login_m .login-header {
             border-bottom:1px solid #ccc;
@@ -30,6 +33,7 @@
 
         body.login .login_m .login-body {
             min-height: 375px;
+            padding:0 15px;
         }
 
             body.login .login_m .login-body .form-horizontal {
@@ -70,4 +74,14 @@
 .buttons {
     margin-top: 15px;
     text-align:center;
+}
+
+.captcha {
+    width:200px;
+    float:left;
+    display:inline
+}
+.BDC_CaptchaDiv {
+    float:left;
+    display:inline;
 }
