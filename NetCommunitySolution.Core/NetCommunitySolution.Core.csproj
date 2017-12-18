@@ -198,6 +198,7 @@
     <Compile Include="Domain\Settings\MediaSetting.cs" />
     <Compile Include="Domain\Settings\PostSetting.cs" />
     <Compile Include="Domain\Settings\RegistrationMode.cs" />
+    <Compile Include="Domain\Settings\RewardPointSetting.cs" />
     <Compile Include="Domain\Settings\Setting.cs" />
     <Compile Include="Medias\ThumbnailHelper.cs" />
     <Compile Include="NetCommunitySolutionConsts.cs" />

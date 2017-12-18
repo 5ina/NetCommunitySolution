@@ -2860,3 +2860,1439 @@ Abp.AbpException: Only one complex type allowed as argument to a web api control
    在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
    在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+DEBUG 2017-12-18 09:08:44,637 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-18 09:08:44,652 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2017-12-18 09:08:44,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,665 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,666 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,666 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,666 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,667 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:44,671 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2017-12-18 09:08:45,210 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-18 09:08:47,535 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-18 09:08:47,563 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-18 09:08:47,565 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-18 09:08:47,572 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-18 09:08:47,714 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-18 09:08:47,784 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 12 classes define auto mapping attributes
+DEBUG 2017-12-18 09:08:47,784 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Authentication.Dto.CustomerDto
+DEBUG 2017-12-18 09:08:47,788 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerInfoModel
+DEBUG 2017-12-18 09:08:47,788 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.SimpleCustomerModel
+DEBUG 2017-12-18 09:08:47,788 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.CategoryModel
+DEBUG 2017-12-18 09:08:47,788 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-18 09:08:47,788 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostCommentModel
+DEBUG 2017-12-18 09:08:47,788 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostDetailModel
+DEBUG 2017-12-18 09:08:47,788 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.SimplePostModel
+DEBUG 2017-12-18 09:08:47,788 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostModel
+DEBUG 2017-12-18 09:08:47,788 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-18 09:08:47,789 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.CategoryModel
+DEBUG 2017-12-18 09:08:47,789 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-18 09:08:48,226 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.ICaptchaService' with service name 'app/captchaService'.
+DEBUG 2017-12-18 09:08:48,227 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-18 09:08:48,229 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Media.IOssService' with service name 'app/ossService'.
+DEBUG 2017-12-18 09:08:48,230 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerAttributeService' with service name 'app/customerAttributeService'.
+DEBUG 2017-12-18 09:08:48,231 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerFollowService' with service name 'app/customerFollowService'.
+DEBUG 2017-12-18 09:08:48,232 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerLevelService' with service name 'app/customerLevelService'.
+DEBUG 2017-12-18 09:08:48,233 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-18 09:08:48,234 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-18 09:08:48,235 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.ICategoryService' with service name 'app/categoryService'.
+DEBUG 2017-12-18 09:08:48,236 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IContentLabelService' with service name 'app/contentLabelService'.
+DEBUG 2017-12-18 09:08:48,237 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostCommentService' with service name 'app/postCommentService'.
+DEBUG 2017-12-18 09:08:48,238 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostLabelService' with service name 'app/postLabelService'.
+DEBUG 2017-12-18 09:08:48,239 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostService' with service name 'app/postService'.
+WARN  2017-12-18 09:09:08,637 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 09:09:08,673 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+ERROR 2017-12-18 09:09:08,683 [7    ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:25:54,047 [41   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:25:54,373 [41   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:41:28,467 [39   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:41:28,928 [39   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:42:06,085 [48   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:42:06,728 [49   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:42:40,532 [39   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:42:41,103 [38   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:42:57,520 [43   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:42:58,112 [43   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:43:11,862 [43   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:43:12,655 [43   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:43:22,123 [38   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:43:22,804 [48   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:44:03,025 [38   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:44:03,632 [45   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:46:42,989 [39   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-18 09:46:43,445 [39   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2017-12-18 10:11:05,209 [70   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:11:05,220 [70   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:11:05,220 [70   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-18 10:11:05,269 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Controllers.HomeController.Index is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,334 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Catalog.CategoryService.GetAllCategoriesDisplayedOnHomePage is executed by user 1 in 48 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,408 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Catalog.ContentLabelService.GetAllLabels is executed by user 1 in 65 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,465 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 47 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,516 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 48 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,581 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Catalog.PostService.GetAllPost is executed by user 1 in 64 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,628 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 46 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,688 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 46 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,735 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 45 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,784 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 48 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,835 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 47 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,888 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 51 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,934 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 45 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:05,982 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 46 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:06,029 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 46 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:06,079 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 46 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:06,126 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 46 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:06,174 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 46 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:06,226 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 49 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:06,281 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 49 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:06,333 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 48 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:06,386 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 48 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:06,439 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 49 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:06,445 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 1 ms from 192.168.2.178 IP address with succeed.
+WARN  2017-12-18 10:11:06,591 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:11:06,591 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:11:06,597 [66   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:11:06,598 [66   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+ERROR 2017-12-18 10:11:06,599 [59   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2017-12-18 10:11:06,601 [66   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:11:06,868 [70   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+ERROR 2017-12-18 10:11:06,874 [70   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate()
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type)
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type)
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2017-12-18 10:11:09,666 [66   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:11:09,667 [66   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-18 10:11:09,675 [66   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.HomeController.Index is executed by user 1 in 1 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:16,111 [66   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:16,113 [66   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerAttributeService.GetAttributeByCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+WARN  2017-12-18 10:11:26,082 [67   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:11:26,082 [67   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-18 10:11:26,089 [67   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.Index is executed by user 1 in 1 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:28,331 [67   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:28,335 [67   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerAttributeService.GetAttributeByCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+WARN  2017-12-18 10:11:29,138 [70   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:11:29,139 [70   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-18 10:11:29,278 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerLevelService.GetAllLevels is executed by user 1 in 82 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:11:29,295 [70   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.List is executed by user 1 in 107 ms from 192.168.2.178 IP address with succeed.
+WARN  2017-12-18 10:15:48,671 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:15:48,671 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,621 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,621 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-18 10:16:20,625 [65   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.Index is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:16:20,655 [65   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:16:20,657 [65   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerAttributeService.GetAttributeByCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+WARN  2017-12-18 10:16:20,796 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,798 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,804 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,804 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,806 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,806 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,826 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,827 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,848 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,848 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,849 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,849 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,855 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,855 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,861 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,864 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,864 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,868 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,868 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,874 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,874 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,879 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,880 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,880 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,881 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,885 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,886 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,891 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,891 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,892 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,900 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,901 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,902 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,902 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,904 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,905 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,912 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:20,913 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:20,913 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:22,478 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:22,479 [5    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:22,481 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:22,482 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:22,491 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:22,492 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:22,494 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:22,494 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:22,522 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:16:22,522 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:16:22,537 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerLevelService.GetAllLevels is executed by user 1 in 4 ms from 192.168.2.178 IP address with exception: The operation cannot be completed because the DbContext has been disposed..
+WARN  2017-12-18 10:16:22,539 [5    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.List is executed by user 1 in 7 ms from 192.168.2.178 IP address with exception: The operation cannot be completed because the DbContext has been disposed..
+ERROR 2017-12-18 10:16:22,543 [5    ] rate.Controllers.CustomerLevelController - The operation cannot be completed because the DbContext has been disposed.
+System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 NetCommunitySolution.PagedResult`1..ctor(IQueryable`1 source, Int32 pageIndex, Int32 pageSize) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Application\PagedResult.cs:行号 24
+   在 NetCommunitySolution.Customers.CustomerLevelService.GetAllLevels(String keywords, Int32 pageIndex, Int32 pageSize) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Application\Customers\CustomerLevelService.cs:行号 57
+   在 Castle.Proxies.CustomerLevelServiceProxy.GetAllLevels_callback(String keywords, Int32 pageIndex, Int32 pageSize)
+   在 Castle.Proxies.Invocations.ICustomerLevelService_GetAllLevels.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo)
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.CustomerLevelServiceProxy.GetAllLevels(String keywords, Int32 pageIndex, Int32 pageSize)
+   在 NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.List(DataSourceRequest command, String Keywords) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Web\Areas\Operate\Controllers\CustomerLevelController.cs:行号 38
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2017-12-18 10:17:08,663 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:08,663 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-18 10:17:08,667 [63   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.Index is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:17:10,624 [63   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:17:10,626 [63   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerAttributeService.GetAttributeByCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+WARN  2017-12-18 10:17:10,915 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:10,915 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,917 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:10,917 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,926 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:10,927 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,931 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:10,932 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,942 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:10,942 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,942 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,942 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,951 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:10,951 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,956 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:10,957 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,966 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:10,966 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,982 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:10,982 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,984 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:10,988 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:10,994 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,001 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:11,003 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,006 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:11,006 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,012 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:11,012 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,016 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,024 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:11,024 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,025 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:11,025 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,033 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:11,033 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,035 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:11,038 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,938 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:11,938 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,996 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:11,997 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:11,997 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:11,997 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:12,001 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:12,001 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:12,024 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:12,024 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:12,049 [65   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerLevelService.GetAllLevels is executed by user 1 in 1 ms from 192.168.2.178 IP address with exception: The operation cannot be completed because the DbContext has been disposed..
+WARN  2017-12-18 10:17:12,049 [65   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.List is executed by user 1 in 4 ms from 192.168.2.178 IP address with exception: The operation cannot be completed because the DbContext has been disposed..
+ERROR 2017-12-18 10:17:12,050 [65   ] rate.Controllers.CustomerLevelController - The operation cannot be completed because the DbContext has been disposed.
+System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 NetCommunitySolution.PagedResult`1..ctor(IQueryable`1 source, Int32 pageIndex, Int32 pageSize) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Application\PagedResult.cs:行号 24
+   在 NetCommunitySolution.Customers.CustomerLevelService.GetAllLevels(String keywords, Int32 pageIndex, Int32 pageSize) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Application\Customers\CustomerLevelService.cs:行号 57
+   在 Castle.Proxies.CustomerLevelServiceProxy.GetAllLevels_callback(String keywords, Int32 pageIndex, Int32 pageSize)
+   在 Castle.Proxies.Invocations.ICustomerLevelService_GetAllLevels.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo)
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.CustomerLevelServiceProxy.GetAllLevels(String keywords, Int32 pageIndex, Int32 pageSize)
+   在 NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.List(DataSourceRequest command, String Keywords) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Web\Areas\Operate\Controllers\CustomerLevelController.cs:行号 38
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2017-12-18 10:17:18,806 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:18,806 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-18 10:17:18,811 [56   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.Index is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:17:18,817 [56   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:17:18,819 [56   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerAttributeService.GetAttributeByCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+WARN  2017-12-18 10:17:18,988 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:18,988 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:18,988 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:18,989 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:18,999 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:18,999 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,010 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,010 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,018 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,019 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,026 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,026 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,030 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,030 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,034 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,034 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,040 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,040 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,044 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,045 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,045 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,045 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,056 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,056 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,060 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,060 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,060 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,068 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,069 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,069 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,070 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,073 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,073 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,074 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,074 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,077 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,077 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,080 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,089 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,089 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,662 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,663 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,670 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,671 [65   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,677 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,678 [63   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,678 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,678 [60   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,685 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:17:19,685 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:17:19,692 [63   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerLevelService.GetAllLevels is executed by user 1 in 1 ms from 192.168.2.178 IP address with exception: The operation cannot be completed because the DbContext has been disposed..
+WARN  2017-12-18 10:17:19,693 [63   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.List is executed by user 1 in 4 ms from 192.168.2.178 IP address with exception: The operation cannot be completed because the DbContext has been disposed..
+ERROR 2017-12-18 10:17:19,693 [63   ] rate.Controllers.CustomerLevelController - The operation cannot be completed because the DbContext has been disposed.
+System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 NetCommunitySolution.PagedResult`1..ctor(IQueryable`1 source, Int32 pageIndex, Int32 pageSize) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Application\PagedResult.cs:行号 24
+   在 NetCommunitySolution.Customers.CustomerLevelService.GetAllLevels(String keywords, Int32 pageIndex, Int32 pageSize) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Application\Customers\CustomerLevelService.cs:行号 57
+   在 Castle.Proxies.CustomerLevelServiceProxy.GetAllLevels_callback(String keywords, Int32 pageIndex, Int32 pageSize)
+   在 Castle.Proxies.Invocations.ICustomerLevelService_GetAllLevels.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo)
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.CustomerLevelServiceProxy.GetAllLevels(String keywords, Int32 pageIndex, Int32 pageSize)
+   在 NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.List(DataSourceRequest command, String Keywords) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Web\Areas\Operate\Controllers\CustomerLevelController.cs:行号 38
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2017-12-18 10:20:28,851 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:28,853 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-18 10:20:28,874 [57   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.Index is executed by user 1 in 1 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:20:28,889 [57   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+INFO  2017-12-18 10:20:28,892 [57   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerAttributeService.GetAttributeByCustomerId is executed by user 1 in 0 ms from 192.168.2.178 IP address with succeed.
+WARN  2017-12-18 10:20:29,349 [6    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,349 [6    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,362 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,362 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,369 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,370 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,382 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,382 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,388 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,389 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,390 [6    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,390 [6    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,396 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,396 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,408 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,409 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,409 [6    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,410 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,411 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,419 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,419 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,432 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,433 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,434 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,434 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,445 [6    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,445 [6    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,447 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,448 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,448 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,450 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,450 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,456 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,456 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,462 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,463 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,468 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,468 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:29,472 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:29,473 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:30,076 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:30,076 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:30,082 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:30,083 [56   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:30,085 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:30,086 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:30,094 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-18 10:20:30,095 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:30,095 [6    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-18 10:20:30,115 [62   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerLevelService.GetAllLevels is executed by user 1 in 5 ms from 192.168.2.178 IP address with exception: The operation cannot be completed because the DbContext has been disposed..
+WARN  2017-12-18 10:20:30,115 [62   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.List is executed by user 1 in 7 ms from 192.168.2.178 IP address with exception: The operation cannot be completed because the DbContext has been disposed..
+ERROR 2017-12-18 10:20:30,116 [62   ] rate.Controllers.CustomerLevelController - The operation cannot be completed because the DbContext has been disposed.
+System.InvalidOperationException: The operation cannot be completed because the DbContext has been disposed.
+   在 System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   在 System.Data.Entity.Internal.InternalContext.Initialize()
+   在 System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   在 System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   在 NetCommunitySolution.PagedResult`1..ctor(IQueryable`1 source, Int32 pageIndex, Int32 pageSize) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Application\PagedResult.cs:行号 24
+   在 NetCommunitySolution.Customers.CustomerLevelService.GetAllLevels(String keywords, Int32 pageIndex, Int32 pageSize) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Application\Customers\CustomerLevelService.cs:行号 57
+   在 Castle.Proxies.CustomerLevelServiceProxy.GetAllLevels_callback(String keywords, Int32 pageIndex, Int32 pageSize)
+   在 Castle.Proxies.Invocations.ICustomerLevelService_GetAllLevels.InvokeMethodOnTarget()
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformSyncUow(IInvocation invocation, UnitOfWorkOptions options)
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.PerformUow(IInvocation invocation, UnitOfWorkOptions options)
+   在 Abp.Domain.Uow.UnitOfWorkInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Auditing.AuditingInterceptor.PerformSyncAuditing(IInvocation invocation, AuditInfo auditInfo)
+   在 Abp.Auditing.AuditingInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Abp.Runtime.Validation.Interception.ValidationInterceptor.Intercept(IInvocation invocation)
+   在 Castle.DynamicProxy.AbstractInvocation.Proceed()
+   在 Castle.Proxies.CustomerLevelServiceProxy.GetAllLevels(String keywords, Int32 pageIndex, Int32 pageSize)
+   在 NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerLevelController.List(DataSourceRequest command, String Keywords) 位置 D:\NetCommunitySolution\src\NetCommunitySolution.Web\Areas\Operate\Controllers\CustomerLevelController.cs:行号 38
+   在 lambda_method(Closure , ControllerBase , Object[] )
+   在 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   在 System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<BeginInvokeSynchronousActionMethod>b__39(IAsyncResult asyncResult, ActionInvocation innerInvokeState)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`2.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethod(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3d()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.AsyncInvocationWithFilters.<>c__DisplayClass46.<InvokeActionMethodFilterAsynchronouslyRecursive>b__3f()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass33.<BeginInvokeActionMethodWithFilters>b__32(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.CallEndDelegate(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResultBase`1.End()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.EndInvokeActionMethodWithFilters(IAsyncResult asyncResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2017-12-18 10:20:53,394 [56   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-18 10:20:53,400 [56   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-18 10:20:53,401 [56   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-18 10:20:53,401 [56   ] Abp.Modules.AbpModuleManager             - Shutting down completed.

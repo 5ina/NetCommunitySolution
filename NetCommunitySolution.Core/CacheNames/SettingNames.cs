@@ -146,4 +146,23 @@
         /// </summary>
         public static string Bucket { get { return "net.setting.media.bucket"; } }
     }
+
+
+    public class RewardPointSettingNames
+    {
+        public static string Enabled { get { return "net.setting.reward.enable"; } }
+        
+        public static string NewPost { get { return "net.setting.reward.newpost"; } }
+        
+        public static string Comment { get { return "net.setting.reward.comment"; } }
+        
+        public static string Solve { get { return "net.setting.reward.solve"; } }
+        
+        public static string Selected { get { return "net.setting.reward.selected"; } }
+
+        
+        public static string Login { get { return "net.setting.reward.login"; } }
+        
+        public static string Register { get { return "net.setting.reward.register"; } }
+    }
 }

@@ -239,6 +239,7 @@ a,a:hover{text-decoration:none;}
 /* Comment List*/
 .comment-list .comments .post-comment {
 position:relative;
+min-height:120px;
 }
 
     .comment-list .comments .post-comment .comment-info {
@@ -252,7 +253,9 @@ position:relative;
         }
     .comment-list .comments .post-comment .comment-content {
         display: block;
-        margin-left:120px;
+        margin-left: 120px;
+        background: #f2f2f2;
+        min-height: 120px;
     }
 
 

@@ -16,5 +16,6 @@ namespace NetCommunitySolution.Domain.Settings
         /// </summary>
         [DisplayName("分页个数")]
         public int PostPageSize { get; set; }
+
     }
 }

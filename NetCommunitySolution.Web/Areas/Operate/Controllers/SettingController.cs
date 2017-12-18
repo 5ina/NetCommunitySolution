@@ -82,6 +82,21 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
             ViewBag.Result = "true";
             return View();
         }
+
+
+        public ActionResult RewardSetting()
+        {
+            var model = _settingService.GetRewardSettings();
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult RewardSetting(Domain.Settings.RewardPointSetting model)
+        {
+            _settingService.SaveRewardSettings(model);
+            ViewBag.Result = "true";
+            return View();
+        }
         #endregion
 
     }

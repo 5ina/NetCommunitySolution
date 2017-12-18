@@ -155,5 +155,45 @@ namespace NetCommunitySolution.Common
             _settingService.SaveSetting(MediaSettingNames.Endpoint, setting.Endpoint);
         }
 
+
+
+        /// <summary>
+        /// 获取媒体配置
+        /// </summary>
+        /// <param name="_settingService"></param>
+        /// <returns></returns>
+        public static RewardPointSetting GetRewardSettings(this ISettingService _settingService)
+        {
+
+            var config = new RewardPointSetting
+            {
+                Enabled = _settingService.GetSettingByKey<bool>(RewardPointSettingNames.Enabled),
+                Comment = _settingService.GetSettingByKey<int>(RewardPointSettingNames.Comment),
+               Login = _settingService.GetSettingByKey<int>(RewardPointSettingNames.Login),
+                NewPost = _settingService.GetSettingByKey<int>(RewardPointSettingNames.NewPost),
+                Register = _settingService.GetSettingByKey<int>(RewardPointSettingNames.Register),
+                Selected = _settingService.GetSettingByKey<int>(RewardPointSettingNames.Selected),
+                Solve = _settingService.GetSettingByKey<int>(RewardPointSettingNames.Solve),
+            };
+            return config;
+        }
+
+
+        /// <summary>
+        /// 存储媒体配置
+        /// </summary>
+        /// <param name="_settingService"></param>
+        /// <param name="setting"></param>
+        public static void SaveRewardSettings(this ISettingService _settingService, RewardPointSetting setting)
+        {
+            _settingService.SaveSetting(RewardPointSettingNames.Enabled, setting.Enabled);
+            _settingService.SaveSetting(RewardPointSettingNames.Comment, setting.Comment);
+            _settingService.SaveSetting(RewardPointSettingNames.Login, setting.Login);
+            _settingService.SaveSetting(RewardPointSettingNames.NewPost, setting.NewPost);
+            _settingService.SaveSetting(RewardPointSettingNames.Register, setting.Register);
+            _settingService.SaveSetting(RewardPointSettingNames.Selected, setting.Selected);
+            _settingService.SaveSetting(RewardPointSettingNames.Solve, setting.Solve);
+        }
+
     }
 }
