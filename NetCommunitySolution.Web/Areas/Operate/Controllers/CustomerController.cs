@@ -1,12 +1,13 @@
-﻿using NetCommunitySolution.Customers;
+﻿using Abp.AutoMapper;
+using NetCommunitySolution.Customers;
 using NetCommunitySolution.Domain.Customers;
 using NetCommunitySolution.Web.Areas.Operate.Models.Customers;
+using NetCommunitySolution.Web.Framework.Controllers;
 using NetCommunitySolution.Web.Framework.Html;
 using NetCommunitySolution.Web.Framework.Layui;
+using NetCommunitySolution.Web.Framework.Mvc;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 
 namespace NetCommunitySolution.Web.Areas.Operate.Controllers
@@ -61,6 +62,80 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
             };
             return AbpJson(data);
         }
+
+        public ActionResult Create()
+        {
+            var model = new AdminModel();
+            return View(model);
+        }
+
+        [HttpPost, ParameterBasedOnFormName("save-continue", "continueEditing")]
+        public ActionResult Create(AdminModel model, bool continueEditing)
+        {
+            if (!model.Password.Equals(model.ConfirmPassword))
+            {
+                ModelState.AddModelError("", "两次密码输入的不相同");
+            }
+
+            if (ModelState.IsValid)
+            {
+                var entity = model.MapTo<Customer>();
+
+                var customerId = _customerService.CreateCustomer(entity);
+
+                if (continueEditing)
+                {
+                    return RedirectToAction("Edit", new { id = customerId });
+                }
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var entity = _customerService.GetCustomerId(id);
+            if (entity != null)
+            {
+                var model = entity.MapTo<AdminModel>();
+                return View(model);
+            }
+            return RedirectToAction("List");
+        }
+
+
+        [HttpPost, ParameterBasedOnFormName("save-continue", "continueEditing")]
+        public ActionResult Edit(AdminModel model, bool continueEditing)
+        {
+            if (!model.Password.Equals(model.ConfirmPassword))
+            {
+                ModelState.AddModelError("", "两次密码输入的不相同");
+            }
+
+            if (ModelState.IsValid)
+            {
+                var entity = _customerService.GetCustomerId(model.Id);
+                entity = model.MapTo<AdminModel, Customer>(entity);
+                _customerService.UpdateCustomer(entity);
+
+                if (continueEditing)
+                {
+                    return RedirectToAction("Edit", new { id = model.Id });
+                }
+                return RedirectToAction("Index");
+            }
+
+            return View(model);
+        }
+
+
+        [HttpPost]
+        public ActionResult Delete(int id)
+        {
+            _customerService.DeleteCustomer(id);
+            return new NullJsonResult();
+        }
         #endregion
 
         #region Child Action
@@ -76,6 +151,8 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
             return PartialView(model);
 
         }
+
+
         #endregion
     }
 }

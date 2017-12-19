@@ -3572,3 +3572,991 @@ WARN  2017-12-19 14:20:14,552 [58   ] Abp.Logging.LogHelper                    -
 INFO  2017-12-19 14:20:14,737 [58   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetAllCustomers is executed by user 1 in 145 ms from 127.0.0.1 IP address with succeed.
 INFO  2017-12-19 14:20:14,762 [58   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerLevelService.GetCustomerLevelById is executed by user 1 in 23 ms from 127.0.0.1 IP address with succeed.
 INFO  2017-12-19 14:20:14,776 [58   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerController.List is executed by user 1 in 186 ms from 127.0.0.1 IP address with succeed.
+DEBUG 2017-12-19 14:33:07,396 [6    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-19 14:33:07,396 [6    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 14:33:07,397 [6    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 14:33:07,397 [6    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-19 14:52:49,454 [102  ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-19 14:52:49,465 [102  ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2017-12-19 14:52:49,470 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,472 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,472 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,472 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,472 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,472 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,472 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,472 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,472 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,473 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,473 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,473 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,473 [102  ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:49,475 [102  ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2017-12-19 14:52:49,712 [102  ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 14:52:50,703 [102  ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-19 14:52:50,707 [102  ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-19 14:52:50,708 [102  ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-19 14:52:50,709 [102  ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-19 14:52:50,804 [102  ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 14:52:50,844 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - Found 14 classes define auto mapping attributes
+DEBUG 2017-12-19 14:52:50,844 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Authentication.Dto.CustomerDto
+DEBUG 2017-12-19 14:52:50,847 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Rewards.RewardPointsHistoryModel
+DEBUG 2017-12-19 14:52:50,847 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerInfoModel
+DEBUG 2017-12-19 14:52:50,847 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-19 14:52:50,847 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.SimpleCustomerModel
+DEBUG 2017-12-19 14:52:50,847 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.CategoryModel
+DEBUG 2017-12-19 14:52:50,847 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-19 14:52:50,847 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostCommentModel
+DEBUG 2017-12-19 14:52:50,847 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostDetailModel
+DEBUG 2017-12-19 14:52:50,847 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.SimplePostModel
+DEBUG 2017-12-19 14:52:50,847 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostModel
+DEBUG 2017-12-19 14:52:50,848 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-19 14:52:50,848 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.CategoryModel
+DEBUG 2017-12-19 14:52:50,848 [102  ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-19 14:52:51,008 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.ICaptchaService' with service name 'app/captchaService'.
+DEBUG 2017-12-19 14:52:51,009 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-19 14:52:51,010 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Media.IOssService' with service name 'app/ossService'.
+DEBUG 2017-12-19 14:52:51,011 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerAttributeService' with service name 'app/customerAttributeService'.
+DEBUG 2017-12-19 14:52:51,012 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerFollowService' with service name 'app/customerFollowService'.
+DEBUG 2017-12-19 14:52:51,013 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerLevelService' with service name 'app/customerLevelService'.
+DEBUG 2017-12-19 14:52:51,013 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-19 14:52:51,014 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.IRewardPointService' with service name 'app/rewardPointService'.
+DEBUG 2017-12-19 14:52:51,015 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-19 14:52:51,016 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.ICategoryService' with service name 'app/categoryService'.
+DEBUG 2017-12-19 14:52:51,017 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IContentLabelService' with service name 'app/contentLabelService'.
+DEBUG 2017-12-19 14:52:51,018 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostCommentService' with service name 'app/postCommentService'.
+DEBUG 2017-12-19 14:52:51,018 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostLabelService' with service name 'app/postLabelService'.
+DEBUG 2017-12-19 14:52:51,019 [102  ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostService' with service name 'app/postService'.
+WARN  2017-12-19 14:52:51,149 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:52:51,178 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:52:51,186 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:52:51,186 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-19 14:52:51,491 [97   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerController.Index is executed by user 1 in 27 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 14:52:56,840 [97   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 1450 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 14:52:56,972 [97   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerAttributeService.GetAttributeByCustomerId is executed by user 1 in 83 ms from 127.0.0.1 IP address with succeed.
+WARN  2017-12-19 14:52:57,334 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:52:57,335 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-19 14:52:57,562 [92   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetAllCustomers is executed by user 1 in 143 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 14:52:57,590 [92   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerLevelService.GetCustomerLevelById is executed by user 1 in 25 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 14:52:57,606 [92   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerController.List is executed by user 1 in 193 ms from 127.0.0.1 IP address with succeed.
+WARN  2017-12-19 14:53:51,412 [100  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:51,413 [100  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-19 14:53:51,415 [100  ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerController.Index is executed by user 1 in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 14:53:52,338 [100  ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 14:53:52,339 [100  ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerAttributeService.GetAttributeByCustomerId is executed by user 1 in 0 ms from 127.0.0.1 IP address with succeed.
+WARN  2017-12-19 14:53:52,386 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,386 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,387 [98   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,387 [98   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,390 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,391 [99   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,395 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,398 [91   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,398 [91   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,399 [96   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,399 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,399 [96   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,399 [101  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,400 [100  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,401 [100  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,406 [96   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,407 [96   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,407 [99   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,408 [99   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,408 [98   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,408 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,408 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,408 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,408 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,409 [101  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,409 [101  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,411 [100  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,411 [100  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,412 [98   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,413 [98   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,413 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,413 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,413 [96   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,415 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,415 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,416 [100  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,417 [100  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,639 [91   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,639 [91   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,639 [99   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,639 [101  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,640 [101  ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:52,643 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:52,643 [92   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-19 14:53:52,694 [98   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetAllCustomers is executed by user 1 in 48 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 14:53:52,695 [98   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerLevelService.GetCustomerLevelById is executed by user 1 in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 14:53:52,710 [98   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerController.List is executed by user 1 in 65 ms from 127.0.0.1 IP address with succeed.
+WARN  2017-12-19 14:53:53,683 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:53,683 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 14:53:55,933 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 14:53:55,933 [97   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-19 14:53:55,984 [97   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetAllCustomers is executed by user 1 in 48 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 14:53:55,985 [97   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerLevelService.GetCustomerLevelById is executed by user 1 in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 14:53:56,000 [97   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerController.List is executed by user 1 in 64 ms from 127.0.0.1 IP address with succeed.
+DEBUG 2017-12-19 14:56:52,658 [84   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-19 14:56:52,659 [84   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 14:56:52,660 [84   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 14:56:52,660 [84   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-19 15:14:59,438 [22   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-19 15:14:59,449 [22   ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2017-12-19 15:14:59,454 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,456 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,456 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,456 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,456 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,456 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,456 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,456 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,457 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,457 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,457 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,457 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,457 [22   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:14:59,459 [22   ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2017-12-19 15:14:59,688 [22   ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:15:00,627 [22   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-19 15:15:00,632 [22   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-19 15:15:00,633 [22   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-19 15:15:00,634 [22   ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-19 15:15:00,731 [22   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 15:15:00,772 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - Found 15 classes define auto mapping attributes
+DEBUG 2017-12-19 15:15:00,772 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Authentication.Dto.CustomerDto
+DEBUG 2017-12-19 15:15:00,775 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Rewards.RewardPointsHistoryModel
+DEBUG 2017-12-19 15:15:00,775 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerInfoModel
+DEBUG 2017-12-19 15:15:00,775 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-19 15:15:00,775 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.SimpleCustomerModel
+DEBUG 2017-12-19 15:15:00,775 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.CategoryModel
+DEBUG 2017-12-19 15:15:00,776 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-19 15:15:00,776 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostCommentModel
+DEBUG 2017-12-19 15:15:00,776 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostDetailModel
+DEBUG 2017-12-19 15:15:00,776 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.SimplePostModel
+DEBUG 2017-12-19 15:15:00,776 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostModel
+DEBUG 2017-12-19 15:15:00,776 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Customers.AdminModel
+DEBUG 2017-12-19 15:15:00,776 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-19 15:15:00,776 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.CategoryModel
+DEBUG 2017-12-19 15:15:00,776 [22   ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-19 15:15:00,940 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.ICaptchaService' with service name 'app/captchaService'.
+DEBUG 2017-12-19 15:15:00,941 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-19 15:15:00,941 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Media.IOssService' with service name 'app/ossService'.
+DEBUG 2017-12-19 15:15:00,942 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerAttributeService' with service name 'app/customerAttributeService'.
+DEBUG 2017-12-19 15:15:00,943 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerFollowService' with service name 'app/customerFollowService'.
+DEBUG 2017-12-19 15:15:00,944 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerLevelService' with service name 'app/customerLevelService'.
+DEBUG 2017-12-19 15:15:00,945 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-19 15:15:00,945 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.IRewardPointService' with service name 'app/rewardPointService'.
+DEBUG 2017-12-19 15:15:00,946 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-19 15:15:00,947 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.ICategoryService' with service name 'app/categoryService'.
+DEBUG 2017-12-19 15:15:00,948 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IContentLabelService' with service name 'app/contentLabelService'.
+DEBUG 2017-12-19 15:15:00,949 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostCommentService' with service name 'app/postCommentService'.
+DEBUG 2017-12-19 15:15:00,949 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostLabelService' with service name 'app/postLabelService'.
+DEBUG 2017-12-19 15:15:00,950 [22   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostService' with service name 'app/postService'.
+WARN  2017-12-19 15:15:01,086 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:01,117 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:01,125 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:01,125 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-19 15:15:01,430 [15   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerController.Create is executed by user 1 in 29 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:15:07,755 [15   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 1820 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:15:07,893 [15   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerAttributeService.GetAttributeByCustomerId is executed by user 1 in 83 ms from 127.0.0.1 IP address with succeed.
+WARN  2017-12-19 15:15:31,010 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:31,010 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-19 15:15:31,012 [64   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Areas.Operate.Controllers.CustomerController.Create is executed by user 1 in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:15:32,064 [64   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:15:32,065 [64   ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerAttributeService.GetAttributeByCustomerId is executed by user 1 in 0 ms from 127.0.0.1 IP address with succeed.
+WARN  2017-12-19 15:15:32,114 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,114 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,115 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,115 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,118 [58   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,119 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,124 [58   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,126 [61   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,126 [61   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,127 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,127 [16   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,127 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,130 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,131 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,132 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,134 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,134 [59   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,134 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,135 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,135 [61   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,136 [61   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,137 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,137 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,140 [58   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,140 [58   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,140 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,141 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,141 [57   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,141 [16   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,142 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,142 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,142 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,143 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,143 [61   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,146 [58   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,147 [58   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,372 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,372 [62   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,372 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,372 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:15:32,372 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:15:32,372 [15   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+DEBUG 2017-12-19 15:19:11,939 [58   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-19 15:19:11,940 [58   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 15:19:11,940 [58   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 15:19:11,940 [58   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-19 15:37:31,006 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-19 15:37:31,018 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2017-12-19 15:37:31,022 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:31,028 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2017-12-19 15:37:31,279 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:37:32,693 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-19 15:37:32,714 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-19 15:37:32,715 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-19 15:37:32,718 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-19 15:37:32,823 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 15:37:32,879 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 15 classes define auto mapping attributes
+DEBUG 2017-12-19 15:37:32,879 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Authentication.Dto.CustomerDto
+DEBUG 2017-12-19 15:37:32,882 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Rewards.RewardPointsHistoryModel
+DEBUG 2017-12-19 15:37:32,882 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerInfoModel
+DEBUG 2017-12-19 15:37:32,882 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-19 15:37:32,882 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.SimpleCustomerModel
+DEBUG 2017-12-19 15:37:32,882 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.CategoryModel
+DEBUG 2017-12-19 15:37:32,882 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-19 15:37:32,882 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostCommentModel
+DEBUG 2017-12-19 15:37:32,882 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostDetailModel
+DEBUG 2017-12-19 15:37:32,883 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.SimplePostModel
+DEBUG 2017-12-19 15:37:32,883 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostModel
+DEBUG 2017-12-19 15:37:32,883 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Customers.AdminModel
+DEBUG 2017-12-19 15:37:32,883 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-19 15:37:32,883 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.CategoryModel
+DEBUG 2017-12-19 15:37:32,883 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-19 15:37:33,076 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.ICaptchaService' with service name 'app/captchaService'.
+DEBUG 2017-12-19 15:37:33,077 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-19 15:37:33,078 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Media.IOssService' with service name 'app/ossService'.
+DEBUG 2017-12-19 15:37:33,078 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerAttributeService' with service name 'app/customerAttributeService'.
+DEBUG 2017-12-19 15:37:33,079 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerFollowService' with service name 'app/customerFollowService'.
+DEBUG 2017-12-19 15:37:33,080 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerLevelService' with service name 'app/customerLevelService'.
+DEBUG 2017-12-19 15:37:33,081 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-19 15:37:33,082 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.IRewardPointService' with service name 'app/rewardPointService'.
+DEBUG 2017-12-19 15:37:33,082 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-19 15:37:33,083 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.ICategoryService' with service name 'app/categoryService'.
+DEBUG 2017-12-19 15:37:33,084 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IContentLabelService' with service name 'app/contentLabelService'.
+DEBUG 2017-12-19 15:37:33,085 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostCommentService' with service name 'app/postCommentService'.
+DEBUG 2017-12-19 15:37:33,086 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostLabelService' with service name 'app/postLabelService'.
+DEBUG 2017-12-19 15:37:33,087 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostService' with service name 'app/postService'.
+WARN  2017-12-19 15:37:33,346 [7    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:37:33,380 [7    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:37:33,387 [7    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:37:33,387 [7    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-19 15:37:33,659 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Controllers.HomeController.Index is executed by user 1 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:38,313 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Catalog.CategoryService.GetAllCategoriesDisplayedOnHomePage is executed by user 1 in 2248 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:39,554 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Catalog.ContentLabelService.GetAllLabels is executed by user 1 in 159 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:40,872 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 103 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:40,908 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 35 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:40,998 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Catalog.PostService.GetAllPost is executed by user 1 in 88 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:41,098 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 73 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,512 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 37 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,549 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 35 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,584 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,623 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 36 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,658 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,692 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,727 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,762 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,905 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,941 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:44,975 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:45,010 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:45,045 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:45,081 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:45,116 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:45,151 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:45,152 [7    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 1 in 0 ms from 127.0.0.1 IP address with succeed.
+WARN  2017-12-19 15:37:47,278 [11   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:37:47,279 [11   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:37:47,279 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:37:47,298 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:37:47,298 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:37:47,300 [10   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:37:47,300 [10   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:37:47,345 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+ERROR 2017-12-19 15:37:47,495 [11   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ActionScriptingHelper.cs:行号 53
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 52
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 29
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 60
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 30
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ScriptProxyManager.cs:行号 70
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\AbpServiceProxiesController.cs:行号 44
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Uow\AbpApiUowFilter.cs:行号 55
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Validation\AbpApiValidationFilter.cs:行号 53
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Auditing\AbpApiAuditFilter.cs:行号 30
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Security\AntiForgery\AbpAntiForgeryApiFilter.cs:行号 51
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Authorization\AbpApiAuthorizeFilter.cs:行号 70
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+WARN  2017-12-19 15:37:52,485 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-19 15:37:52,521 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:52,559 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 37 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:52,594 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:52,629 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:52,663 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 33 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:52,700 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 36 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:52,737 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 36 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:52,772 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 1 in 34 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:37:52,777 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Controllers.CustomerController.Logout is executed by user 1 in 3 ms from 127.0.0.1 IP address with succeed.
+ERROR 2017-12-19 15:37:53,625 [10   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ActionScriptingHelper.cs:行号 53
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 52
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 29
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 60
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 30
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ScriptProxyManager.cs:行号 70
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\AbpServiceProxiesController.cs:行号 44
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Uow\AbpApiUowFilter.cs:行号 55
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Validation\AbpApiValidationFilter.cs:行号 53
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Auditing\AbpApiAuditFilter.cs:行号 30
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Security\AntiForgery\AbpAntiForgeryApiFilter.cs:行号 51
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Authorization\AbpApiAuthorizeFilter.cs:行号 70
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-19 15:37:53,803 [7    ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ActionScriptingHelper.cs:行号 53
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 52
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 29
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 60
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 30
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ScriptProxyManager.cs:行号 70
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\AbpServiceProxiesController.cs:行号 44
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Uow\AbpApiUowFilter.cs:行号 55
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Validation\AbpApiValidationFilter.cs:行号 53
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Auditing\AbpApiAuditFilter.cs:行号 30
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Security\AntiForgery\AbpAntiForgeryApiFilter.cs:行号 51
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Authorization\AbpApiAuthorizeFilter.cs:行号 70
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-19 15:37:57,140 [11   ] ution.Web.Controllers.CustomerController - h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+System.Web.HttpCompileException (0x80004005): h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2017-12-19 15:38:39,253 [9    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-19 15:38:39,254 [9    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 15:38:39,254 [9    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 15:38:39,254 [9    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2017-12-19 15:38:49,269 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-19 15:38:49,282 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2017-12-19 15:38:49,286 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,289 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,290 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:49,293 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2017-12-19 15:38:49,574 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:38:51,283 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-19 15:38:51,304 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-19 15:38:51,306 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-19 15:38:51,308 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-19 15:38:51,432 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 15:38:51,487 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 15 classes define auto mapping attributes
+DEBUG 2017-12-19 15:38:51,487 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Authentication.Dto.CustomerDto
+DEBUG 2017-12-19 15:38:51,489 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Rewards.RewardPointsHistoryModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerInfoModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.SimpleCustomerModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.CategoryModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostCommentModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostDetailModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.SimplePostModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Customers.AdminModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.CategoryModel
+DEBUG 2017-12-19 15:38:51,490 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-19 15:38:51,708 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.ICaptchaService' with service name 'app/captchaService'.
+DEBUG 2017-12-19 15:38:51,709 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-19 15:38:51,710 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Media.IOssService' with service name 'app/ossService'.
+DEBUG 2017-12-19 15:38:51,711 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerAttributeService' with service name 'app/customerAttributeService'.
+DEBUG 2017-12-19 15:38:51,712 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerFollowService' with service name 'app/customerFollowService'.
+DEBUG 2017-12-19 15:38:51,713 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerLevelService' with service name 'app/customerLevelService'.
+DEBUG 2017-12-19 15:38:51,713 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-19 15:38:51,714 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.IRewardPointService' with service name 'app/rewardPointService'.
+DEBUG 2017-12-19 15:38:51,715 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-19 15:38:51,716 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.ICategoryService' with service name 'app/categoryService'.
+DEBUG 2017-12-19 15:38:51,717 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IContentLabelService' with service name 'app/contentLabelService'.
+DEBUG 2017-12-19 15:38:51,717 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostCommentService' with service name 'app/postCommentService'.
+DEBUG 2017-12-19 15:38:51,718 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostLabelService' with service name 'app/postLabelService'.
+DEBUG 2017-12-19 15:38:51,719 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostService' with service name 'app/postService'.
+ERROR 2017-12-19 15:39:15,134 [8    ] ution.Web.Controllers.CustomerController - h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+System.Web.HttpCompileException (0x80004005): h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+   在 System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.WebDirectoryBatchCompiler.AddBuildProviders(Boolean retryIfDeletionHappens)
+WARN  2017-12-19 15:39:16,651 [7    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:39:16,675 [7    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+ERROR 2017-12-19 15:39:16,676 [8    ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ActionScriptingHelper.cs:行号 53
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 52
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 29
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 60
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 30
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ScriptProxyManager.cs:行号 70
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\AbpServiceProxiesController.cs:行号 44
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Uow\AbpApiUowFilter.cs:行号 55
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Validation\AbpApiValidationFilter.cs:行号 53
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Auditing\AbpApiAuditFilter.cs:行号 30
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Security\AntiForgery\AbpAntiForgeryApiFilter.cs:行号 51
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Authorization\AbpApiAuthorizeFilter.cs:行号 70
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-19 15:39:17,214 [9    ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ActionScriptingHelper.cs:行号 53
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 52
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 29
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 60
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 30
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ScriptProxyManager.cs:行号 70
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\AbpServiceProxiesController.cs:行号 44
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Uow\AbpApiUowFilter.cs:行号 55
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Validation\AbpApiValidationFilter.cs:行号 53
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Auditing\AbpApiAuditFilter.cs:行号 30
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Security\AntiForgery\AbpAntiForgeryApiFilter.cs:行号 51
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Authorization\AbpApiAuthorizeFilter.cs:行号 70
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-19 15:40:25,704 [8    ] ution.Web.Controllers.CustomerController - h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+System.Web.HttpCompileException (0x80004005): h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2017-12-19 15:40:27,185 [9    ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ActionScriptingHelper.cs:行号 53
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 52
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 29
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 60
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 30
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ScriptProxyManager.cs:行号 70
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\AbpServiceProxiesController.cs:行号 44
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Uow\AbpApiUowFilter.cs:行号 55
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Validation\AbpApiValidationFilter.cs:行号 53
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Auditing\AbpApiAuditFilter.cs:行号 30
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Security\AntiForgery\AbpAntiForgeryApiFilter.cs:行号 51
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Authorization\AbpApiAuthorizeFilter.cs:行号 70
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-19 15:40:27,841 [18   ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ActionScriptingHelper.cs:行号 53
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 52
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 29
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 60
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 30
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ScriptProxyManager.cs:行号 70
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\AbpServiceProxiesController.cs:行号 44
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Uow\AbpApiUowFilter.cs:行号 55
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Validation\AbpApiValidationFilter.cs:行号 53
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Auditing\AbpApiAuditFilter.cs:行号 30
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Security\AntiForgery\AbpAntiForgeryApiFilter.cs:行号 51
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Authorization\AbpApiAuthorizeFilter.cs:行号 70
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+ERROR 2017-12-19 15:40:52,467 [18   ] ution.Web.Controllers.CustomerController - h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+System.Web.HttpCompileException (0x80004005): h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2017-12-19 15:41:59,665 [16   ] ution.Web.Controllers.CustomerController - h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+System.Web.HttpCompileException (0x80004005): h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2017-12-19 15:42:14,454 [8    ] ution.Web.Controllers.CustomerController - h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+System.Web.HttpCompileException (0x80004005): h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+ERROR 2017-12-19 15:42:20,938 [8    ] ution.Web.Controllers.CustomerController - “@”字符后不应有“if”关键字。在代码内部，不需要在像“if”这样的构造前加上前缀“@”。
+
+System.Web.HttpParseException (0x80004005): “@”字符后不应有“if”关键字。在代码内部，不需要在像“if”这样的构造前加上前缀“@”。
+
+   在 System.Web.WebPages.Razor.RazorBuildProvider.EnsureGeneratedCode()
+   在 System.Web.WebPages.Razor.RazorBuildProvider.get_CodeCompilerType()
+   在 System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   在 System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+DEBUG 2017-12-19 15:44:21,006 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2017-12-19 15:44:21,017 [1    ] Abp.Modules.AbpModuleManager             - Found 13 ABP modules in total.
+DEBUG 2017-12-19 15:44:21,021 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.Web.NetCommunitySolutionWebModule, NetCommunitySolution.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,023 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionDataModule, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkModule, Abp.EntityFramework, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,024 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionCoreModule, NetCommunitySolution.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionApplicationModule, NetCommunitySolution.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NetCommunitySolution.NetCommunitySolutionWebApiModule, NetCommunitySolution.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,025 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.2.5.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:21,028 [1    ] Abp.Modules.AbpModuleManager             - 13 modules loaded.
+DEBUG 2017-12-19 15:44:21,274 [1    ] EntityFramework.AbpEntityFrameworkModule - Registering DbContext: NetCommunitySolution.EntityFramework.NetCommunitySolutionDbContext, NetCommunitySolution.EntityFramework, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2017-12-19 15:44:22,642 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2017-12-19 15:44:22,670 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2017-12-19 15:44:22,672 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2017-12-19 15:44:22,674 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NetCommunitySolution
+DEBUG 2017-12-19 15:44:22,780 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 15:44:22,833 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 15 classes define auto mapping attributes
+DEBUG 2017-12-19 15:44:22,833 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Authentication.Dto.CustomerDto
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Rewards.RewardPointsHistoryModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerInfoModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Customers.SimpleCustomerModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.CategoryModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostCommentModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostDetailModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.SimplePostModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Models.Catalog.PostModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Customers.AdminModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Customers.CustomerLevelModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.CategoryModel
+DEBUG 2017-12-19 15:44:22,837 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NetCommunitySolution.Web.Areas.Operate.Models.Catalog.ContentLabelModel
+DEBUG 2017-12-19 15:44:23,031 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.ICaptchaService' with service name 'app/captchaService'.
+DEBUG 2017-12-19 15:44:23,031 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Security.IEncryptionService' with service name 'app/encryptionService'.
+DEBUG 2017-12-19 15:44:23,032 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Media.IOssService' with service name 'app/ossService'.
+DEBUG 2017-12-19 15:44:23,033 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerAttributeService' with service name 'app/customerAttributeService'.
+DEBUG 2017-12-19 15:44:23,034 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerFollowService' with service name 'app/customerFollowService'.
+DEBUG 2017-12-19 15:44:23,034 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerLevelService' with service name 'app/customerLevelService'.
+DEBUG 2017-12-19 15:44:23,035 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.ICustomerService' with service name 'app/customerService'.
+DEBUG 2017-12-19 15:44:23,036 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Customers.IRewardPointService' with service name 'app/rewardPointService'.
+DEBUG 2017-12-19 15:44:23,037 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Common.ISettingService' with service name 'app/settingService'.
+DEBUG 2017-12-19 15:44:23,037 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.ICategoryService' with service name 'app/categoryService'.
+DEBUG 2017-12-19 15:44:23,038 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IContentLabelService' with service name 'app/contentLabelService'.
+DEBUG 2017-12-19 15:44:23,039 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostCommentService' with service name 'app/postCommentService'.
+DEBUG 2017-12-19 15:44:23,040 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostLabelService' with service name 'app/postLabelService'.
+DEBUG 2017-12-19 15:44:23,041 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'NetCommunitySolution.Catalog.IPostService' with service name 'app/postService'.
+ERROR 2017-12-19 15:44:28,817 [8    ] ution.Web.Controllers.CustomerController - h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+System.Web.HttpCompileException (0x80004005): h:\NetCommunitySolution\NetCommunitySolution.Web\Views\Customer\Register.cshtml(80): error CS0135: “Model”与声明“System.Web.Mvc.WebViewPage<TModel>.Model”冲突
+   在 System.Web.Compilation.AssemblyBuilder.Compile()
+   在 System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   在 System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerWrapper.System.Web.Mvc.IBuildManager.GetCompiledType(String virtualPath)
+   在 System.Web.Mvc.BuildManagerCompiledView.Render(ViewContext viewContext, TextWriter writer)
+   在 System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResult(ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilterRecursive(IList`1 filters, Int32 filterIndex, ResultExecutingContext preContext, ControllerContext controllerContext, ActionResult actionResult)
+   在 System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<>c__DisplayClass2b.<BeginInvokeAction>b__1c()
+   在 System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass21.<BeginInvokeAction>b__1e(IAsyncResult asyncResult)
+WARN  2017-12-19 15:46:13,948 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:46:13,969 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:46:13,977 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:46:13,977 [8    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+INFO  2017-12-19 15:46:13,999 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Web.Controllers.HomeController.Index is executed by user 2 in 0 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:15,182 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Catalog.CategoryService.GetAllCategoriesDisplayedOnHomePage is executed by user 2 in 96 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:16,394 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Catalog.ContentLabelService.GetAllLabels is executed by user 2 in 170 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:17,564 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 53 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:17,619 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:17,732 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Catalog.PostService.GetAllPost is executed by user 2 in 112 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:17,801 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 2 in 65 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,431 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,486 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,541 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,596 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,650 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 53 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,703 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 52 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,758 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,812 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,868 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 53 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,923 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:20,977 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:21,031 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 53 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:21,086 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 53 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:21,141 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 54 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:21,194 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 53 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:21,248 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Common.SettingService.GetSettingByKey is executed by user 2 in 53 ms from 127.0.0.1 IP address with succeed.
+INFO  2017-12-19 15:46:21,306 [8    ] Abp.Auditing.SimpleLogAuditingStore      - AUDIT LOG: NetCommunitySolution.Customers.CustomerService.GetCustomerId is executed by user 2 in 56 ms from 127.0.0.1 IP address with succeed.
+WARN  2017-12-19 15:46:21,386 [24   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:46:21,386 [24   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:46:21,387 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2017-12-19 15:46:21,387 [9    ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support CreateAsync.
+WARN  2017-12-19 15:46:21,452 [24   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+ERROR 2017-12-19 15:46:21,578 [9    ] nHandling.AbpApiExceptionFilterAttribute - Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+Abp.AbpException: Only one complex type allowed as argument to a web api controller action. But GetAllPost contains more than one!
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ActionScriptingHelper.GenerateBody(DynamicApiActionInfo actionInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ActionScriptingHelper.cs:行号 53
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateAjaxCallParameters() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 52
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryActionScriptGenerator.GenerateMethod() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryActionScriptGenerator.cs:行号 29
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.AppendMethod(StringBuilder script, DynamicApiControllerInfo controllerInfo, DynamicApiActionInfo methodInfo) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 60
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.jQuery.JQueryProxyGenerator.Generate() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\jQuery\JQueryProxyGenerator.cs:行号 30
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.ScriptProxyManager.GetAllScript(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\ScriptProxyManager.cs:行号 70
+   在 Abp.WebApi.Controllers.Dynamic.Scripting.AbpServiceProxiesController.GetAll(ProxyScriptType type) 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Controllers\Dynamic\Scripting\AbpServiceProxiesController.cs:行号 44
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Uow\AbpApiUowFilter.cs:行号 55
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Validation\AbpApiValidationFilter.cs:行号 53
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Auditing\AbpApiAuditFilter.cs:行号 30
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Security\AntiForgery\AbpAntiForgeryApiFilter.cs:行号 51
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext() 位置 D:\Github\aspnetboilerplate\src\Abp.Web.Api\WebApi\Authorization\AbpApiAuthorizeFilter.cs:行号 70
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()
+DEBUG 2017-12-19 15:46:37,818 [35   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2017-12-19 15:46:37,819 [35   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 15:46:37,820 [35   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2017-12-19 15:46:37,820 [35   ] Abp.Modules.AbpModuleManager             - Shutting down completed.

@@ -623,6 +623,10 @@
     <Content Include="Areas\Operate\Views\Home\Index.cshtml" />
     <Content Include="Areas\Operate\Views\Post\Index.cshtml" />
     <Content Include="Areas\Operate\Views\Setting\RewardSetting.cshtml" />
+    <Content Include="Areas\Operate\Views\Customer\Create.cshtml" />
+    <Content Include="Areas\Operate\Views\Customer\Edit.cshtml" />
+    <Content Include="Areas\Operate\Views\Customer\_CreateOrUpdate.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.2.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.2.1.js" />
     <Content Include="Scripts\jquery-3.2.1.min.js" />
@@ -681,6 +685,7 @@
     <Compile Include="Areas\Operate\Models\Catalog\CategoryListModel.cs" />
     <Compile Include="Areas\Operate\Models\Catalog\CategoryModel.cs" />
     <Compile Include="Areas\Operate\Models\Catalog\ContentLabelModel.cs" />
+    <Compile Include="Areas\Operate\Models\Customers\AdminModel.cs" />
     <Compile Include="Areas\Operate\Models\Customers\CustomerBoxModel.cs" />
     <Compile Include="Areas\Operate\Models\Customers\CustomerLevelModel.cs" />
     <Compile Include="Areas\Operate\OperateAreaRegistration.cs" />

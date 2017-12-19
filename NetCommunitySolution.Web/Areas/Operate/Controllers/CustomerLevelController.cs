@@ -75,7 +75,7 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
                 return RedirectToAction("Index");
             }
             
-            return View();
+            return View(model);
         }
 
         public ActionResult Edit(int id)
@@ -102,7 +102,7 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
                 return RedirectToAction("Index");
             }
             
-            return View();
+            return View(model);
         }
 
 

@@ -1,0 +1,48 @@
+﻿@model NetCommunitySolution.Web.Areas.Operate.Models.Customers.AdminModel
+
+@Html.HiddenFor(model => model.Id)
+
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.LoginName)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.LoginName)
+
+    </div>
+</div>
+
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.Phone)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.Phone)
+
+    </div>
+</div>
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.Email)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.Email)
+
+    </div>
+</div>
+
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.Password)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.Password)
+
+    </div>
+</div>
+
+
+
+<div class="layui-form-item">
+    @Html.NETLabelFor(model => model.ConfirmPassword)
+    <div class="layui-input-block">
+        @Html.NETEditorFor(model => model.ConfirmPassword)
+
+    </div>
+</div>
