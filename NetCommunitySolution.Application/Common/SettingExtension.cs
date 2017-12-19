@@ -169,11 +169,10 @@ namespace NetCommunitySolution.Common
             {
                 Enabled = _settingService.GetSettingByKey<bool>(RewardPointSettingNames.Enabled),
                 Comment = _settingService.GetSettingByKey<int>(RewardPointSettingNames.Comment),
-               Login = _settingService.GetSettingByKey<int>(RewardPointSettingNames.Login),
                 NewPost = _settingService.GetSettingByKey<int>(RewardPointSettingNames.NewPost),
-                Register = _settingService.GetSettingByKey<int>(RewardPointSettingNames.Register),
                 Selected = _settingService.GetSettingByKey<int>(RewardPointSettingNames.Selected),
                 Solve = _settingService.GetSettingByKey<int>(RewardPointSettingNames.Solve),
+                DayMaxReward = _settingService.GetSettingByKey<int>(RewardPointSettingNames.DayMaxReward),                
             };
             return config;
         }
@@ -188,11 +187,10 @@ namespace NetCommunitySolution.Common
         {
             _settingService.SaveSetting(RewardPointSettingNames.Enabled, setting.Enabled);
             _settingService.SaveSetting(RewardPointSettingNames.Comment, setting.Comment);
-            _settingService.SaveSetting(RewardPointSettingNames.Login, setting.Login);
             _settingService.SaveSetting(RewardPointSettingNames.NewPost, setting.NewPost);
-            _settingService.SaveSetting(RewardPointSettingNames.Register, setting.Register);
             _settingService.SaveSetting(RewardPointSettingNames.Selected, setting.Selected);
             _settingService.SaveSetting(RewardPointSettingNames.Solve, setting.Solve);
+            _settingService.SaveSetting(RewardPointSettingNames.DayMaxReward, setting.DayMaxReward);
         }
 
     }

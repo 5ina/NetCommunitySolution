@@ -6,7 +6,6 @@
     ViewBag.ActiveItem = "Reward-Setting"; //The menu item will be active for this page.
 }
 
-
 @if (!String.IsNullOrEmpty(ViewBag.Result))
 {
     <script type="text/javascript">
@@ -29,13 +28,44 @@
         </div>
     </div>
 
-
-
     <div class="layui-form-item">
         @Html.NETLabelFor(model => model.Enabled)
 
         <div class="layui-input-block">
-            @Html.NETEditorFor(model => model.Enabled)
+            @Html.NETCheckBoxFor(model => model.Enabled, null, "reward-enabled")
+        </div>
+    </div>
+
+
+    <div class="layui-form-item panel-enalbed">
+        @Html.NETLabelFor(model => model.Comment)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.Comment)
+        </div>
+    </div>
+    
+    <div class="layui-form-item panel-enalbed">
+        @Html.NETLabelFor(model => model.Selected)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.Selected)
+        </div>
+    </div>
+
+    <div class="layui-form-item panel-enalbed">
+        @Html.NETLabelFor(model => model.Solve)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.Solve)
+        </div>
+    </div>
+
+    <div class="layui-form-item panel-enalbed">
+        @Html.NETLabelFor(model => model.DayMaxReward)
+
+        <div class="layui-input-block">
+            @Html.NETEditorFor(model => model.DayMaxReward)
         </div>
     </div>
 }
@@ -44,6 +74,20 @@
         var form = layui.form;
         //各种基于事件的操作，下面会有进一步介绍
         form.render();
+
+        form.on('checkbox(reward-enabled)', function (data) {
+            activePanelEnabled();
+        });
+
     });
+    activePanelEnabled();
+    function activePanelEnabled() {
+        var enabledId = "@Html.FieldIdFor(model => model.Enabled)";
+        if (document.getElementById(enabledId).checked == true) {
+            $('.panel-enalbed').show();
+        } else {
+            $('.panel-enalbed').hide();
+        }
+    }
 </script>
 

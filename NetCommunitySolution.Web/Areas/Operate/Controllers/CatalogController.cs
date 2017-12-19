@@ -63,6 +63,7 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
         public ActionResult List(DataSourceRequest command,string Keywords)
         {
             var categories = _categoryService.GetAllCategories(keywords: Keywords,
+                showHidden: true,
                 pageIndex: command.pageName - 1,
                 pageSize: command.limitName);
 
@@ -123,11 +124,11 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
                 var entity = _categoryService.GetCategoryById(model.Id);
                 entity = model.MapTo<CategoryModel, Category>(entity);
 
-                var categoryId = _categoryService.InsertCategory(entity);
+                _categoryService.UpdateCategory(entity);
 
                 if (continueEditing)
                 {
-                    return RedirectToAction("Edit", new { id = categoryId });
+                    return RedirectToAction("Edit", new { id = model.Id });
                 }
                 return RedirectToAction("Index");
             }

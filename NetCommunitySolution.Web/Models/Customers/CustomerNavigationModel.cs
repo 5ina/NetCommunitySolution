@@ -29,6 +29,7 @@ namespace NetCommunitySolution.Web.Models.Customers
     {
         Info = 0,
         Posts =10,
+        Level = 20,
         RewardPoints = 60,
         ChangePassword = 70,
         Avatar = 80,

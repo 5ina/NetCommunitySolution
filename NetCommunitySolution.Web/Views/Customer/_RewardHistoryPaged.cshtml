@@ -1,0 +1,25 @@
+﻿@model PagedItemModel<RewardPointsHistoryModel>
+
+@using NetCommunitySolution.Web.Models.Rewards;
+@using NetCommunitySolution.Web.Models.Common;
+
+<div class="reward-history">
+    <div class="reward-title">
+
+        <span class="id">Id</span>
+        <span class="point">浮动积分</span>
+        <span class="time">操作时间</span>
+        <span class="balance">积分余额</span>
+        <span class="message">信息</span>
+    </div>
+    @foreach (var item in Model.Items)
+    {
+    <div class="reward-item">
+        <span class="id">@item.Id</span>
+        <span class="point">@item.Points</span>
+        <span class="time">@item.CreationTime.ToString("yyyy.MM.dd hh:mm")</span>
+        <span class="balance">@item.PointsBalance</span>
+        <span class="message">@item.Message</span>
+    </div>
+    }
+</div>

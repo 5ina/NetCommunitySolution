@@ -1,0 +1,13 @@
+﻿@model CustomerInfoModel
+@using NetCommunitySolution.Web.Models.Customers;
+@{
+    Layout = "~/Views/Shared/_CustomerLayout.cshtml";
+}
+
+@section left
+{
+    @Html.Action("CustomerNavigation", "Customer", new { selectedTabId = CustomerNavigationEnum.Level })
+}
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>用户级别</legend>
+</fieldset>

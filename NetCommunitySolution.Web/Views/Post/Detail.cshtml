@@ -24,8 +24,15 @@
     <div class="layui-col-md8">
         <div class="content" style="padding:15px">
             <blockquote class="layui-elem-quote">
-                <h3>@Model.Title</h3></blockquote>
-
+                <h3>@Model.Title</h3>
+            </blockquote>
+            <div class="content-labels">
+                @foreach (var label in Model.ContentLabels)
+        {
+            <a class="layui-badge layui-bg-blue">@label.Name</a>
+}
+            </div>
+            <hr class="layui-bg-orange">
             <div class="post-content">
                 @Html.Raw(Model.Content)
             </div>
@@ -33,7 +40,7 @@
             <div class="post-comment">
                 <!-- Post Comment List-->
                 @Html.Action("PostComment", "Post", new { postId = Model.Id })
-                                
+
                 <hr class="layui-bg-orange">
 
                 <!-- Post Comment From-->

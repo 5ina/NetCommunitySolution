@@ -111,8 +111,10 @@ namespace NetCommunitySolution.Web
 
                         "~/Scripts/jquery-3.2.1.min.js",
                         "~/Scripts/jquery-ui-1.12.1.min.js",
-                        
+
                         "~/Scripts/moment-with-locales.min.js",
+                        "~/Scripts/jquery.unobtrusive-ajax.min.js",
+                        
                         "~/Scripts/jquery.validate.min.js",
                         "~/Scripts/jquery.blockUI.js",
                         "~/Scripts/toastr.min.js",

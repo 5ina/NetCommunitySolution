@@ -10,14 +10,18 @@
         </div>
     </div>
     <div class="comment-content">
-        @using (Html.BeginForm("Comment", "Post", FormMethod.Post, new { @class = "layui-form", id = "comment-form" }))
-    {
+        @using (Ajax.BeginForm("Comment", "Post", new AjaxOptions { OnSuccess="commentSaved",
+            HttpMethod = "POST",
+        },
+            new { @class = "form-horizontal", id = "order-form" }))
+            // FormMethod.Post, new { @class = "layui-form", id = "comment-form" }))
+        {
             @Html.HiddenFor(model => model.PostId)
-        @Html.AntiForgeryToken()
+            @Html.AntiForgeryToken()
 
 
         <div class="layui-form-item layui-form-text">
-            <label class="layui-form-label">文本域</label>
+            <label class="layui-form-label" for="@Html.FieldIdFor(model=>model.Content)">评论内容</label>
             <div class="layui-input-block">
                 @Html.NETEditorFor(model => model.Content)
             </div>
@@ -45,4 +49,18 @@
         var form = layui.form;
         //各种基于事件的操作，下面会有进一步介绍
         form.render();
+    });
+
+    function commentSaved(data) {
+        if (data == "success") {
+            layer.open({
+                title: '评论成功'
+                , content: '您的评论已经发表'
+            });
+
+            layui.use('form', function () {
+                var form = layui.form;                
+            });
+        }
+    }
 </script>

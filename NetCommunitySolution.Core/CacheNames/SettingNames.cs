@@ -159,10 +159,7 @@
         public static string Solve { get { return "net.setting.reward.solve"; } }
         
         public static string Selected { get { return "net.setting.reward.selected"; } }
-
         
-        public static string Login { get { return "net.setting.reward.login"; } }
-        
-        public static string Register { get { return "net.setting.reward.register"; } }
+        public static string DayMaxReward { get { return "net.setting.reward.daymaxreward"; } }
     }
 }

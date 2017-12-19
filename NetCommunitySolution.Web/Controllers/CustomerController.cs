@@ -21,6 +21,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using NetCommunitySolution.Web.Framework.UI;
+using NetCommunitySolution.Web.Models.Rewards;
+using NetCommunitySolution.Web.Framework.Event.Reward;
 
 namespace NetCommunitySolution.Web.Controllers
 {
@@ -37,6 +39,7 @@ namespace NetCommunitySolution.Web.Controllers
         private readonly ISettingService _settingService;
         private readonly IOssService _ossService;
         private readonly ICustomerAttributeService _attribteService;
+        private readonly IRewardPointService _rewardPointService;
         private readonly IEncryptionService _encryptionService;
 
         private const string CACHE_CUSTOMER_STATISTICAL_OVERVIEW = "net.cache.customer.statistical.overview";
@@ -47,6 +50,7 @@ namespace NetCommunitySolution.Web.Controllers
             ISettingService settingService,
             IOssService ossService,
             ICustomerAttributeService attribteService,
+            IRewardPointService rewardPointService,
             IEncryptionService encryptionService)
         {
             this._customerService = customerService;
@@ -55,6 +59,7 @@ namespace NetCommunitySolution.Web.Controllers
             this._cacheManager = cacheManager;
             this._settingService = settingService;
             this._attribteService = attribteService;
+            this._rewardPointService = rewardPointService;
             this._encryptionService = encryptionService;
             this._ossService = ossService;
         }
@@ -314,7 +319,7 @@ namespace NetCommunitySolution.Web.Controllers
         }
         #endregion
 
-        #region Change Password / Info
+        #region Change Password / Info /Level
         [MemberLogin(true)]
         public ActionResult ChangePassword()
         {
@@ -432,6 +437,11 @@ namespace NetCommunitySolution.Web.Controllers
                 }
             });
         }
+        public ActionResult Level()
+        {
+            var model = new MyLevelModel();
+            return View(model);
+        }
 
         [ChildActionOnly]
         public ActionResult CustomerNavigation(int selectedTabId = 0)
@@ -462,6 +472,15 @@ namespace NetCommunitySolution.Web.Controllers
                     ItemClass = "customer-reward"
                 });
 
+
+            model.CustomerNavigationItems.Add(new CustomerNavigationItemModel
+            {
+                Url = Url.Action("Level", "Customer"),
+                Title = "用户级别",
+                Tab = CustomerNavigationEnum.Level,
+                ItemClass = "customer-level"
+            });
+
             var mediaSetting = _settingService.GetMediaSettings();
             if(mediaSetting.EnabledAvatar)
             {
@@ -487,6 +506,25 @@ namespace NetCommunitySolution.Web.Controllers
             model.SelectedTab = (CustomerNavigationEnum)selectedTabId;
 
             return PartialView(model);
+        }
+
+        #endregion
+
+        #region Reward
+        public ActionResult Reward(int pageIndex = 0,int pageSize = 30 )
+        {
+            var customer = GetCurrentCustomer();
+            var model = new CustomerRewardModel();
+            var histories = customer.GetCustomerReward(_rewardPointService, pageIndex, pageSize);
+            model.Reward = customer.GetCustomerAttributeValue<int>(CustomerAttributeNames.Reward);
+            model.Items = new Models.Common.PagedItemModel<RewardPointsHistoryModel>
+            {
+                PageIndex = pageIndex,
+                PageSize = pageSize,
+                Total = histories.TotalCount,
+                Items = histories.Items.MapTo<IList<RewardPointsHistoryModel>>()
+            };
+            return View(model);
         }
         #endregion
 

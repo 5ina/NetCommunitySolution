@@ -26,7 +26,8 @@ namespace NetCommunitySolution.EntityFramework
         public virtual IDbSet<CustomerLevel> CustomerLevel { get; set; }
         public virtual IDbSet<CustomerAttribute> CustomerAttribute { get; set; }
         public virtual IDbSet<CustomerFollow> CustomerFollow { get; set; }
-        
+        public virtual IDbSet<RewardPointsHistory> RewardPointsHistory { get; set; }
+
         //Catalog
         public virtual IDbSet<Category> Category { get; set; }
         public virtual IDbSet<ContentLabel> ContentLabel { get; set; }

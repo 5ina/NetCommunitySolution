@@ -632,6 +632,8 @@
     <Content Include="Scripts\jquery-ui-1.12.1.min.js" />
     <Content Include="Scripts\jquery.blockUI.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
@@ -691,6 +693,8 @@
     <Compile Include="Controllers\PostController.cs" />
     <Compile Include="Framework\Controllers\MemberLoginAttribute.cs" />
     <Compile Include="Framework\Controllers\ParameterBasedOnFormNameAttribute.cs" />
+    <Compile Include="Framework\Event\Reward\RewardEventAttribute.cs" />
+    <Compile Include="Framework\Event\Reward\RewardEventMode.cs" />
     <Compile Include="Framework\Html\EnumExtensions.cs" />
     <Compile Include="Framework\Html\HtmlExtensions.cs" />
     <Compile Include="Framework\Html\SelectListHelper.cs" />
@@ -706,9 +710,11 @@
     <Compile Include="Models\Catalog\PostDetailModel.cs" />
     <Compile Include="Models\Catalog\SimplePostModel.cs" />
     <Compile Include="Models\Catalog\PostModel.cs" />
+    <Compile Include="Models\Common\PagedItemModel.cs" />
     <Compile Include="Models\Customers\ChangePasswordModel.cs" />
     <Compile Include="Models\Customers\CustomerAvatarModel.cs" />
     <Compile Include="Models\Customers\CustomerInfoModel.cs" />
+    <Compile Include="Models\Customers\CustomerLevelModel.cs" />
     <Compile Include="Models\Customers\CustomerNavigationModel.cs" />
     <Compile Include="Models\Customers\LoginModel.cs" />
     <Compile Include="Models\Customers\RegisterModel.cs" />
@@ -721,6 +727,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Layout\TopMenuViewModel.cs" />
+    <Compile Include="Models\Rewards\CustomerRewardModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\NetCommunitySolutionWebViewPageBase.cs" />
     <Compile Include="Views\UrlChecker.cs" />
@@ -759,6 +766,9 @@
     <Content Include="Views\Shared\_PostBox.cshtml" />
     <Content Include="Views\Post\PostCatalog.cshtml" />
     <Content Include="Views\Post\MyPost.cshtml" />
+    <Content Include="Views\Customer\Reward.cshtml" />
+    <Content Include="Views\Customer\_RewardHistoryPaged.cshtml" />
+    <Content Include="Views\Customer\Level.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

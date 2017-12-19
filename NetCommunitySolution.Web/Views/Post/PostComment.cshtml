@@ -22,6 +22,12 @@
                 <div class="q_time">
                     <span>@item.Comment.CreationTime.ToString("yyyy.MM.dd HH:mm")</span>
                 </div>
+                @if (ViewBag.Solve != true)
+                {
+                    <div class="selected">
+                        选定他
+                    </div>
+                }
             </div>
         </div>
         <hr class="layui-bg-green">

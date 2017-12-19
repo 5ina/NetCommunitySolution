@@ -3,6 +3,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using NetCommunitySolution.Authentication.Dto;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace NetCommunitySolution.Authentication
@@ -22,6 +23,10 @@ namespace NetCommunitySolution.Authentication
         public override Task SignInAsync(CustomerDto user, bool isPersistent, bool rememberBrowser)
         {
             return base.SignInAsync(user, isPersistent, rememberBrowser);
+        }
+        public override Task<ClaimsIdentity> CreateUserIdentityAsync(CustomerDto user)
+        {
+            return base.CreateUserIdentityAsync(user);
         }
     }
 }

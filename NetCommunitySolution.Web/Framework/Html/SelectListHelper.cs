@@ -22,19 +22,14 @@ namespace NetCommunitySolution.Web.Framework.Html
         /// <returns>Category list</returns>
         public static List<SelectListItem> GetCategoryList(ICategoryService categoryService, ICacheManager cacheManager, bool showHidden = false)
         {
-            string cacheKey = string.Format(ModelCacheEventConsumer.CATEGORIES_LIST_KEY, showHidden);
-            var categoryListItems = cacheManager.GetCache(cacheKey).Get(cacheKey, () =>
-            {
                 var categories = categoryService.GetAllCategories(showHidden: showHidden);
-                return categories.Items.Select(c => new SelectListItem
+                var categoryListItems = categories.Items.Select(c => new SelectListItem
                 {
                     Text = c.GetFormattedBreadCrumb(categories.Items.ToList()),
                     Value = c.Id.ToString()
                 }).ToList();
-            });
 
             var result = new List<SelectListItem>();
-            //clone the list to ensure that "selected" property is not set
             foreach (var item in categoryListItems)
             {
                 result.Add(new SelectListItem

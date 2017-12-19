@@ -26,15 +26,18 @@ namespace NetCommunitySolution.Web.Framework.Html
         }
 
         public static MvcHtmlString NETEditorFor<TModel, TValue>(this HtmlHelper<TModel> helper,
-           Expression<Func<TModel, TValue>> expression, string placeholder = "", bool renderFormControlClass = true)
+           Expression<Func<TModel, TValue>> expression, 
+           bool renderFormControlClass = true)
         {
             var result = new StringBuilder();
-            
+
             var htmlAttributes = new
             {
                 @class = renderFormControlClass ? "layui-input" : "",
             };
-            result.Append(helper.EditorFor(expression, new { htmlAttributes, placeholder }));
+            
+            
+            result.Append(helper.EditorFor(expression, new { htmlAttributes }));
 
             return MvcHtmlString.Create(result.ToString());
         }
@@ -62,13 +65,15 @@ namespace NetCommunitySolution.Web.Framework.Html
         }
 
 
-        public static MvcHtmlString NETCheckBoxFor<TModel>(this HtmlHelper<TModel> helper,
-            Expression<Func<TModel, bool>> expression)
+        public static MvcHtmlString NETCheckBoxFor<TModel>(this HtmlHelper<TModel> htmlHelper,
+            Expression<Func<TModel, bool>> expression, object htmlAttributes = null, string layfilter = null)
         {
-
-            var Attributes = new KeyValuePair<string, string>("lay-skin", "primary");
-            var attrs = HtmlHelper.AnonymousObjectToHtmlAttributes(Attributes);
-            return helper.CheckBoxFor(expression, attrs);
+            var attributes =
+                HtmlHelper.AnonymousObjectToHtmlAttributes(htmlAttributes);
+            if (!attributes.ContainsKey("lay-filter"))
+                attributes["lay-filter"] = layfilter;
+            return htmlHelper.CheckBoxFor(expression, attributes);
+            
         }
 
         public static MvcHtmlString NETRadioButtonFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper, 

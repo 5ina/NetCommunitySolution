@@ -7,7 +7,15 @@
 
 <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
     <legend>类目管理</legend>
-</fieldset>
+</fieldset><div class="layui-row">
+
+    <div class="layui-col-xs1 layui-col-md-offset11">
+        <div class="grid-demo grid-demo-bg1">
+
+            <a class="layui-btn layui-btn-danger" id="label-search" href="@Url.Action("Create")"><i class="fa fa-search"></i>新增类目</a>
+        </div>
+    </div>
+</div>
 <div class="layui-form-item">
     <div class="layui-inline">
         <label class="layui-form-label">关键字</label>
@@ -24,7 +32,7 @@
 
 <script type="text/html" id="op">
     <!-- 这里的 checked 的状态只是演示 -->
-    <a class="layui-btn layui-btn-mini layui-btn-xs" href="Edit/{{d.Id}}">查看</a>
+    <a class="layui-btn layui-btn-mini layui-btn-xs" href="/Operate/Catalog/Edit/{{d.Id}}">查看</a>
     <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
 </script>
 <script>

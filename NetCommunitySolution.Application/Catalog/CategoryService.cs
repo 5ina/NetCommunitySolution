@@ -122,6 +122,7 @@ namespace NetCommunitySolution.Catalog
                         orderby c.DisplayOrder
                         where c.Published &&
                         c.IncludeInTopMenu
+                        orderby c.ParentCategoryId , c.DisplayOrder descending
                         select c;
 
             var categories = query.ToList();

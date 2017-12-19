@@ -59,6 +59,7 @@ namespace NetCommunitySolution.Web.Areas.Operate.Controllers
         public ActionResult List(DataSourceRequest command, string Keywords)
         {
             var labels = _labelService.GetAllLabels(keywords: Keywords,
+                showHidden: true,
                 pageIndex: command.pageName - 1,
                 pageSize: command.limitName);
 

@@ -7,6 +7,7 @@ using NetCommunitySolution.Customers;
 using NetCommunitySolution.Domain.Catalog;
 using NetCommunitySolution.Domain.Customers;
 using NetCommunitySolution.Web.Framework.Controllers;
+using NetCommunitySolution.Web.Framework.Event.Reward;
 using NetCommunitySolution.Web.Framework.Html;
 using NetCommunitySolution.Web.Models.Catalog;
 using System;
@@ -112,6 +113,7 @@ namespace NetCommunitySolution.Web.Controllers
         [UnitOfWork]
         [ValidateInput(false)]
         [HttpPost, ParameterBasedOnFormName("save-continue", "continueEditing")]
+        [RewardEvent(RewardEventMode.NewPost)]
         public ActionResult NewPost(PostModel model, bool continueEditing)
         {
             if (ModelState.IsValid)
@@ -129,7 +131,7 @@ namespace NetCommunitySolution.Web.Controllers
                 {
                     return RedirectToAction("Edit", new { id = model.Id });
                 }
-                return RedirectToAction("Detail", new { id = model.Id });
+                return RedirectToAction("Detail", new { postId = model.Id });
             }
 
             PreparePostModel(model);
@@ -200,6 +202,10 @@ namespace NetCommunitySolution.Web.Controllers
                 model.Avatar = customer.GetCustomerAttributeValue<string>(CustomerAttributeNames.Avatar);
                 return model;
             }).ToList();
+
+            var post = _postService.GetPostById(postId);
+            ViewBag.Solve = post.Solve;
+            ViewBag.CurrentCustomerID = AbpSession.UserId;
             return PartialView(items);
         }
 
@@ -215,6 +221,7 @@ namespace NetCommunitySolution.Web.Controllers
         [HttpPost]
         [UnitOfWork]
         [ValidateInput(false)]
+        [RewardEvent(RewardEventMode.Comment)]
         public ActionResult Comment(PostCommentModel model)
         {
             if (model.PostId <= 0)
@@ -227,7 +234,8 @@ namespace NetCommunitySolution.Web.Controllers
 
         [UnitOfWork]
         [HttpPost]
-        public ActionResult SelectComment(int commentId, int postId)
+        [RewardEvent(RewardEventMode.Comment)]
+        public ActionResult SelectComment(int commentId, int postId, int customerId)
         {
             var post = _postService.GetPostById(postId);
             post.Solve = true;

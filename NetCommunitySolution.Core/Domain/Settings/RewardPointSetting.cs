@@ -24,12 +24,9 @@ namespace NetCommunitySolution.Domain.Settings
 
         [DisplayName("回帖选中")]
         public int Selected { get; set; }
+        
 
-
-        [DisplayName("登录积分")]
-        public int Login { get; set; }
-
-        [DisplayName("注册积分")]
-        public int Register { get; set; }
+        [DisplayName("每日最高")]
+        public int DayMaxReward { get; set; }
     }
 }

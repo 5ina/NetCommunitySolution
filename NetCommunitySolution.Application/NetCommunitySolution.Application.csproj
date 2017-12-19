@@ -246,6 +246,9 @@
     <Compile Include="Customers\ICustomerFollowService.cs" />
     <Compile Include="Customers\ICustomerLevelService.cs" />
     <Compile Include="Customers\ICustomerService.cs" />
+    <Compile Include="Customers\IRewardPointService.cs" />
+    <Compile Include="Customers\RewardPointService.cs" />
+    <Compile Include="Customers\RewardRewardPointExtension.cs" />
     <Compile Include="Media\IOssService.cs" />
     <Compile Include="Media\OssService.cs" />
     <Compile Include="NetCommunitySolutionApplicationModule.cs" />

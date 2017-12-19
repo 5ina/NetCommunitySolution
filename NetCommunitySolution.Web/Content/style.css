@@ -92,6 +92,7 @@ a,a:hover{text-decoration:none;}
         padding: 15px;
         border:1px solid #ccc;
         border-top:none;
+        line-height:1.9em;
     }
 .customer-status .dropdown .dropdown-menu {
     background: #007fff;
@@ -259,7 +260,77 @@ min-height:120px;
     }
 
 
+        .comment-list .comments .post-comment .comment-content .comment-body {
+
+            padding-bottom:40px;
+        }
+    .comment-list .comments .post-comment .comment-content .selected{
+        position:absolute;
+        bottom:0;
+        right:0;
+        padding:4px 12px;
+    }
+
+
         .comment-list .comments .post-comment .comment-content .q_time {
             color: #777;
             font-size: 12px;
+            padding: 4px 12px;
+            position: absolute;
+            bottom: 0;
+            left: 130px;
         }
+
+/* reward-page */
+.reward-page .reward-content .reward-value {
+    font-size:40px;
+    text-indent:10px;
+    background:#009688;
+    color:#fff;
+    padding:15px 0;
+        
+}
+
+.reward-page .reward-content .int {
+    color:#fff;
+    background:#ff6a00;
+    padding:15px 0;
+}
+
+.reward-page .reward-history {
+    padding:15px;
+    line-height:2.5em;
+}
+
+
+    .reward-page .reward-history .reward-title span {
+        padding: 0 12px;
+        display: inline-block;
+        background:#ccc
+    }
+
+    .reward-page .reward-history span {
+        padding: 0 12px;
+        display: inline-table;
+        text-align:center;
+    }
+
+    .reward-page .reward-history span.time {
+        width:300px;
+    }
+
+        .reward-page .reward-history span.id {
+            width: 90px;
+        }
+
+        .reward-page .reward-history span.point {
+            width: 90px;
+        }
+        .reward-page .reward-history span.message {
+            width: 460px;
+        }
+        .reward-page .reward-history span.balance {
+            width: 90px;
+        }
+
+
